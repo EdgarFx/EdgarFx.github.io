@@ -5,24 +5,12 @@
     <link>https://EdgarFx.github.io/tag/quadruped-robot/</link>
       <atom:link href="https://EdgarFx.github.io/tag/quadruped-robot/index.xml" rel="self" type="application/rss+xml" />
     <description>Quadruped Robot</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 13 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png</url>
       <title>Quadruped Robot</title>
       <link>https://EdgarFx.github.io/tag/quadruped-robot/</link>
     </image>
-    
-    <item>
-      <title>I focus on research quadruped walking with two pint feet, recently.</title>
-      <link>https://EdgarFx.github.io/post/two_leg_walking/</link>
-      <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/post/two_leg_walking/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Will be releasing soon.&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
     
     <item>
       <title>Quadruped robot walking like lizard with two point feet</title>
