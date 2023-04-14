@@ -97,9 +97,6 @@
     <loc>https://EdgarFx.github.io/admin/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/post/</loc>
-    <priority>0</priority>
-  </url><url>
     <loc>https://EdgarFx.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
   </url>
