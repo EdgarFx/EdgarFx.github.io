@@ -41,11 +41,38 @@
     </item>
     
     <item>
+      <title>Quantum Computing Based Power System Fault Diagnosis with QAOA and Efficient Gate Decomposition</title>
+      <link>https://EdgarFx.github.io/research/q_optimization/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/q_optimization/</guid>
+      <description>&lt;p&gt;Power system fault diagnosis helps to reproduce the fault process and provide the dispatchers with a basis for fault decision-making. The aim of this research theme is to try to adapt quantum approximate optimization algorithm to solve power system fault diagnosis problem under current hardware limit, utilizing the potential advantages of quantum computing to handle more complex power system faults.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SLAM for Vision-based Navigation</title>
+      <link>https://EdgarFx.github.io/research/navigation/</link>
+      <pubDate>Fri, 14 Apr 2023 10:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/navigation/</guid>
+      <description>&lt;p&gt;This research project is initiated by Prof. Shankar Sastry (UC Berkeley) and Prof. Somil Bansal (University of Southern California). The main aim of the research is to create a new autonomous navigation pipeline that incorporates learning-based perception for extracting distinctive features and semantic interpretation, and model-based SLAM for inference and metric map reconstruction. Specifically, learning-based perception techniques have the ability to successfully identify objects that are important for the subsequent navigation task, but may face difficulties in accurately reconstructing metrics in challenging scenarios such as narrow hallways and tight corners. On the other hand, visual SLAM methods can produce consistent metric maps but often require significant computational resources, and do not provide relevant semantic information. This study aims to explore methods of integrating these two approaches, learning-based and model-based, to establish an efficient and reliable autonomous navigation system that can achieve high success rates and adapt to complex and unpredictable environments.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Carbon Disclosure Effect, Corporate Fundamentals, and Net-zero Emission Target: Evidence from China</title>
       <link>https://EdgarFx.github.io/publication/disclosure/</link>
       <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/publication/disclosure/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Carbon Disclosure Effect, Corporate Fundamentals, and Net-zero Emission Target: Evidence from China</title>
+      <link>https://EdgarFx.github.io/research/disclosure/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/disclosure/</guid>
+      <description>&lt;p&gt;Under the national net-zero emission target, carbon disclosure becomes more significant for investors to evaluate corporate climate risk in formulating investing strategies. This study aims to analyze the impact of Carbon Disclosure on Company Financial Performance.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -57,6 +84,15 @@
     </item>
     
     <item>
+      <title>Carbon Disclosure Effect, Corporate Fundamentals, and Net-zero Emission Target: Evidence from China</title>
+      <link>https://EdgarFx.github.io/research/ets/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/ets/</guid>
+      <description>&lt;p&gt;This paper conducts an empirical analysis of the impact of China’s national and regional Emissions Trading Scheme (ETS) on the ﬁnancial performance of listed companies. A comprehensive dataset is constructed, encompassing ﬁrm-level carbon allowance data and ﬁrm-level emission data from July 2021 to December 2022. Our ﬁndings indicate that, in the initial years of China’s ETS implementation, companies participating in the national ETS experienced a statistically signiﬁcant superior performance compared to non-participating ﬁrms due to excess free carbon emission allowances. Results also show that National ETS resulted in a statistically signiﬁcant reduction in emissions of regulated companies. Nevertheless, involvement in the regional ETS yielded no discernible e↵ect on the ﬁnancial and environmental performance of regulated entities. The outcomes reveal the existence of a substantial and statistically signiﬁcant ”over-allocation of carbon allowances,” predominantly attributable to increased non-operational income of regulated companies in China’s national ETS.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
       <link>https://EdgarFx.github.io/publication/l_qlstm/</link>
       <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
@@ -65,11 +101,20 @@
     </item>
     
     <item>
-      <title>Quadruped robot walking like lizard with two point feet</title>
-      <link>https://EdgarFx.github.io/research/quadruped_two_leg_walking/</link>
-      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/research/quadruped_two_leg_walking/</guid>
-      <description>&lt;p&gt;The aim of this research theme is to try to empower quadrupedal robot two point feet walking using existing gradient-based, reinforcement learning, meta-heuristic-based algorithms, etc. Currently, ongoing!&lt;/p&gt;
+      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
+      <link>https://EdgarFx.github.io/research/l_qlstm/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/l_qlstm/</guid>
+      <description>&lt;p&gt;Accurate carbon price forecasting is important for investors and policymakers to make decisions in the carbon market. With the development of quantum computing in recent years, quantum machine learning has shown great potential in a wide range of areas. The aim of this research theme is to try to adapt Quantum Long Short-Term Memory to forecast the carbon price.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simulation Modeling Analysis of Carbon-Electricity Market in the Context of Carbon Neutrality</title>
+      <link>https://EdgarFx.github.io/research/simulation/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/simulation/</guid>
+      <description>&lt;p&gt;This paper studied carbon market clearing, electricity market clearing, and computable general equilibrium (CGE) models to simulate carbon, electricity, and macro-economy systems. A hybrid experimental learning method is applied to simulate the carbon-electricity market, which solves the macro-scale problems from the conflict between electricity market price reduction and carbon emission cost, and the micro-scale problems from the different decision time scales. Based on the simulation framework, we can study the electricity market forecasting analysis techniques. Based on the Guangdong trial spot market, a case study on a 3-bus electricity market is launched to test the proposed method&amp;rsquo;s adaption in the bidding behavior modeling of the electricity market. Moreover, a CGE experiment finds out that the carbon market can reduce the emission amount of the eight industries. And the carbon price can affect each industry&amp;rsquo;s emission amount, however, it has little effect on the total amount. This work is supported by The Science and Technology Project of State Grid Zhejiang Electric Power Co., Ltd. “Research on Carbon Trading System Based on Blockchain Technology” (Grant NO.5211LS21N002).&lt;/p&gt;
 </description>
     </item>
     
@@ -82,21 +127,11 @@
     </item>
     
     <item>
-      <title>Quadruped jumping with optimal control</title>
-      <link>https://EdgarFx.github.io/research/offline_quadruped_jumping/</link>
-      <pubDate>Sun, 27 Feb 2022 10:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/research/offline_quadruped_jumping/</guid>
-      <description>&lt;p&gt;The aim of this research theme is to try to empower quadrupedal robot or bipedal robot jumping using existing gradient-based, reinforcement learning, meta-heuristic-based algorithms, etc. Currently, meta-heuristic-based online and offline jumping is implemented.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Painting Robot in construction industry (RA Work)</title>
-      <link>https://EdgarFx.github.io/research/construction_robot/</link>
-      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/research/construction_robot/</guid>
-      <description>&lt;p&gt;Due to the lack of experienced labor and high-quality requirements, interior painting task calls for robotic solutions in the construction field. This paper presents a robotic system aiming for the automatic interior wall painting task. The new painting robot comprises an omnidirectional mobile base and a seven degrees-of-freedom (7-DOF) redundant manipulator consisting of a 6-DOF robot arm and a 1-DOF lifting mechanism to make the painting task more flexible. Further, a building information modeling-based three-dimensional (3D) reconstruction approach is used to obtain the complete 3D model of all walls in the interior environment for automatic painting. Moreover, we propose a two-stage coverage planning framework to automatically generate optimal mobile base paths and manipulator trajectories to paint the walls. In the proposed framework, the global planner plans the painting waypoints sequence optimally. The local planner generates the mobile base poses by a new evaluation function which both ensures coverage of all painting waypoints and optimizes robot paths length. The results of field tests showed that the whole painting robot system has high environment adaptability to paint interior walls automatically. Furthermore, the planning results can significantly reduce total robot paths length compared with the previous studies. The painting robot can automatically finish a painting of 46.3 
-in 59.3 min, and this performance verifies the proposed design and algorithms.&lt;/p&gt;
+      <title>2022 Carbon Rating Report of China&#39;s 100 Overseas Listed Companies</title>
+      <link>https://EdgarFx.github.io/research/carbon_rating/</link>
+      <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/carbon_rating/</guid>
+      <description>&lt;p&gt;At present, there is no unified definition of the organizational boundary, scope and management for corporate carbon emission information disclosure in China. China-based Stock Exchanges have no mandatory disclosure requirements for carbon emission information of listed companies either. In the absence of uniform standards, there may be inconsistencies in the statistical methodologies of corporate carbon information disclosure, resulting in the lack of comparability among different emission data. Domestic regulatory authorities need to establish a unified corporate carbon information disclosure standard to supervise the carbon information disclosure of listed companies and assist companies, thus to carry out standardized disclosure. Carbon disclosure is now of great practical significance to the development of enterprises. The leading enterprises in the capital market generally have higher disclosure levels, which will be in turn incentivized by the stock market, thus forming a positive cycle. At the same time, with the national carbon peaking and carbon neutrality policy in place, carbon disclosure, as a social and environmental factor, will continuously be the focus of the capital market. It will also have a greater impact on a company’s stock price, profits and other financial performances. Therefore, it is even more imperative for all companies to improve their own carbon emission management and disclosure systems. While achieving emission reduction targets, they should also reduce the carbon emission intensity and improve the quality of carbon information disclosure. This report proposes a carbon rating system and releases the carbon rating of China’s 100 Overseas Listed Companies.&lt;/p&gt;
 </description>
     </item>
     

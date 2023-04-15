@@ -18,6 +18,10 @@
     <lastmod>2023-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://EdgarFx.github.io/tag/power-system/</loc>
+    <lastmod>2023-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://EdgarFx.github.io/publication_types/</loc>
     <lastmod>2023-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -26,15 +30,51 @@
     <lastmod>2023-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://EdgarFx.github.io/tag/quantum-computing/</loc>
+    <lastmod>2023-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://EdgarFx.github.io/publication/q_optimization/</loc>
     <lastmod>2023-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/research/q_optimization/</loc>
+    <lastmod>2023-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/research/</loc>
+    <lastmod>2023-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/tags/</loc>
+    <lastmod>2023-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/tag/computer-vision-and-robotics/</loc>
+    <lastmod>2023-04-14T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/research/navigation/</loc>
+    <lastmod>2023-04-14T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/publication/disclosure/</loc>
     <lastmod>2023-04-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://EdgarFx.github.io/research/disclosure/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/tag/carbon-market/</loc>
+    <lastmod>2023-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://EdgarFx.github.io/publication/ets/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/research/ets/</loc>
     <lastmod>2023-04-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -46,52 +86,24 @@
     <lastmod>2023-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/tag/bipedal-robot/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+    <loc>https://EdgarFx.github.io/research/l_qlstm/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/tag/optimal-control/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/tag/quadruped-robot/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/research/quadruped_two_leg_walking/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/tag/reinforcement-learning/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/research/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/tags/</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
+    <loc>https://EdgarFx.github.io/research/simulation/</loc>
+    <lastmod>2023-03-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/publication/carbon_rating/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/publication-type/4/</loc>
+    <loc>https://EdgarFx.github.io/research/carbon_rating/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/research/offline_quadruped_jumping/</loc>
-    <lastmod>2022-02-27T10:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/research/construction_robot/</loc>
-    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/tag/trajectory-planning/</loc>
-    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+    <loc>https://EdgarFx.github.io/publication-type/4/</loc>
+    <lastmod>2022-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/tag/deep-learning/</loc>
