@@ -5,7 +5,7 @@
     <link>https://EdgarFx.github.io/publication/</link>
       <atom:link href="https://EdgarFx.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 25 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>An Optimal Motion Planning Framework for Quadruped Jumping</title>
-      <link>https://EdgarFx.github.io/publication/offline_jumping/</link>
-      <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/publication/offline_jumping/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Building information modeling‐based 3D reconstruction and coverage planning enabled automatic painting of interior walls using a novel painting robot in construction</title>
       <link>https://EdgarFx.github.io/publication/zhouyang_jfr/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/publication/zhouyang_jfr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
+      <link>https://EdgarFx.github.io/publication/offline_jumping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/publication/offline_jumping/</guid>
       <description></description>
     </item>
     
