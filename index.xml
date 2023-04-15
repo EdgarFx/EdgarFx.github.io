@@ -42,14 +42,6 @@
     </item>
     
     <item>
-      <title>Building information modeling‐based 3D reconstruction and coverage planning enabled automatic painting of interior walls using a novel painting robot in construction</title>
-      <link>https://EdgarFx.github.io/publication/zhouyang_jfr/</link>
-      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/publication/zhouyang_jfr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Quadruped jumping with optimal control</title>
       <link>https://EdgarFx.github.io/research/offline_quadruped_jumping/</link>
       <pubDate>Sun, 27 Feb 2022 10:00:00 +0000</pubDate>
@@ -94,6 +86,14 @@ in 59.3 min, and this performance verifies the proposed design and algorithms.
       <link>https://EdgarFx.github.io/publication/offline_jumping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/publication/offline_jumping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Computing Based Power System Fault Diagnosis with QAOA and Efficient Gate Decomposition</title>
+      <link>https://EdgarFx.github.io/publication/q_optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/publication/q_optimization/</guid>
       <description></description>
     </item>
     

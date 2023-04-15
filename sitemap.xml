@@ -42,22 +42,6 @@
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/publication-type/2/</loc>
-    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/publication/zhouyang_jfr/</loc>
-    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/publication_types/</loc>
-    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/publication/</loc>
-    <lastmod>2022-06-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://EdgarFx.github.io/research/offline_quadruped_jumping/</loc>
     <lastmod>2022-02-27T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -85,10 +69,25 @@
     <loc>https://EdgarFx.github.io/admin/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://EdgarFx.github.io/publication-type/2/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/publication-type/3/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://EdgarFx.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/publication/offline_jumping/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/publication_types/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/publication/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/publication/q_optimization/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/publication/genloco_hb/</loc>
