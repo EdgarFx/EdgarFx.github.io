@@ -14,22 +14,6 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/publication-type/1/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/publication/genloco_hb/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/publication_types/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/publication/</loc>
-    <lastmod>2022-09-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://EdgarFx.github.io/tag/bipedal-robot/</loc>
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -58,7 +42,19 @@
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://EdgarFx.github.io/publication-type/1/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://EdgarFx.github.io/publication/offline_jumping/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/publication_types/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/publication/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -98,6 +94,9 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/categories/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/publication/genloco_hb/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
