@@ -33,6 +33,30 @@
     </item>
     
     <item>
+      <title>Quantum Computing Based Power System Fault Diagnosis with QAOA and Efficient Gate Decomposition</title>
+      <link>https://EdgarFx.github.io/publication/q_optimization/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/publication/q_optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carbon Disclosure Effect, Corporate Fundamentals, and Net-zero Emission Target: Evidence from China</title>
+      <link>https://EdgarFx.github.io/publication/disclosure/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/publication/disclosure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
+      <link>https://EdgarFx.github.io/publication/l_qlstm/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/publication/l_qlstm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Quadruped robot walking like lizard with two point feet</title>
       <link>https://EdgarFx.github.io/research/quadruped_two_leg_walking/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
@@ -86,22 +110,6 @@ in 59.3 min, and this performance verifies the proposed design and algorithms.
       <link>https://EdgarFx.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/admin/config.yml</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
-      <link>https://EdgarFx.github.io/publication/l_qlstm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/publication/l_qlstm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Quantum Computing Based Power System Fault Diagnosis with QAOA and Efficient Gate Decomposition</title>
-      <link>https://EdgarFx.github.io/publication/q_optimization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/publication/q_optimization/</guid>
       <description></description>
     </item>
     

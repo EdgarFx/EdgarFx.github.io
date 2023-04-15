@@ -5,7 +5,7 @@
     <link>https://EdgarFx.github.io/publication-type/3/</link>
       <atom:link href="https://EdgarFx.github.io/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 15 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png</url>
       <title>3</title>
@@ -15,8 +15,16 @@
     <item>
       <title>Quantum Computing Based Power System Fault Diagnosis with QAOA and Efficient Gate Decomposition</title>
       <link>https://EdgarFx.github.io/publication/q_optimization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/publication/q_optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carbon Disclosure Effect, Corporate Fundamentals, and Net-zero Emission Target: Evidence from China</title>
+      <link>https://EdgarFx.github.io/publication/disclosure/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/publication/disclosure/</guid>
       <description></description>
     </item>
     
