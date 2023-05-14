@@ -33,6 +33,23 @@
     </item>
     
     <item>
+      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
+      <link>https://EdgarFx.github.io/publication/l_qlstm/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/publication/l_qlstm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
+      <link>https://EdgarFx.github.io/research/l_qlstm/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/l_qlstm/</guid>
+      <description>&lt;p&gt;Accurate carbon price forecasting is important for investors and policymakers to make decisions in the carbon market. With the development of quantum computing in recent years, quantum machine learning has shown great potential in a wide range of areas. The aim of this research theme is to try to adapt Quantum Long Short-Term Memory to forecast the carbon price.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Power System Fault Diagnosis with Quantum Computing and Efficient Gate Decomposition</title>
       <link>https://EdgarFx.github.io/publication/q_optimization/</link>
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
@@ -89,23 +106,6 @@
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/research/ets/</guid>
       <description>&lt;p&gt;This paper conducts an empirical analysis of the impact of China’s national and regional Emissions Trading Scheme (ETS) on the ﬁnancial performance of listed companies. A comprehensive dataset is constructed, encompassing ﬁrm-level carbon allowance data and ﬁrm-level emission data from July 2021 to December 2022. Our ﬁndings indicate that, in the initial years of China’s ETS implementation, companies participating in the national ETS experienced a statistically signiﬁcant superior performance compared to non-participating ﬁrms due to excess free carbon emission allowances. Results also show that National ETS resulted in a statistically signiﬁcant reduction in emissions of regulated companies. Nevertheless, involvement in the regional ETS yielded no discernible e↵ect on the ﬁnancial and environmental performance of regulated entities. The outcomes reveal the existence of a substantial and statistically signiﬁcant ”over-allocation of carbon allowances,” predominantly attributable to increased non-operational income of regulated companies in China’s national ETS.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
-      <link>https://EdgarFx.github.io/publication/l_qlstm/</link>
-      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/publication/l_qlstm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
-      <link>https://EdgarFx.github.io/research/l_qlstm/</link>
-      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/research/l_qlstm/</guid>
-      <description>&lt;p&gt;Accurate carbon price forecasting is important for investors and policymakers to make decisions in the carbon market. With the development of quantum computing in recent years, quantum machine learning has shown great potential in a wide range of areas. The aim of this research theme is to try to adapt Quantum Long Short-Term Memory to forecast the carbon price.&lt;/p&gt;
 </description>
     </item>
     

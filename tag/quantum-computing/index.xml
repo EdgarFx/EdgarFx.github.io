@@ -5,7 +5,7 @@
     <link>https://EdgarFx.github.io/tag/quantum-computing/</link>
       <atom:link href="https://EdgarFx.github.io/tag/quantum-computing/index.xml" rel="self" type="application/rss+xml" />
     <description>Quantum Computing</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 15 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png</url>
       <title>Quantum Computing</title>
@@ -13,20 +13,20 @@
     </image>
     
     <item>
+      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
+      <link>https://EdgarFx.github.io/research/l_qlstm/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/research/l_qlstm/</guid>
+      <description>&lt;p&gt;Accurate carbon price forecasting is important for investors and policymakers to make decisions in the carbon market. With the development of quantum computing in recent years, quantum machine learning has shown great potential in a wide range of areas. The aim of this research theme is to try to adapt Quantum Long Short-Term Memory to forecast the carbon price.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Power System Fault Diagnosis with Quantum Computing and Efficient Gate Decomposition</title>
       <link>https://EdgarFx.github.io/research/q_optimization/</link>
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/research/q_optimization/</guid>
       <description>&lt;p&gt;Power system fault diagnosis helps to reproduce the fault process and provide the dispatchers with a basis for fault decision-making. The aim of this research theme is to try to adapt quantum approximate optimization algorithm to solve power system fault diagnosis problem under current hardware limit, utilizing the potential advantages of quantum computing to handle more complex power system faults.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
-      <link>https://EdgarFx.github.io/research/l_qlstm/</link>
-      <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/research/l_qlstm/</guid>
-      <description>&lt;p&gt;Accurate carbon price forecasting is important for investors and policymakers to make decisions in the carbon market. With the development of quantum computing in recent years, quantum machine learning has shown great potential in a wide range of areas. The aim of this research theme is to try to adapt Quantum Long Short-Term Memory to forecast the carbon price.&lt;/p&gt;
 </description>
     </item>
     
