@@ -5,7 +5,7 @@
     <link>https://EdgarFx.github.io/publication/</link>
       <atom:link href="https://EdgarFx.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 14 May 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting</title>
       <link>https://EdgarFx.github.io/publication/l_qlstm/</link>
-      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/publication/l_qlstm/</guid>
       <description></description>
     </item>
