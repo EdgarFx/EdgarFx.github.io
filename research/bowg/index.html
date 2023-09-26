@@ -272,12 +272,12 @@
 
   
 
-<meta name="description" content="Undergrad Researcher in Robotics and Computer Vision" />
+<meta name="description" content="A feature detector capable of detecting features at different scales based on an image pyramid. A definition of word groups exploiting the spatial co-occurrence of detected features, which provides context-specific feature representation. A database is established and updated online storing the word group information of each image, which enables efficient loop closure score computation." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://EdgarFx.github.io/tag/deep-learning/" />
-<link rel="canonical" href="https://EdgarFx.github.io/tag/deep-learning/" />
+<link rel="alternate" hreflang="en-us" href="https://EdgarFx.github.io/research/bowg/" />
+<link rel="canonical" href="https://EdgarFx.github.io/research/bowg/" />
 
 
 
@@ -300,25 +300,30 @@
 
 
   
-  
 
 
 
 
 
 
-<meta property="twitter:card" content="summary" />
+<meta property="twitter:card" content="summary_large_image" />
 
   <meta property="twitter:site" content="@xiangfei" />
   <meta property="twitter:creator" content="@xiangfei" />
-<meta property="twitter:image" content="https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png" />
+<meta property="twitter:image" content="https://EdgarFx.github.io/research/bowg/featured.png" />
 <meta property="og:site_name" content="Xiang Fei" />
-<meta property="og:url" content="https://EdgarFx.github.io/tag/deep-learning/" />
-<meta property="og:title" content="Deep Learning | Xiang Fei" />
-<meta property="og:description" content="Undergrad Researcher in Robotics and Computer Vision" /><meta property="og:image" content="https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://EdgarFx.github.io/research/bowg/" />
+<meta property="og:title" content="Bag-of-Word-Groups (BoWG), A Robust Loop Closure Module for In-pipe Visual-Laser-Inertial SLAM | Xiang Fei" />
+<meta property="og:description" content="A feature detector capable of detecting features at different scales based on an image pyramid. A definition of word groups exploiting the spatial co-occurrence of detected features, which provides context-specific feature representation. A database is established and updated online storing the word group information of each image, which enables efficient loop closure score computation." /><meta property="og:image" content="https://EdgarFx.github.io/research/bowg/featured.png" /><meta property="og:locale" content="en-us" />
 
   
-    <meta property="og:updated_time" content="2016-04-27T00:00:00&#43;00:00" />
+    <meta
+      property="article:published_time"
+      content="2023-08-04T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-08-04T00:00:00&#43;00:00">
   
 
 
@@ -326,24 +331,24 @@
 
 
 
-
-
-
-
-  
-  
-  
-
-  
-  
-    <link rel="alternate" href="/tag/deep-learning/index.xml" type="application/rss+xml" title="Xiang Fei" />
-  
 
   
 
 
+
+
   
-  <title>Deep Learning | Xiang Fei</title>
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Bag-of-Word-Groups (BoWG), A Robust Loop Closure Module for In-pipe Visual-Laser-Inertial SLAM | Xiang Fei</title>
 
   
   
@@ -363,7 +368,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="2a1384775b26064a2229fa7789959ffb" >
 
   
   
@@ -737,149 +742,384 @@
     
     
 
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Bag-of-Word-Groups (BoWG), A Robust Loop Closure Module for In-pipe Visual-Laser-Inertial SLAM</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 4, 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://docs.google.com/presentation/d/1maY7paywcalkHGTucG-XSmBUghmM3jYc/edit?usp=sharing&amp;ouid=110083063639360259216&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 586px;">
+  <div style="position: relative">
+    <img src="/research/bowg/featured_hu50c59c4e0edd1afd133b45219a6d38ce_454491_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="586" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>In-pipe simultaneous localization and mapping (SLAM) techniques with photorealistic RGB-D reconstruction capability have the potential to enhance human labor to inspect pipe conditions and localize anomalies, thereby preventing hazardous leaks and explosions. Loop closure detection is vital in the process of SLAM, as it helps reduce the accumulative drift of the robot’s estimated odometry and generate a globally consistent map. However, in confined-space environments such as narrow pipes, conventional loop closure methods suffer perceptual aliasing due to feature scarcity and textural repetitiveness. In this research, we aim to develop a robust loop closure module in confined-space environments on top of our prior confined-space dense RGB-D SLAM method, visual-laser-inertial (VLI) SLAM. Specifically, we define the concept of word group based on spatial proximity and positions of features and propose to build and maintain a novel loop closure detection module called Bag-of-Word-Groups (BoWG) online, which provides context-specific feature representation. Besides, we utilize Gaussian pyramids to implement Multi-scale Good Features To Track (MS-GFTT) to detect richer features at various scales for word group analysis. Our method does not require any extra sensor other than a monocular visual camera and can be easily integrated into existing Bag-of-Words (BoW) methods. To validate the proposed method, we conduct real-world experiments in a narrow, feature-sparse pipeline with loops. Experiment results show that our method is robust and can achieve high precision while maintaining acceptable recall when the perceptual aliasing problem is serious. In addition, the proposed method has the potential to be applied to environments other than narrow pipes.</p>
+
+    </div>
+
     
 
 
 
 
 
-
-
-
-
-
-
-
-
+<div class="article-tags">
   
-
-  
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>Deep Learning</h1>
-
-  
-
+  <a class="badge badge-light" href="/tag/computer-vision-and-robotics/">Computer Vision and Robotics</a>
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
-
-  
-  
-    
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/project/example/" >Example Project</a>
-    </div>
-
-    
-    <a href="/project/example/"  class="summary-link">
-      <div class="article-style">
-        An example of using the in-built project page.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://twitter.com/georgecushen" target="_blank" rel="noopener">
-    <i class="fab fa-zhihu mr-1"></i>Follow</a>
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
+<div class="share-box">
+  <ul class="share">
     
       
-      <a href="/project/example/" >
-        <img src="/project/example/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_224363_150x0_resize_q75_h2_lanczos.webp" height="84" width="150"
-            alt="Example Project" loading="lazy">
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2FEdgarFx.github.io%2Fresearch%2Fbowg%2F&amp;text=Bag-of-Word-Groups&#43;%28BoWG%29%2C&#43;A&#43;Robust&#43;Loop&#43;Closure&#43;Module&#43;for&#43;In-pipe&#43;Visual-Laser-Inertial&#43;SLAM" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2FEdgarFx.github.io%2Fresearch%2Fbowg%2F&amp;t=Bag-of-Word-Groups&#43;%28BoWG%29%2C&#43;A&#43;Robust&#43;Loop&#43;Closure&#43;Module&#43;for&#43;In-pipe&#43;Visual-Laser-Inertial&#43;SLAM" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Bag-of-Word-Groups%20%28BoWG%29%2C%20A%20Robust%20Loop%20Closure%20Module%20for%20In-pipe%20Visual-Laser-Inertial%20SLAM&amp;body=https%3A%2F%2FEdgarFx.github.io%2Fresearch%2Fbowg%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2FEdgarFx.github.io%2Fresearch%2Fbowg%2F&amp;title=Bag-of-Word-Groups&#43;%28BoWG%29%2C&#43;A&#43;Robust&#43;Loop&#43;Closure&#43;Module&#43;for&#43;In-pipe&#43;Visual-Laser-Inertial&#43;SLAM" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Bag-of-Word-Groups&#43;%28BoWG%29%2C&#43;A&#43;Robust&#43;Loop&#43;Closure&#43;Module&#43;for&#43;In-pipe&#43;Visual-Laser-Inertial&#43;SLAM%20https%3A%2F%2FEdgarFx.github.io%2Fresearch%2Fbowg%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2FEdgarFx.github.io%2Fresearch%2Fbowg%2F&amp;title=Bag-of-Word-Groups&#43;%28BoWG%29%2C&#43;A&#43;Robust&#43;Loop&#43;Closure&#43;Module&#43;for&#43;In-pipe&#43;Visual-Laser-Inertial&#43;SLAM" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://EdgarFx.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu067e0129ea3a667517c2f5f2d232027c_995202_270x270_fill_q75_lanczos_center.jpg" alt="Xiang Fei"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://EdgarFx.github.io/">Xiang Fei</a></h5>
+      <h6 class="card-subtitle">Undergraduate in Computer Science and Engineering</h6>
+      <p class="card-text">My current research interests include SLAM, 3D Reconstruction, Navigation, Robotics, Dynamic Systems and Optimal Control.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:xiangfei@link.cuhk.edu.cn" >
+        <i class="fas fa-envelope"></i>
       </a>
+    </li>
+  
     
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=HFN65ugAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/EdgarFx" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/xiang-fei/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
   </div>
-</div>
 
-  
 
-  
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
   </div>
 
   <div class="page-footer">
