@@ -5,12 +5,21 @@
     <link>https://EdgarFx.github.io/project/</link>
       <atom:link href="https://EdgarFx.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 14 Apr 2023 10:00:00 +0000</lastBuildDate>
     <image>
       <url>https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://EdgarFx.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>SLAM for Vision-based Navigation</title>
+      <link>https://EdgarFx.github.io/project/navigation/</link>
+      <pubDate>Fri, 14 Apr 2023 10:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/project/navigation/</guid>
+      <description>&lt;p&gt;This research project is initiated by Prof. Shankar Sastry (UC Berkeley) and Prof. Somil Bansal (University of Southern California). The main aim of the research is to create a new autonomous navigation pipeline that incorporates learning-based perception for extracting distinctive features and semantic interpretation, and model-based SLAM for inference and metric map reconstruction. Specifically, learning-based perception techniques have the ability to successfully identify objects that are important for the subsequent navigation task, but may face difficulties in accurately reconstructing metrics in challenging scenarios such as narrow hallways and tight corners. On the other hand, visual SLAM methods can produce consistent metric maps but often require significant computational resources, and do not provide relevant semantic information. This study aims to explore methods of integrating these two approaches, learning-based and model-based, to establish an efficient and reliable autonomous navigation system that can achieve high success rates and adapt to complex and unpredictable environments.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>3D Reconstruction of the Gastrointestinal Tract and Sinus Surface</title>
@@ -20,9 +29,15 @@
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This task involved creating 3D reconstructions of the gastrointestinal tract and sinus surface using a monocular endoscope. The main goal of this project was to document the endoscopy process in 3D and to help doctors realize a more comprehensive examination. Given the project&amp;rsquo;s emphasis on reconstruction accuracy over real-time operation, I opted to explore methods rooted in Structure from Motion (SfM) instead of Simultaneous Localization and Mapping (SLAM). During the reconstruction process within a structure like the human gastrointestinal tract and sinus surface, various challenges arose, such as textureless image frames, varying lighting conditions, and contaminated frames. To address these issues, I employed learning-based approaches. Utilizing the sparse reconstruction and camera pose obtained by SfM with SIFT as self-supervised signals, I trained a two-branch Siamese network to achieve dense depth estimation and feature descriptors. Following this, depth fusion and surface extraction were performed to reconstruct a highly accurate watertight triangle mesh surface of the gastrointestinal tract and sinus surface. There, I was responsible for methodology conceptualization and code implementation.&lt;/p&gt;
 &lt;center class=&#34;half&#34;&gt;
-    &lt;img src=&#34;https://media.giphy.com/media/TRSYjA7bffmxDtONdy/giphy.gif&#34; width=&#34;45%&#34;/&gt;&lt;img src=&#34;https://media.giphy.com/media/ZI4METZ0dPjbWVlCOz/giphy.gif&#34; width=&#34;45%&#34;/&gt;
+    &lt;img src=&#34;https://media.giphy.com/media/TRSYjA7bffmxDtONdy/giphy.gif&#34; width=&#34;100%&#34;/&gt;
     &lt;figcaption&gt;
-					 &lt;b&gt;Figure 1.&lt;/b&gt; Point cloud obtained by the dense depth estimation; and overlay of the video and the point cloud obtain by COLMAP with the dense feature descriptors .
+					 &lt;b&gt;Figure 1.&lt;/b&gt; Point cloud obtained by the dense depth estimation.
+    &lt;/figcaption&gt;
+&lt;/center&gt;
+&lt;center class=&#34;half&#34;&gt;
+    &lt;img src=&#34;https://media.giphy.com/media/ZI4METZ0dPjbWVlCOz/giphy.gif&#34; width=&#34;100%&#34;/&gt;
+    &lt;figcaption&gt;
+					 &lt;b&gt;Figure 2.&lt;/b&gt; The overlay of the video and the point cloud obtain by COLMAP with the dense feature descriptors.
     &lt;/figcaption&gt;
 &lt;/center&gt;
 &lt;h2 id=&#34;more-details-about-learning-based-dense-depth-estimation-and-feature-descriptors&#34;&gt;More Details about Learning-based Dense Depth Estimation and Feature Descriptors&lt;/h2&gt;
