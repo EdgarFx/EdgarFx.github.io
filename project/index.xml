@@ -5,7 +5,7 @@
     <link>https://EdgarFx.github.io/project/</link>
       <atom:link href="https://EdgarFx.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Sep 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
@@ -13,11 +13,335 @@
     </image>
     
     <item>
-      <title>Example Project</title>
-      <link>https://EdgarFx.github.io/project/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/project/example/</guid>
-      <description></description>
+      <title>3D Reconstruction of the Gastrointestinal Tract and Sinus Surface</title>
+      <link>https://EdgarFx.github.io/project/winning/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/project/winning/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This task involved creating 3D reconstructions of the gastrointestinal tract and sinus surface using a monocular endoscope. The main goal of this project was to document the endoscopy process in 3D and to help doctors realize a more comprehensive examination. Given the project&amp;rsquo;s emphasis on reconstruction accuracy over real-time operation, I opted to explore methods rooted in Structure from Motion (SfM) instead of Simultaneous Localization and Mapping (SLAM). During the reconstruction process within a structure like the human gastrointestinal tract and sinus surface, various challenges arose, such as textureless image frames, varying lighting conditions, and contaminated frames. To address these issues, I employed learning-based approaches. Utilizing the sparse reconstruction and camera pose obtained by SfM with SIFT as self-supervised signals, I trained a two-branch Siamese network to achieve dense depth estimation and feature descriptors. Following this, depth fusion and surface extraction were performed to reconstruct a highly accurate watertight triangle mesh surface of the gastrointestinal tract and sinus surface. There, I was responsible for methodology conceptualization and code implementation.&lt;/p&gt;
+&lt;center class=&#34;half&#34;&gt;
+    &lt;img src=&#34;https://media.giphy.com/media/TRSYjA7bffmxDtONdy/giphy.gif&#34; width=&#34;370&#34;/&gt; &lt;img src=&#34;https://media.giphy.com/media/ZI4METZ0dPjbWVlCOz/giphy.gif&#34; width=&#34;370&#34;/&gt;
+    &lt;figcaption&gt;
+					 &lt;b&gt;Figure 1.&lt;/b&gt; Point cloud obtained by the dense depth estimation; and overlay of the video and the point cloud obtain by COLMAP with the dense feature descriptors .
+    &lt;/figcaption&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;more-details-about-learning-based-dense-depth-estimation-and-feature-descriptors&#34;&gt;More Details about Learning-based Dense Depth Estimation and Feature Descriptors&lt;/h2&gt;
+&lt;h3 id=&#34;1-dense-depth-estimation&#34;&gt;1. Dense Depth Estimation&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-09-32-00_hu3b0edff42ef0ce742708ada079f1d724_206294_a302ef4862bd72df85714f3b5e1e7298.webp 400w,
+               /project/winning/images/2022-08-29-09-32-00_hu3b0edff42ef0ce742708ada079f1d724_206294_168c47d3997d04efeca4f37111566233.webp 760w,
+               /project/winning/images/2022-08-29-09-32-00_hu3b0edff42ef0ce742708ada079f1d724_206294_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-09-32-00_hu3b0edff42ef0ce742708ada079f1d724_206294_a302ef4862bd72df85714f3b5e1e7298.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;460&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The figure depicts the architecture of a dense depth estimation network. In general, the network training relies on a loss function to update network parameters by backpropagating useful information in the form of gradients. The loss function comprises the introduced components: Sparse Flow Loss and Depth Consistency Loss. To guide the training of depth estimation using these losses, several types of input data are necessary. These inputs include endoscopic video frames, camera poses and intrinsic parameters, sparse depth maps, sparse soft masks, and sparse flow maps, elaborated in the training data section. Finally, in order to transform the network predictions obtained from Monocular Depth Estimation into an appropriate format for loss computation, several custom layers are employed. These custom layers include the Depth Scaling Layer, Depth Warping Layer, and Flow from Depth Layer, detailed in the network architecture section.&lt;/p&gt;
+&lt;h4 id=&#34;11-training-data&#34;&gt;1.1 Training Data&lt;/h4&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-09-40-26_hub5c782196323c81a1b3303204d49716d_198039_ef295b1233ffdc870d6a8324c5fcf70c.webp 400w,
+               /project/winning/images/2022-08-29-09-40-26_hub5c782196323c81a1b3303204d49716d_198039_5ef5cd9a81f9d22475c5214255798cab.webp 760w,
+               /project/winning/images/2022-08-29-09-40-26_hub5c782196323c81a1b3303204d49716d_198039_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-09-40-26_hub5c782196323c81a1b3303204d49716d_198039_ef295b1233ffdc870d6a8324c5fcf70c.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;321&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The training data originates from unlabeled endoscopic videos, as illustrated in the framework above.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data Preprocessing&lt;/strong&gt;: Initially, the video sequences undergo undistortion using distortion coefficients estimated from the respective calibrated videos. Sparse reconstruction, camera poses, and point visibility are estimated by Structure from Motion (SfM) from the undistorted video sequences, excluding black invalid regions within video frames. Point cloud filtering is employed to remove extreme outliers from the sparse reconstruction. To smooth the point visibility information by leveraging continuous camera movement in the video, as depicted in Figure b, is utilized. The sparse form data generated from SfM results is elaborated below.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sparse Depth Maps&lt;/strong&gt;: Monocular Depth Estimation solely predicts depth on a global scale. However, for effective loss computation, the scale of depth prediction must align with the SfM results. Hence, the introduced sparse depth maps here serve as anchors for scaling depth predictions in the Depth Scaling Layer. To generate sparse depth maps, 3D points from sparse reconstruction by SfM are projected onto the image plane with camera poses, intrinsic functions, and point visibility information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sparse Flow Maps&lt;/strong&gt;: Sparse flow maps are utilized for the subsequent Sparse Flow Loss (SFL). Previously, we directly used sparse depth maps for loss computation to leverage self-supervised signals from sparse reconstruction. This led to fixed and potentially biased training targets, such as sparse depth maps, per frame. In contrast to sparse depth maps, sparse flow maps describe 2D projection motion of sparse reconstruction involving camera poses of two input frames with random frame intervals. By combining camera trajectories and sparse reconstruction and considering all pairs of frame combinations, errors in new targets, like sparse flow maps, are likely unbiased per frame. This reduces the influence of random noise in training data on the network. For models trained using SFL, depth predictions exhibit natural smoothness and edge preservation, eliminating the need for explicit regularization during training.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sparse Soft Masks&lt;/strong&gt;：Sparse masks enable the network to utilize effective sparse signals within sparse form data while disregarding other invalid areas. Soft weighting defined before training interprets the fact that the error distribution of individual points in SfM results varies and mitigates the impact of SfM reconstruction errors. The intuition behind this design is that the more frames used in triangulating a 3D point in SfM bundle adjustment, the higher the precision usually attained. Sparse soft masks are employed in the subsequent SFL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;12-network-architecture&#34;&gt;1.2 Network Architecture&lt;/h4&gt;
+&lt;p&gt;The overall network architecture during the training phase consists of a Siamese dual-branch network. It relies on sparse signals from SfM and geometric constraints between two frames to learn predicting dense depth maps from a single endoscopic video frame. During the application phase, the network employs a simpler single-branch architecture for depth estimation from a single frame. All the described custom layers below are differentiable, enabling the network to be trained end-to-end.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Monocular Depth Estimation&lt;/strong&gt;: This module utilizes an architecture called DenseNet, achieving performance comparable to other popular architectures while significantly reducing network parameters by extensively reusing previous feature maps. The channel count of the final convolutional layer is altered to 1, and the final activations, i.e., log-softmax and linear activations, are replaced to suit the task of depth prediction. The transposed convolutional layers in the upscaling section of the network are substituted with nearest-neighbor upsampling and convolutional layers to reduce checkerboard artifacts in the final output.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Depth Scaling Layer&lt;/strong&gt;: This layer scales the depth predictions of Monocular Depth Estimation to match the scale of the corresponding SfM results for correct loss computation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flow from Depth Layer&lt;/strong&gt;: To guide the network training using the Sparse Flow Loss (SFL) described later with the sparse flow maps generated from SfM results, it is necessary to convert the scaled depth maps into dense flow maps with relative camera poses and intrinsic matrices. The resultant dense flow maps are used for depth estimation training, essentially describing a 2D displacement field for 3D viewpoint changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Depth Warping Layer&lt;/strong&gt;: The sparse flow maps primarily guide regions projected from sparse information in the frames from SfM. As most frames have only a small fraction of pixel values effectively represented in the sparse flow maps, most regions remain inadequately guided. Leveraging geometric constraints between two frames through camera motion and intrinsic parameters enforces consistency between two corresponding depth predictions. The intuition is that densely predicted depth maps from two adjacent frames are related due to observed overlapping regions. To ensure differentiable implementation of the geometric constraints employed in the subsequent Depth Consistency Loss, alignment of viewpoint for depth predictions is prerequisite.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;13-loss-functions&#34;&gt;1.3 Loss Functions&lt;/h4&gt;
+&lt;p&gt;The newly designed losses leverage self-supervised signals from SfM and enforce geometric consistency between depth predictions of two frames.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sparse Flow Loss (SFL)&lt;/strong&gt;: To generate accurate dense depth maps consistent with sparse reconstructions from SfM, the network is trained to minimize differences between dense flow maps and corresponding sparse flow maps. This loss is scale-invariant, considering differences in 2D projection motion in pixels, resolving data imbalance issues arising from arbitrary scales in SfM results.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Depth Consistency Loss (DCL)&lt;/strong&gt;: Solely relying on sparse signals from SFL doesn&amp;rsquo;t provide sufficient information for the network to infer regions without available sparse annotations. Therefore, geometric constraints are enforced between two independently predicted depth maps.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Overall Loss&lt;/strong&gt;: The comprehensive loss function for training the network using a pair of training data from frames $j$ and $k$ is represented as: $$L(j,k)=\lambda_1L_{flow}(j,k)+\lambda_2L_{consist}(j,k)$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;14-experiment&#34;&gt;1.4 Experiment&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Run 100 epochs，validation loss is as follows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-10-33-30_hu96719d4517007a6aad8ec34705e89010_106136_686706d3f8cb7f25d8a57b5db8b59eec.webp 400w,
+               /project/winning/images/2022-08-29-10-33-30_hu96719d4517007a6aad8ec34705e89010_106136_89909d8d2b903e052b277471995d12bd.webp 760w,
+               /project/winning/images/2022-08-29-10-33-30_hu96719d4517007a6aad8ec34705e89010_106136_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-10-33-30_hu96719d4517007a6aad8ec34705e89010_106136_686706d3f8cb7f25d8a57b5db8b59eec.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;312&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The reason why there is a sudden increase here is because the weight of depth consistency loss is always set to 0.1 in the first 20 epochs, and is set to 5 after 20 epochs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The dense depth map predicted by the validation set is shown in the figure below.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-10-36-09_huce74c7c1f30768e870210a8a50a695b8_406029_8411b47af173abb4fc01e64e09e251c6.webp 400w,
+               /project/winning/images/2022-08-29-10-36-09_huce74c7c1f30768e870210a8a50a695b8_406029_89317f28a8bdc8e74305454c93e74968.webp 760w,
+               /project/winning/images/2022-08-29-10-36-09_huce74c7c1f30768e870210a8a50a695b8_406029_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-10-36-09_huce74c7c1f30768e870210a8a50a695b8_406029_8411b47af173abb4fc01e64e09e251c6.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;491&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;2-dense-feature-descriptors&#34;&gt;2. Dense Feature Descriptors&lt;/h3&gt;
+&lt;h4 id=&#34;21-overall-network-architecture&#34;&gt;2.1 Overall Network Architecture&lt;/h4&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-13-28-51_hu9c968ff88a86c5e100ebae24af2a5068_86604_9d0efb33bc38de721892854422dd801d.webp 400w,
+               /project/winning/images/2022-08-29-13-28-51_hu9c968ff88a86c5e100ebae24af2a5068_86604_a0813a02fc9f422224eb6711f06c33d0.webp 760w,
+               /project/winning/images/2022-08-29-13-28-51_hu9c968ff88a86c5e100ebae24af2a5068_86604_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-13-28-51_hu9c968ff88a86c5e100ebae24af2a5068_86604_9d0efb33bc38de721892854422dd801d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;277&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As depicted in the figure above, the training network comprises a Siamese dual-branch architecture. It takes in a pair of color images, serving as the Source and Target, respectively. The training objective is to identify the correct corresponding keypoint positions in the Target image, given the keypoint locations in the Source image. The SfM method, incorporating SIFT, is applied to video sequences to estimate sparse 3D reconstructions and camera poses. Subsequently, the sparse 3D reconstruction is projected onto the image plane using the estimated camera poses to generate ground truth point correspondences. The dense feature extraction module is a fully convolutional DenseNet that receives color images and outputs dense descriptor mappings with the same resolution as the input images, employing the length of the feature descriptors as the channel dimension. The descriptor mappings are L2-normalized along the channel dimension to enhance generalization. For each source keypoint location, corresponding descriptors are sampled from the source descriptor mapping. These descriptors of source keypoints serve as 1×1 convolutional kernels to perform 2D convolutions on the target descriptor mapping in the Point-of-Interest (POI) convolutional layer. The computed heatmap represents the similarity between the source keypoint locations and every position on the target image. The network is trained using the suggested Relative Response (RR) loss to enforce the heatmap to exhibit high responses solely at the true target positions.&lt;/p&gt;
+&lt;h4 id=&#34;22-point-of-interest-poi-conv-layer&#34;&gt;2.2 Point-of-Interest (POI) Conv Layer&lt;/h4&gt;
+&lt;p&gt;This layer serves to transform the descriptor learning problem into keypoint localization. For a pair of source and target input images, a pair of dense descriptor mappings $F_s$ and $F_t$ are generated from the feature extraction module. The sizes of the input images and descriptor mappings are $3 × H × W$ and $C × H × W$, respectively. For a descriptor at the source keypoint position $x_s$, the corresponding feature descriptor $F_s(x_s)$ is extracted using nearest neighbor sampling, which can be altered if needed to employ other sampling methods. The descriptor size is $C × 1 × 1$. By treating the sampled feature descriptor as a $1×1$ convolutional kernel, a 2D convolution operation is performed on $F_t$ to generate the target heatmap $M_t$, storing the similarity between the source descriptor and each target descriptor in $F_t$.&lt;/p&gt;
+&lt;h4 id=&#34;23-relative-response-loss-rr&#34;&gt;2.3 Relative Response Loss (RR)&lt;/h4&gt;
+&lt;p&gt;The intuition behind this loss is that the target heatmap should exhibit high responses at the ground truth target keypoint positions while suppressing responses at other locations as much as possible. Furthermore, it doesn&amp;rsquo;t rely on any prior knowledge about the heatmap response distribution, preserving the potential for multi-modal distributions to handle matching ambiguities in challenging cases. To achieve this, we maximize the ratio between the response at the true positions and the sum of responses across the entire heatmap. This ratio constitutes the Relative Response (RR) loss.&lt;/p&gt;
+&lt;h4 id=&#34;24-dense-feature-matching&#34;&gt;2.4 Dense Feature Matching&lt;/h4&gt;
+&lt;p&gt;For each source keypoint position in the source image, the method described above is used to generate the corresponding target heatmap. The position with the maximum response value in the heatmap is selected as the estimated target keypoint location. Then, the descriptors at these estimated target keypoint positions undergo the same operation on the source descriptor mapping to estimate the source keypoint positions. Due to the nature of dense matching, traditional nearest neighbor criteria used in pairwise feature matching for local descriptors are overly strict. Hence, we relax these criteria, accepting matches as long as the estimated source keypoint positions are in the vicinity of the original source keypoint positions. This is referred to as the cycle consistency criterion. The computation for dense matching can be parallelized on the GPU, treating all sampled source descriptors as a kernel of size $N × L × 1 × 1$, where $N$ serves as the query count of source keypoint positions and is used as the output channel dimension, and $L$ represents the length of feature descriptors used as the input channel dimension for standard 2D convolutional operations.&lt;/p&gt;
+&lt;h4 id=&#34;25-experiment&#34;&gt;2.5 Experiment&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;training loss&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-14-26-30_hu08a015447aedbc68c8e7b969c722f634_56229_bb754d879480d191da63f5f2d92a351a.webp 400w,
+               /project/winning/images/2022-08-29-14-26-30_hu08a015447aedbc68c8e7b969c722f634_56229_b933a212ea570d9f2b93861477fc5262.webp 760w,
+               /project/winning/images/2022-08-29-14-26-30_hu08a015447aedbc68c8e7b969c722f634_56229_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-14-26-30_hu08a015447aedbc68c8e7b969c722f634_56229_bb754d879480d191da63f5f2d92a351a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;366&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;validation accuracy&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-14-27-13_hu3b6b0584364fdb7de68a5ed4981e81a2_146756_021b44a5711ba96987df2587dda63c36.webp 400w,
+               /project/winning/images/2022-08-29-14-27-13_hu3b6b0584364fdb7de68a5ed4981e81a2_146756_6cb4db2db66ebdd010d43dac5b741b8d.webp 760w,
+               /project/winning/images/2022-08-29-14-27-13_hu3b6b0584364fdb7de68a5ed4981e81a2_146756_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-14-27-13_hu3b6b0584364fdb7de68a5ed4981e81a2_146756_021b44a5711ba96987df2587dda63c36.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;380&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Note that the difference between the three accuracies here is that the thresholds are different.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;test accuracy&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-14-28-10_huef7f308cfecd340bdded5363038fb572_94655_e464b2f27a294a6b45e6c547b5958bc3.webp 400w,
+               /project/winning/images/2022-08-29-14-28-10_huef7f308cfecd340bdded5363038fb572_94655_9a7f4aaaed513bab333c91779e06721b.webp 760w,
+               /project/winning/images/2022-08-29-14-28-10_huef7f308cfecd340bdded5363038fb572_94655_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-14-28-10_huef7f308cfecd340bdded5363038fb572_94655_e464b2f27a294a6b45e6c547b5958bc3.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;393&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Matching Results&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/winning/images/2022-08-29-14-29-28_hu262a69f2317eeeb2ba1566cb3386cbc7_567646_3496546456b3b56f524d009c21cc262a.webp 400w,
+               /project/winning/images/2022-08-29-14-29-28_hu262a69f2317eeeb2ba1566cb3386cbc7_567646_4d9d19ed676584e662a1cc7f754f05fe.webp 760w,
+               /project/winning/images/2022-08-29-14-29-28_hu262a69f2317eeeb2ba1566cb3386cbc7_567646_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/winning/images/2022-08-29-14-29-28_hu262a69f2317eeeb2ba1566cb3386cbc7_567646_3496546456b3b56f524d009c21cc262a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;311&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The first picture on the left here is a comparison of the feature matching of Deep Learning and sift, the second picture is a heat map, and the third picture is an illustration of the target map and the key point positions determined by the detector.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dense Depth Estimation: &lt;a href=&#34;https://arxiv.org/pdf/1902.07766.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/pdf/1902.07766.pdf&lt;/a&gt;
+Dense Feature Descriptors: &lt;a href=&#34;https://arxiv.org/pdf/2003.00619.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/pdf/2003.00619.pdf&lt;/a&gt;
+Dense 3D Reconstruction: &lt;a href=&#34;https://arxiv.org/pdf/2003.08502.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/pdf/2003.08502.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
     </item>
     
   </channel>
