@@ -58,10 +58,6 @@
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/publication/q_gan/</loc>
-    <lastmod>2023-07-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://EdgarFx.github.io/project/</loc>
     <lastmod>2023-05-20T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -130,6 +126,9 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/publication/ets/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/publication/q_gan/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/publication/simulation/</loc>
