@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: August 3, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.ed504088bef26d60cb0a358a914f70ce.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Xiang Fei" />
+
+
+
+
+
+  
+
+<meta name="description" content="Undergrad Researcher in Robotics and Computer Vision" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://EdgarFx.github.io/misc/" />
+<link rel="canonical" href="https://EdgarFx.github.io/misc/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@xiangfei" />
+  <meta property="twitter:creator" content="@xiangfei" />
+<meta property="twitter:image" content="https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Xiang (Shawn) Fei" />
+<meta property="og:url" content="https://EdgarFx.github.io/misc/" />
+<meta property="og:title" content="Miscellaneous Links | Xiang (Shawn) Fei" />
+<meta property="og:description" content="Undergrad Researcher in Robotics and Computer Vision" /><meta property="og:image" content="https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    <link rel="alternate" href="/misc/index.xml" type="application/rss+xml" title="Xiang (Shawn) Fei" />
+  
+
+  
+
+
+  
+  <title>Miscellaneous Links | Xiang (Shawn) Fei</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   " data-wc-page-id="3055eb56c576709905b42c9c324319a8" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2bb937f129e5d9a1df7980a60ff6010c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Xiang (Shawn) Fei</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Xiang (Shawn) Fei</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#recent_news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#project"><span>Project</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#experience"><span>Experience</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#misc"><span>Misc</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+<div class="universal-wrapper pt-3">
+  <h1>Miscellaneous Links</h1>
+
+  
+
+  
+</div>
+
+
+
+<div class="universal-wrapper">
+  
+    <div class="article-style"><ul>
+<li>My <a href="../mentoring">mentoring experience</a> (my favorite part of the job!)</li>
+<li>Blog posts on Medium: <a href="https://yixue-zhao.medium.com/" target="_blank" rel="noopener">@yixue_zhao</a></li>
+<li>Conference talks on YouTube: <a href="https://www.youtube.com/playlist?list=PLFckxHEE6q5vc-si0DTEVA7gg_Z7x0Wwj" target="_blank" rel="noopener">@Yixue Zhao</a></li>
+<li>Twitter (academic life): <a href="https://twitter.com/yixue_zhao" target="_blank" rel="noopener">@yixue_zhao</a></li>
+<li>Instagram (beautiful moments): <a href="https://www.instagram.com/zhao_yixue" target="_blank" rel="noopener">@zhao_yixue</a></li>
+<li>Favorite Instagram accounts: <a href="https://www.instagram.com/susa_sachiko/" target="_blank" rel="noopener">@susa_sachiko</a>, <a href="https://www.instagram.com/im.littlehome/" target="_blank" rel="noopener">@im.littlehome</a>, <a href="https://www.instagram.com/spongecake_thescottishfold/" target="_blank" rel="noopener">@spongecake_thescottishfold</a>, <a href="https://www.instagram.com/indiarosecrawford" target="_blank" rel="noopener">@indiarosecrawford</a>, <a href="https://www.instagram.com/thetinychefshow/" target="_blank" rel="noopener">@thetinychefshow</a></li>
+<li>Favorite YouTube channels: <a href="https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ" target="_blank" rel="noopener">Mr &amp; Mrs Gao</a> (Chinese), <a href="https://www.youtube.com/@DhammasukhaOrg" target="_blank" rel="noopener">TWIM - Dhamma Sukha Meditation Center</a></li>
+<li>Favorite Podcast: <a href="https://www.philosophizethis.org/" target="_blank" rel="noopener">Philosophize this!</a>, <a href="https://fitmind.org/podcast" target="_blank" rel="noopener">FitMind</a></li>
+<li>Favorite Newsletter: <a href="https://markmanson.net/newsletters" target="_blank" rel="noopener">5 Minutes That Might Change Your Life</a></li>
+<li>Favorite Apps: <a href="https://fitmind.org/" target="_blank" rel="noopener">FitMind</a>, <a href="https://finchcare.com/" target="_blank" rel="noopener">Finch</a>, <a href="https://www.forestapp.cc/" target="_blank" rel="noopener">Forest</a></li>
+<li>A list of random (non-major) classes that I&rsquo;ve enjoyed taking: <a href="../classes">random classes</a></li>
+</ul>
+<h1 id="photo-gallery">Photo Gallery</h1>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//ASE%202019%20Victory%20Dinner!.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//ASE%202019%20Victory%20Dinner!.jpg" alt="ASE 2019 Victory Dinner!" />
+				    </div>
+			      <figcaption>
+		          <p>ASE 2019 Victory Dinner!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//ASE%202019%20Victory%20Dinner!.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Academic%20vs%20Industry%20Panel%20Discussion.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Academic%20vs%20Industry%20Panel%20Discussion.jpg" alt="Academic vs Industry Panel Discussion" />
+				    </div>
+			      <figcaption>
+		          <p>Academic vs Industry Panel Discussion</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Academic%20vs%20Industry%20Panel%20Discussion.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//At%20John%20Lennon%20Wall%20with%20my%20ICSE%20Roommates!.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//At%20John%20Lennon%20Wall%20with%20my%20ICSE%20Roommates!.jpg" alt="At John Lennon Wall with my ICSE Roommates!" />
+				    </div>
+			      <figcaption>
+		          <p>At John Lennon Wall with my ICSE Roommates!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//At%20John%20Lennon%20Wall%20with%20my%20ICSE%20Roommates!.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//College%20Graduation%20in%202014.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//College%20Graduation%20in%202014.jpg" alt="College Graduation in 2014" />
+				    </div>
+			      <figcaption>
+		          <p>College Graduation in 2014</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//College%20Graduation%20in%202014.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Cute%20Ancient%20Village%20in%20China.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Cute%20Ancient%20Village%20in%20China.jpeg" alt="Cute Ancient Village in China" />
+				    </div>
+			      <figcaption>
+		          <p>Cute Ancient Village in China</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Cute%20Ancient%20Village%20in%20China.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Fushimi%20Inari%20Taisha%20in%20Japen%202018.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Fushimi%20Inari%20Taisha%20in%20Japen%202018.jpg" alt="Fushimi Inari Taisha in Japen 2018" />
+				    </div>
+			      <figcaption>
+		          <p>Fushimi Inari Taisha in Japen 2018</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Fushimi%20Inari%20Taisha%20in%20Japen%202018.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Grace%20Hopper%20Celebration%202015%20at%20Houston.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Grace%20Hopper%20Celebration%202015%20at%20Houston.jpg" alt="Grace Hopper Celebration 2015 at Houston" />
+				    </div>
+			      <figcaption>
+		          <p>Grace Hopper Celebration 2015 at Houston</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Grace%20Hopper%20Celebration%202015%20at%20Houston.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Grad%20Cohort%202017%20at%20Washington%20DC.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Grad%20Cohort%202017%20at%20Washington%20DC.jpg" alt="Grad Cohort 2017 at Washington DC" />
+				    </div>
+			      <figcaption>
+		          <p>Grad Cohort 2017 at Washington DC</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Grad%20Cohort%202017%20at%20Washington%20DC.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Grand%20Canyon.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Grand%20Canyon.jpg" alt="Grand Canyon" />
+				    </div>
+			      <figcaption>
+		          <p>Grand Canyon</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Grand%20Canyon.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//I%27m%20married!.JPG');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//I%27m%20married!.JPG" alt="I&#39;m married!" />
+				    </div>
+			      <figcaption>
+		          <p>I&#39;m married!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//I%27m%20married!.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//ICSE%20Roommates%27%20Trip%20in%20Prague!.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//ICSE%20Roommates%27%20Trip%20in%20Prague!.jpg" alt="ICSE Roommates&#39; Trip in Prague!" />
+				    </div>
+			      <figcaption>
+		          <p>ICSE Roommates&#39; Trip in Prague!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//ICSE%20Roommates%27%20Trip%20in%20Prague!.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//ICSE2016%20SoftArch%20Group%20Photo%20at%20Austin%20%28my%20first%20ICSE!%29.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//ICSE2016%20SoftArch%20Group%20Photo%20at%20Austin%20%28my%20first%20ICSE!%29.jpg" alt="ICSE2016 SoftArch Group Photo at Austin (my first ICSE!)" />
+				    </div>
+			      <figcaption>
+		          <p>ICSE2016 SoftArch Group Photo at Austin (my first ICSE!)</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//ICSE2016%20SoftArch%20Group%20Photo%20at%20Austin%20%28my%20first%20ICSE!%29.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//ICSE2017%20Argentine%20Dinner%20at%20Buenos%20Aires.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//ICSE2017%20Argentine%20Dinner%20at%20Buenos%20Aires.jpg" alt="ICSE2017 Argentine Dinner at Buenos Aires" />
+				    </div>
+			      <figcaption>
+		          <p>ICSE2017 Argentine Dinner at Buenos Aires</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//ICSE2017%20Argentine%20Dinner%20at%20Buenos%20Aires.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//ICSE2017%20Empanada%20Competition%20at%20Buenos%20Aires%20%28I%20won!%29.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//ICSE2017%20Empanada%20Competition%20at%20Buenos%20Aires%20%28I%20won!%29.jpg" alt="ICSE2017 Empanada Competition at Buenos Aires (I won!)" />
+				    </div>
+			      <figcaption>
+		          <p>ICSE2017 Empanada Competition at Buenos Aires (I won!)</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//ICSE2017%20Empanada%20Competition%20at%20Buenos%20Aires%20%28I%20won!%29.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//ICSE2017%20Student%20Volunteer%20Victory%20Dinner%20at%20Buenos%20Aires.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//ICSE2017%20Student%20Volunteer%20Victory%20Dinner%20at%20Buenos%20Aires.jpg" alt="ICSE2017 Student Volunteer Victory Dinner at Buenos Aires" />
+				    </div>
+			      <figcaption>
+		          <p>ICSE2017 Student Volunteer Victory Dinner at Buenos Aires</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//ICSE2017%20Student%20Volunteer%20Victory%20Dinner%20at%20Buenos%20Aires.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//ICSE2018%20%2850%20years%20of%20SE!%29%20SoftArch%20Group%20Photo%20at%20Gothenburg.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//ICSE2018%20%2850%20years%20of%20SE!%29%20SoftArch%20Group%20Photo%20at%20Gothenburg.jpg" alt="ICSE2018 (50 years of SE!) SoftArch Group Photo at Gothenburg" />
+				    </div>
+			      <figcaption>
+		          <p>ICSE2018 (50 years of SE!) SoftArch Group Photo at Gothenburg</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//ICSE2018%20%2850%20years%20of%20SE!%29%20SoftArch%20Group%20Photo%20at%20Gothenburg.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//ICSE2019%20Roommates%20Reunion%20at%20Montreal.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//ICSE2019%20Roommates%20Reunion%20at%20Montreal.jpg" alt="ICSE2019 Roommates Reunion at Montreal" />
+				    </div>
+			      <figcaption>
+		          <p>ICSE2019 Roommates Reunion at Montreal</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//ICSE2019%20Roommates%20Reunion%20at%20Montreal.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Jenny%20Wang%20Excellence%20in%20Teaching%20Award.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Jenny%20Wang%20Excellence%20in%20Teaching%20Award.jpg" alt="Jenny Wang Excellence in Teaching Award" />
+				    </div>
+			      <figcaption>
+		          <p>Jenny Wang Excellence in Teaching Award</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Jenny%20Wang%20Excellence%20in%20Teaching%20Award.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Just%20Passed%20My%20PhD%20Defense!.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Just%20Passed%20My%20PhD%20Defense!.jpg" alt="Just Passed My PhD Defense!" />
+				    </div>
+			      <figcaption>
+		          <p>Just Passed My PhD Defense!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Just%20Passed%20My%20PhD%20Defense!.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Lovely%20Evening%20at%20Heshun%20Ancient%20Town%20in%20China.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Lovely%20Evening%20at%20Heshun%20Ancient%20Town%20in%20China.jpeg" alt="Lovely Evening at Heshun Ancient Town in China" />
+				    </div>
+			      <figcaption>
+		          <p>Lovely Evening at Heshun Ancient Town in China</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Lovely%20Evening%20at%20Heshun%20Ancient%20Town%20in%20China.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//MOBILESoft2017%20Student%20Research%20Competition%20Gold%20Medal.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//MOBILESoft2017%20Student%20Research%20Competition%20Gold%20Medal.jpg" alt="MOBILESoft2017 Student Research Competition Gold Medal" />
+				    </div>
+			      <figcaption>
+		          <p>MOBILESoft2017 Student Research Competition Gold Medal</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//MOBILESoft2017%20Student%20Research%20Competition%20Gold%20Medal.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Meeing%20Doraemon%20in%20Singapore%20at%20FSE%202022!.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Meeing%20Doraemon%20in%20Singapore%20at%20FSE%202022!.jpeg" alt="Meeing Doraemon in Singapore at FSE 2022!" />
+				    </div>
+			      <figcaption>
+		          <p>Meeing Doraemon in Singapore at FSE 2022!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Meeing%20Doraemon%20in%20Singapore%20at%20FSE%202022!.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//My%20Very%20First%20Piano%20Performance%20at%20USC!.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//My%20Very%20First%20Piano%20Performance%20at%20USC!.jpg" alt="My Very First Piano Performance at USC!" />
+				    </div>
+			      <figcaption>
+		          <p>My Very First Piano Performance at USC!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//My%20Very%20First%20Piano%20Performance%20at%20USC!.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Neno%27s%2050th%20Birthday%20at%20SoftArch%20Lab%20in%20USC.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Neno%27s%2050th%20Birthday%20at%20SoftArch%20Lab%20in%20USC.jpg" alt="Neno&#39;s 50th Birthday at SoftArch Lab in USC" />
+				    </div>
+			      <figcaption>
+		          <p>Neno&#39;s 50th Birthday at SoftArch Lab in USC</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Neno%27s%2050th%20Birthday%20at%20SoftArch%20Lab%20in%20USC.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Outdoor%20Climbing%20in%20Farley!.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Outdoor%20Climbing%20in%20Farley!.jpg" alt="Outdoor Climbing in Farley!" />
+				    </div>
+			      <figcaption>
+		          <p>Outdoor Climbing in Farley!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Outdoor%20Climbing%20in%20Farley!.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Paint%20Nite%20Achievement.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Paint%20Nite%20Achievement.jpg" alt="Paint Nite Achievement" />
+				    </div>
+			      <figcaption>
+		          <p>Paint Nite Achievement</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Paint%20Nite%20Achievement.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Pandemic%20can%27t%20stop%20me%20from%20climbing!.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Pandemic%20can%27t%20stop%20me%20from%20climbing!.jpeg" alt="Pandemic can&#39;t stop me from climbing!" />
+				    </div>
+			      <figcaption>
+		          <p>Pandemic can&#39;t stop me from climbing!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Pandemic%20can%27t%20stop%20me%20from%20climbing!.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Piano%20performance%20at%20USC!.png');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Piano%20performance%20at%20USC!.png" alt="Piano performance at USC!" />
+				    </div>
+			      <figcaption>
+		          <p>Piano performance at USC!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Piano%20performance%20at%20USC!.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Poem%20by%20Xu%20Zhimo%20at%20Cambridge.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Poem%20by%20Xu%20Zhimo%20at%20Cambridge.jpeg" alt="Poem by Xu Zhimo at Cambridge" />
+				    </div>
+			      <figcaption>
+		          <p>Poem by Xu Zhimo at Cambridge</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Poem%20by%20Xu%20Zhimo%20at%20Cambridge.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Post-ICSE%20Trip%20in%20Berlin%202018.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Post-ICSE%20Trip%20in%20Berlin%202018.jpg" alt="Post-ICSE Trip in Berlin 2018" />
+				    </div>
+			      <figcaption>
+		          <p>Post-ICSE Trip in Berlin 2018</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Post-ICSE%20Trip%20in%20Berlin%202018.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Presenting%20a%20Poster%20at%20UCI%20Forum%202017.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Presenting%20a%20Poster%20at%20UCI%20Forum%202017.jpg" alt="Presenting a Poster at UCI Forum 2017" />
+				    </div>
+			      <figcaption>
+		          <p>Presenting a Poster at UCI Forum 2017</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Presenting%20a%20Poster%20at%20UCI%20Forum%202017.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Presenting%20at%20ASE%202018%20in%20Montpellier.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Presenting%20at%20ASE%202018%20in%20Montpellier.jpg" alt="Presenting at ASE 2018 in Montpellier" />
+				    </div>
+			      <figcaption>
+		          <p>Presenting at ASE 2018 in Montpellier</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Presenting%20at%20ASE%202018%20in%20Montpellier.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Safari%20Trip%20in%20Kenya%202017%20%28will%20come%20back!%29.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Safari%20Trip%20in%20Kenya%202017%20%28will%20come%20back!%29.jpg" alt="Safari Trip in Kenya 2017 (will come back!)" />
+				    </div>
+			      <figcaption>
+		          <p>Safari Trip in Kenya 2017 (will come back!)</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Safari%20Trip%20in%20Kenya%202017%20%28will%20come%20back!%29.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Safari%20Trip%20in%20Kenya%20with%20Binoculars!.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Safari%20Trip%20in%20Kenya%20with%20Binoculars!.jpg" alt="Safari Trip in Kenya with Binoculars!" />
+				    </div>
+			      <figcaption>
+		          <p>Safari Trip in Kenya with Binoculars!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Safari%20Trip%20in%20Kenya%20with%20Binoculars!.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Santa%20Monica%20Pier.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Santa%20Monica%20Pier.jpeg" alt="Santa Monica Pier" />
+				    </div>
+			      <figcaption>
+		          <p>Santa Monica Pier</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Santa%20Monica%20Pier.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Seals%20at%20La%20Jolla%20Cove!.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Seals%20at%20La%20Jolla%20Cove!.jpeg" alt="Seals at La Jolla Cove!" />
+				    </div>
+			      <figcaption>
+		          <p>Seals at La Jolla Cove!</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Seals%20at%20La%20Jolla%20Cove!.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//The%20British%20Library.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//The%20British%20Library.jpeg" alt="The British Library" />
+				    </div>
+			      <figcaption>
+		          <p>The British Library</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//The%20British%20Library.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//Trip%20at%20Joshua%20Tree%20National%20Park%20%28when%20I%20broke%20my%20foot%29.jpg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//Trip%20at%20Joshua%20Tree%20National%20Park%20%28when%20I%20broke%20my%20foot%29.jpg" alt="Trip at Joshua Tree National Park (when I broke my foot)" />
+				    </div>
+			      <figcaption>
+		          <p>Trip at Joshua Tree National Park (when I broke my foot)</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//Trip%20at%20Joshua%20Tree%20National%20Park%20%28when%20I%20broke%20my%20foot%29.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://EdgarFx.github.io/img/gallery//With%20Mom%20in%20Vegas.jpeg');" >
+				      <img itemprop="thumbnail" src="https://EdgarFx.github.io/img/gallery//With%20Mom%20in%20Vegas.jpeg" alt="With Mom in Vegas" />
+				    </div>
+			      <figcaption>
+		          <p>With Mom in Vegas</p>
+			      </figcaption>
+				    <a href="https://EdgarFx.github.io/img/gallery//With%20Mom%20in%20Vegas.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+ <script src="/js/load-photoswipe.js"></script>
+ 
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+ 
+ 
+ <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+ 
+ <div class="pswp__bg"></div>
+ 
+ <div class="pswp__scroll-wrap">
+     
+     <div class="pswp__container">
+       <div class="pswp__item"></div>
+       <div class="pswp__item"></div>
+       <div class="pswp__item"></div>
+     </div>
+     
+     <div class="pswp__ui pswp__ui--hidden">
+     <div class="pswp__top-bar">
+       
+       <div class="pswp__counter"></div>
+       <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+       <button class="pswp__button pswp__button--share" title="Share"></button>
+       <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+       <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+       
+       
+       <div class="pswp__preloader">
+         <div class="pswp__preloader__icn">
+           <div class="pswp__preloader__cut">
+             <div class="pswp__preloader__donut"></div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+       <div class="pswp__share-tooltip"></div>
+     </div>
+     <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+     </button>
+     <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+     </button>
+     <div class="pswp__caption">
+       <div class="pswp__caption__center"></div>
+     </div>
+     </div>
+     </div>
+ </div>
+</p>
+<!-- 
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+  
+  
+  <div class="box" >
+    <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <div class="img" style="background-image: url('/img/pubheader.jpg');">
+        <img itemprop="thumbnail" src="/img/pubheader.jpg" alt="Grace Hopper Celebration 2015"/>
+      </div>
+      <a href="img/pubheader.jpg" itemprop="contentUrl"></a>
+        <figcaption>
+            <p>Grace Hopper Celebration 2015</p>
+        </figcaption>
+    </figure>
+  </div>
+
+  
+  
+  <div class="box" >
+    <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <div class="img" style="background-image: url('/img/gallery/Grand%20Canyon.jpg');">
+        <img itemprop="thumbnail" src="/img/gallery/Grand%20Canyon.jpg" alt="Grad Cohort 2017"/>
+      </div>
+      <a href="img/gallery/Grand%20Canyon.jpg" itemprop="contentUrl"></a>
+        <figcaption>
+            <p>Grad Cohort 2017</p>
+        </figcaption>
+    </figure>
+  </div>
+
+
+</div>
+
+ --></div>
+  
+
+  
+  
+
+  
+
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -135,5 +135,8 @@
   </url><url>
     <loc>https://EdgarFx.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/misc/</loc>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
