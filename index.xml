@@ -49,6 +49,78 @@
     </item>
     
     <item>
+      <title>Photorealistic-3D-Reconstruction-with-Multi-view-Stereo</title>
+      <link>https://EdgarFx.github.io/project/real_acmm/</link>
+      <pubDate>Sat, 20 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/project/real_acmm/</guid>
+      <description>&lt;p&gt;In this research project, we propose real-ACMM, which is a photorealistic 3D reconstruction method with MVS. The proposed real-ACMM is based on the architecture of &lt;a href=&#34;https://arxiv.org/abs/1904.08103&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACMM&lt;/a&gt;, and we make improvements on ACMM, achieving better reconstruction results with fewer iterations, especially in low-texture areas. The &lt;a href=&#34;https://github.com/EdgarFx/Photorealistic-3D-Reconstruction-with-Multi-view-Stereo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code&lt;/a&gt; is open-sourced.&lt;/p&gt;
+&lt;p&gt;Our main contributions are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Proposed Broad Adaptive Checkerboard Sampling, which broadly considers all the pixels in a neighborhood window during pixel sampling, instead of extending in a specific direction. This method helps capture correct hypotheses in large low-texture areas.&lt;/li&gt;
+&lt;li&gt;Introduced Dynamic Multi-Hypothesis Joint View Selection, which dynamically adjusts the matching cost for both the good matching and bad matching, allowing more robust and accurate view selection.&lt;/li&gt;
+&lt;li&gt;Results show that the proposed method can achieve better reconstruction results with fewer iterations, especially in low-texture areas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results-in-eth3d-benchmark&#34;&gt;Results in ETH3D benchmark&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Depth map comparison between different algorithms on ETH3D pipes dataset&#34; srcset=&#34;
+               /project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_085bf737c15fae94b4b3761a302f5b9d.webp 400w,
+               /project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_8e7198bbd64f73d4264985486878f8c6.webp 760w,
+               /project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_085bf737c15fae94b4b3761a302f5b9d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;442&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Point cloud comparisons between different algorithms on ETH3D pipes dataset&#34; srcset=&#34;
+               /project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_843ca2dac16df8638e67c592c1744eaa.webp 400w,
+               /project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_d4ef039d3590ec2d42bf6898f2d181e3.webp 760w,
+               /project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://EdgarFx.github.io/project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_843ca2dac16df8638e67c592c1744eaa.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;431&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Bag-of-Word-Groups (BoWG), A Robust Loop Closure Module for In-pipe Visual-Laser-Inertial SLAM</title>
       <link>https://EdgarFx.github.io/research/bowg/</link>
       <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
