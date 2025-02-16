@@ -44,10 +44,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Depth map comparison between different algorithms on ETH3D pipes dataset&#34; srcset=&#34;
-               /project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_d11b35918b5b4850610dfa6a2ff18d5f.webp 400w,
+               /project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_d1863a1f6ef7152a0f4919011934e570.webp 400w,
                /project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_4472c77b2333ef817d3c8c09442cf226.webp 760w,
                /project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://EdgarFx.github.io/project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_d11b35918b5b4850610dfa6a2ff18d5f.webp&#34;
+               src=&#34;https://EdgarFx.github.io/project/real_acmm/depth_hu245772cc57a08179b058337bb5baab20_972865_d1863a1f6ef7152a0f4919011934e570.webp&#34;
                width=&#34;760&#34;
                height=&#34;442&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -72,27 +72,15 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Point cloud comparisons between different algorithms on ETH3D pipes dataset&#34; srcset=&#34;
-               /project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_04e92d51044f0a1407c33d485ff61ff4.webp 400w,
+               /project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_535ff039c88372336b45729786651e66.webp 400w,
                /project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_115e2ed6bf5c36be5a104a51a5513fdd.webp 760w,
                /project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://EdgarFx.github.io/project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_04e92d51044f0a1407c33d485ff61ff4.webp&#34;
+               src=&#34;https://EdgarFx.github.io/project/real_acmm/point_hu7b5e6900ffe116fd3c12ad820a0de0fa_919960_535ff039c88372336b45729786651e66.webp&#34;
                width=&#34;760&#34;
                height=&#34;431&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SLAM for Vision-based Navigation</title>
-      <link>https://EdgarFx.github.io/project/navigation/</link>
-      <pubDate>Sat, 20 May 2023 10:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/project/navigation/</guid>
-      <description>&lt;p&gt;This research project is initiated by Prof. Shankar Sastry (UC Berkeley) and Prof. Somil Bansal (University of Southern California). The main aim of the research is to create a new autonomous navigation pipeline that incorporates learning-based perception for extracting distinctive features and semantic interpretation, and model-based SLAM for inference and metric map reconstruction.&lt;/p&gt;
-&lt;p&gt;Specifically, learning-based perception techniques have the ability to successfully identify objects that are important for the subsequent navigation task, but may face difficulties in accurately reconstructing metrics in challenging scenarios such as narrow hallways and tight corners. On the other hand, visual SLAM methods can produce consistent metric maps but often require significant computational resources, and do not provide relevant semantic information. This study aims to explore methods of integrating these two approaches, learning-based and model-based, to establish an efficient and reliable autonomous navigation system that can achieve high success rates and adapt to complex and unpredictable environments.&lt;/p&gt;
-&lt;p&gt;I was honored to directly mentored by Dr. Chih-Yuan Chiu and Prof. Somil Bansal in this project. Our work was based on Prof. Bansal&amp;rsquo;s prior work &lt;a href=&#34;https://smlbansal.github.io/LB-WayPtNav/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LB-WayPtNav&lt;/a&gt;, which is a learning-based navigation method and can generate some way points to guide the movement of the robot. This method can be used to navigate in novel environments, however, it would generate infeasible paths for some cases such as tight corners and narrow hallways. This is because this method struggles to provide accurate metric reconstruction when necessary (e.g. tight corners, narrow hallways). Meanwhile, visual SLAM algorithms can generate consistent metric maps, but are often computationally expensive to run, and do not provide relevant semantic information. Therefore, we try to establish a pipeline that combines both SLAM and the learning-based method to support an efficient autonomous navigation framework.&lt;/p&gt;
-&lt;p&gt;As a proof of concept, we showed that SLAM with particle filtering pairing algorithm and LiDAR information is able to successfully navigate situations that proved challenging for the purely learning based approach presented by Bansal. After that, we designed a switching mechanism that can switch to SLAM from learning based approach when the current scene is challenging, which is based on &lt;a href=&#34;https://arxiv.org/abs/2211.02736&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;reachability analysis&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -445,6 +433,14 @@
       <guid>https://EdgarFx.github.io/project/quick_table/</guid>
       <description>&lt;p&gt;This research proposes a new pipeline to extract tables of interest in PDF files, and develops an ultra lightweight application named QuickTable accordingly. Most of the previous research only focused on one or two tasks of table recognition and there is little research on finding tables of interest. The developed QuickTable uses the proposed pipeline based on PP-Picodet, SLANet, PPOCRv3, Text Segmentation and Cosine Similarity Analysis, which allows users to upload PDF files &lt;strong&gt;from mobile devices&lt;/strong&gt; and &lt;strong&gt;enter keywords to get tables of interest&lt;/strong&gt;. In addition, we have trained models in both Chinese and English so that users can upload files in &lt;strong&gt;different languages&lt;/strong&gt;. Experiments show that the proposed pipeline is lightweight and outperforms previous approaches, demonstrating the effectiveness of our method. The &lt;a href=&#34;https://github.com/EdgarFx/QuickTable&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code&lt;/a&gt; is open-sourced.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://EdgarFx.github.io/project/navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/project/navigation/</guid>
+      <description></description>
     </item>
     
   </channel>

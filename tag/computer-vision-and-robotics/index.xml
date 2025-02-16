@@ -21,14 +21,5 @@
 </description>
     </item>
     
-    <item>
-      <title>SLAM for Vision-based Navigation</title>
-      <link>https://EdgarFx.github.io/research/navigation/</link>
-      <pubDate>Fri, 14 Apr 2023 10:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/research/navigation/</guid>
-      <description>&lt;p&gt;This research project is initiated by Prof. Shankar Sastry (UC Berkeley) and Prof. Somil Bansal (University of Southern California). The main aim of the research is to create a new autonomous navigation pipeline that incorporates learning-based perception for extracting distinctive features and semantic interpretation, and model-based SLAM for inference and metric map reconstruction. Specifically, learning-based perception techniques have the ability to successfully identify objects that are important for the subsequent navigation task, but may face difficulties in accurately reconstructing metrics in challenging scenarios such as narrow hallways and tight corners. On the other hand, visual SLAM methods can produce consistent metric maps but often require significant computational resources, and do not provide relevant semantic information. This study aims to explore methods of integrating these two approaches, learning-based and model-based, to establish an efficient and reliable autonomous navigation system that can achieve high success rates and adapt to complex and unpredictable environments.&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>

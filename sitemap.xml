@@ -70,10 +70,6 @@
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://EdgarFx.github.io/project/navigation/</loc>
-    <lastmod>2023-05-20T10:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://EdgarFx.github.io/tag/carbon-market/</loc>
     <lastmod>2023-05-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -92,10 +88,6 @@
   </url><url>
     <loc>https://EdgarFx.github.io/research/q_optimization/</loc>
     <lastmod>2023-04-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/research/navigation/</loc>
-    <lastmod>2023-04-14T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/publication/disclosure/</loc>
@@ -139,6 +131,12 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/admin/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/project/navigation/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://EdgarFx.github.io/research/navigation/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/categories/</loc>
