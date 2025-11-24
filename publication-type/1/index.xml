@@ -17,33 +17,38 @@
       <link>https://EdgarFx.github.io/publication/bowg/</link>
       <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/publication/bowg/</guid>
-      <description>&lt;video width=&#34;100%&#34; controls&gt;
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This paper presents Bag-of-Word-Groups (BoWG), a novel loop closure detection method that achieves superior precision-recall, robustness, and computational efficiency. The core innovation lies in the introduction of word groups, which captures the spatial co-occurrence and proximity of visual words to construct an online dictionary. Additionally, drawing inspiration from probabilistic transition models, we incorporate temporal consistency directly into similarity computation with an adaptive scheme, substantially improving precision-recall performance. The method is further strengthened by a feature distribution analysis module and dedicated post-verification mechanisms.&lt;/p&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;Loop Closure Detection Using BoWG on New College&lt;/h2&gt;
+  &lt;img src=&#34;nc_demo.gif&#34; alt=&#34;NC Demo&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;BoWG vs DBoW2&lt;/h2&gt;
+  &lt;img src=&#34;demo.gif&#34; alt=&#34;BoWG vs DBoW2&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;Performance Compared With Exising Methods&lt;/h2&gt;
+  &lt;img src=&#34;results.png&#34; alt=&#34;Performance Compared With Exising Methods&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;Integrate BoWG into VINS-Mono&lt;/h2&gt;
+  &lt;img src=&#34;MH03_vins_bowg.gif&#34; alt=&#34;Integrate BoWG into VINS-Mono&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;Video&lt;/h2&gt;
+  &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+    &lt;source src=&#34;video.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    Your browser does not support the video tag.
+  &lt;/video&gt;
+&lt;/div&gt;
+&lt;!-- &lt;video width=&#34;100%&#34; controls&gt;
   &lt;source src=&#34;demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
   Your browser does not support the video tag.
 &lt;/video&gt;
-&lt;p&gt;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;BoWG vs DBoW2&#34;
-           src=&#34;https://EdgarFx.github.io/publication/bowg/demo.gif&#34;
-           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+![BoWG vs DBoW2](demo.gif) --&gt;
 </description>
     </item>
     
