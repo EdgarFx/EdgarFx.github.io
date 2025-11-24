@@ -40,25 +40,25 @@
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This paper presents MAC-VI-Init, a robust and accurate method for VI initialization and online calibration. Traditional approaches often struggle in challenging environments - such as severe illumination changes, dynamic objects, occlusions, and fast motions - due to their reliance on geometric visual features. Our method leverages learning-based feature matching and metrics-aware covariance to robustly estimate visual poses. Moreover, we explicitly compute the covariance of these visual poses to enable more effective joint VI optimization. A learning-based IMU model, AirIMU, can further be incorporated to provide precise IMU corrections and reliable uncertainty estimates for IMU pre-integration. Experiments in challenging scenarios demonstrate that our approach substantially improves the robustness and accuracy compared with existing methods.&lt;/p&gt;
 &lt;h2 id=&#34;video-demos&#34;&gt;Video Demos&lt;/h2&gt;
-&lt;p&gt;These videos illustrate the gravity-direction initialization results (Orange: estimated gravity; Green: ground truth) across different environments. Subsequent localization and mapping are carried out by jointly optimizing the visual pose graph (PGO) together with either standard IMU residuals or those from AirIMU. When AirIMU is used, the localization and mapping system effectively becomes &lt;strong&gt;MACVIO&lt;/strong&gt;, a learning-based stereo visual-inertial odometry framework that we are also developing.&lt;/p&gt;
+&lt;p&gt;These videos illustrate the gravity-direction initialization results (Orange: estimated gravity; Green: ground truth) across different environments. Subsequent localization and mapping are carried out by jointly optimizing the visual pose graph (PGO) together with either standard IMU residuals or those from AirIMU. When AirIMU is used, the localization and mapping system effectively becomes &lt;strong&gt;MACVIO&lt;/strong&gt;, a learning-based stereo visual-inertial odometry that we are also developing.&lt;/p&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;
-  &lt;h2&gt;Successful Initialization Comparison on V102 Sequence of EuRoC dataset&lt;/h2&gt;
+  &lt;h2&gt;Successful Initialization Comparison on V102 Sequence of EuRoC Dataset&lt;/h2&gt;
   &lt;img src=&#34;featured.png&#34; alt=&#34;success&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
 &lt;/div&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;
-  &lt;h2&gt;Performance Comparison on EuRoC dataset&lt;/h2&gt;
+  &lt;h2&gt;Performance Comparison on EuRoC Dataset&lt;/h2&gt;
   &lt;img src=&#34;results_euroc.png&#34; alt=&#34;euroc_init&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
 &lt;/div&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;
-  &lt;h2&gt;Performance of the proposed MAC-VI-Init on TUM and VBR dataset&lt;/h2&gt;
+  &lt;h2&gt;Performance of the proposed MAC-VI-Init on TUM and VBR Dataset&lt;/h2&gt;
   &lt;img src=&#34;results_tum_vbr.png&#34; alt=&#34;tum_vbr_init&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
 &lt;/div&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;
-  &lt;h2&gt;Gyroscope Bias Estimation Comparison on EuRoC dataset&lt;/h2&gt;
+  &lt;h2&gt;Gyroscope Bias Estimation Comparison on EuRoC Dataset&lt;/h2&gt;
   &lt;img src=&#34;gyro_bias.png&#34; alt=&#34;gyro_bias&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
 &lt;/div&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;
-  &lt;h2&gt;Pose Covariance Analysis on TartanAir dataset&lt;/h2&gt;
+  &lt;h2&gt;Pose Covariance Analysis on TartanAir Dataset&lt;/h2&gt;
   &lt;div style=&#34;display: flex; flex-direction: column; gap: 5px;&#34;&gt;
     &lt;img src=&#34;pose_cov_bin.png&#34; alt=&#34;Test Site&#34; style=&#34;width: 100%; display: block; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
     &lt;img src=&#34;pose_cov_trans.png&#34; alt=&#34;Results&#34; style=&#34;width: 100%; display: block; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
@@ -608,6 +608,121 @@
     </item>
     
     <item>
+      <title>Visual-Laser-Inertial SLAM for 3D Reconstruction of Confined Pipes</title>
+      <link>https://EdgarFx.github.io/project/vli_slam/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/project/vli_slam/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This work extended our lab&amp;rsquo;s previous work - a compact, low-cast visual-laser-inertial (VLI) SLAM-based 3D scanner - to narrow pipe environments. This technique enables in-pipe 3D reconstruction and defect detection.&lt;/p&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;In-pipe VLI-SLAM for Pipe Inspection&lt;/h2&gt;
+  &lt;img src=&#34;pipe_slam.gif&#34; alt=&#34;success&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;vli-slam&#34;&gt;VLI-SLAM&lt;/h2&gt;
+&lt;p&gt;The above in-pipe 3D reconstruction is adapted from &lt;a href=&#34;https://ieeexplore.ieee.org/document/9561860&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VLI-SLAM&lt;/a&gt;, a prior work of our lab. VLI-SLAM incorporates the laser-based structured light technique into a traditional monocular visual-inertial SLAM system.&lt;/p&gt;
+&lt;p&gt;The following figures illustrate the hardware prototype for deploying VLI-SLAM, the ray-casting problem for solving the depth of laser point, and the software framework of VLI-SLAM.&lt;/p&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;div style=&#34;display: flex; gap: 20px; align-items: stretch;&#34;&gt;
+    &lt;div style=&#34;flex: 1; min-width: 0; display: flex; flex-direction: column;&#34;&gt;
+      &lt;div style=&#34;flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+        &lt;img src=&#34;prototype.png&#34; alt=&#34;Test Site&#34; style=&#34;width: 100%; height: 100%; object-fit: contain;&#34;&gt;
+      &lt;/div&gt;
+      &lt;p style=&#34;text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: #666;&#34;&gt;Hardware Prototype of the Original Compact Scanner&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;flex: 1; min-width: 0; display: flex; flex-direction: column;&#34;&gt;
+      &lt;div style=&#34;flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+        &lt;img src=&#34;ray.png&#34; alt=&#34;Results&#34; style=&#34;width: 100%; height: 100%; object-fit: contain;&#34;&gt;
+      &lt;/div&gt;
+      &lt;p style=&#34;text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: #666;&#34;&gt;Ray-casting Problem of the Laser-based Structured Light&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;Software framework and data flow visualization of VLI-SLAM&lt;/h2&gt;
+  &lt;img src=&#34;framework.png&#34; alt=&#34;success&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;extend-vli-slam-to-in-pipe-environments&#34;&gt;Extend VLI-SLAM to In-pipe Environments&lt;/h2&gt;
+&lt;p&gt;To extend VLI-SLAM to in-pipe environments, the main problem is to consider the prototype design, especially how to achieve the laser-based structured light system. A straight-forward way is to project laser beam onto a conic mirror to generate laser-ring, as the following figures show.&lt;/p&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;div style=&#34;display: flex; gap: 20px; align-items: stretch;&#34;&gt;
+    &lt;div style=&#34;flex: 1; min-width: 0; display: flex; flex-direction: column;&#34;&gt;
+      &lt;div style=&#34;flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+        &lt;img src=&#34;pipe_robot.png&#34; alt=&#34;Test Site&#34; style=&#34;width: 100%; height: 100%; object-fit: contain;&#34;&gt;
+      &lt;/div&gt;
+      &lt;p style=&#34;text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: #666;&#34;&gt;Hardware Prototype of the In-pipe Robot with Laser Pole&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;flex: 1; min-width: 0; display: flex; flex-direction: column;&#34;&gt;
+      &lt;div style=&#34;flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+        &lt;img src=&#34;ray_ring.png&#34; alt=&#34;Results&#34; style=&#34;width: 100%; height: 100%; object-fit: contain;&#34;&gt;
+      &lt;/div&gt;
+      &lt;p style=&#34;text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: #666;&#34;&gt;Ray-casting Problem of the Laser-based Structured Light with Laser Ring&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;Unreal Engine Simulation&lt;/h2&gt;
+  &lt;img src=&#34;simulation.png&#34; alt=&#34;success&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;The figures (a), (b) are from the real pipe; (c), (d) are from the simulated environment.&lt;/p&gt;
+&lt;h2 id=&#34;another-design-exploration&#34;&gt;Another Design Exploration&lt;/h2&gt;
+&lt;p&gt;This above laser pole-based design is our current and most mature model. However, this design requires a dedicated laser pole to generate the laser ring, which restricts the robot’s mobility in confined pipes, particularly during turns. So we also explored other solutions, for example, generate a conical laser emission using diffractive optical elements. The first question is how to calibrate the conical laser surface. The following is our proposed laser cone calibration method, which achieves sub-millimeter accuracy even though the detected laser points are sparse and unevenly distributed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Calibration Software Procedure:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: An image review window will pop up for collecting images (Press &amp;ldquo;s&amp;rdquo; to save image or &amp;ldquo;q&amp;rdquo; to exit).&lt;/p&gt;
+&lt;p&gt;In this step, we need to pay attention that the laser points near the checkerboard corners will interfere the detection of the checkerboard corners, as shown in the figure below, so we need to avoid the collision. Currently I just physically masked some parts of the laser.&lt;/p&gt;
+&lt;div style=&#34;text-align: center; margin: 2rem 0;&#34;&gt;
+  &lt;img src=&#34;collision.png&#34; alt=&#34;Pipeline of laser cones fitting&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+  &lt;p style=&#34;margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;&#34;&gt;Figure: Collision of laser points and checkerboard corners&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Another window will pop up to examine the Laser detection result. (Press &amp;lsquo;y&amp;rsquo; to accept, &amp;rsquo;n&amp;rsquo; to reject current image).&lt;/p&gt;
+&lt;div style=&#34;text-align: center; margin: 2rem 0;&#34;&gt;
+  &lt;img src=&#34;step2.png&#34; alt=&#34;Pipeline of laser cones fitting&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+  &lt;p style=&#34;margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;&#34;&gt;Figure: An example visualization in step 2&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In this step, the 0-Order laser point and laser rings in each image are detected, and the user can see the result in a window. If the detection for some images is not so good, the user can reject these images. The figure above is an example visualization in step 2. The white point is the 0-Order laser point, and the blue points are those belong to laser rings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: Laser cones will be fitted and visualized, results will be saved in config files.&lt;/p&gt;
+&lt;div style=&#34;text-align: center; margin: 2rem 0;&#34;&gt;
+  &lt;img src=&#34;pipeline.png&#34; alt=&#34;Pipeline of laser cones fitting&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+  &lt;p style=&#34;margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;&#34;&gt;Figure: Pipeline of laser cones fitting&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; margin: 2rem 0;&#34;&gt;
+  &lt;img src=&#34;fit.png&#34; alt=&#34;Pipeline of laser cones fitting&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+  &lt;p style=&#34;margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;&#34;&gt;Laser Cone Fitting&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In this step, the laser cones will be fitted with the accepted images. The pipeline for laser cones fitting is shown in the figure above.&lt;/p&gt;
+&lt;p&gt;We firstly use the detected 0-Order laser points to fit the cone axis equation in camera frame with RANSAC, the equation is represented in parametric form:&lt;/p&gt;
+&lt;p&gt;$$x = x_0 + v_x s$$&lt;/p&gt;
+&lt;p&gt;$$y = y_0 + v_y s$$&lt;/p&gt;
+&lt;p&gt;$$z = z_0 + v_z s$$&lt;/p&gt;
+&lt;p&gt;Then, we can try to fit the cone in the laser frame (origin is the cone vertex). This is because in laser frame, the cone can be described by the standard cone equation, so the shape can be constrained:&lt;/p&gt;
+&lt;p&gt;$$\frac{x_l^2 + y_l^2}{a^2} - \frac{z_l^2}{b^2} = 0$$&lt;/p&gt;
+&lt;p&gt;Let $R^{cl}$ and $t^{cl}$ represent the rotation and translation from camera frame to laser frame, we have:&lt;/p&gt;
+&lt;p&gt;$$X_l = R^{cl}X_c + t^{cl}$$&lt;/p&gt;
+&lt;p&gt;where $X_l = [x_l, y_l, z_l]^T$ is the coordinates in laser frame, and $X_c = [x_c, y_c, z_c]^T$ is the coordinates in camera frame.&lt;/p&gt;
+&lt;p&gt;For $R^{cl}$, it can be simply computed after we get the equation of the cone axis. But currently we don&amp;rsquo;t know $t_{cl}$ since we don&amp;rsquo;t know the position of the cone vertex. Therefore, to fit the cone, we need to modify the equation (4), let $r_l^2 = x_l^2 + y_l^2$, and $b = 1$, the equation becomes:&lt;/p&gt;
+&lt;p&gt;$$r_l^2 = a^2 z_l^2$$&lt;/p&gt;
+&lt;p&gt;Here $r_l$ is actually the distance from the laser point to the cone axis, so it can be computed in the camera frame without knowing the camera-laser transformation. In addition, since $r_l, a, z_l &amp;gt; 0$, we can simplify the equation as:&lt;/p&gt;
+&lt;p&gt;$$r_l = a z_l$$&lt;/p&gt;
+&lt;p&gt;Then, according to the previous equation, we have:&lt;/p&gt;
+&lt;p&gt;$$z_l = R^{cl}_3 X_c + t^{cl}_3$$&lt;/p&gt;
+&lt;p&gt;where $R^{cl}_3$ is the third row of $R^{cl}$, and $t^{cl}_3$ is the third row of $t^{cl}$.&lt;/p&gt;
+&lt;p&gt;Let $z_l&amp;rsquo; = R^{cl}_3 X_c$, $k = a \cdot t^{cl}_3$, and substitute into the equation, we have:&lt;/p&gt;
+&lt;p&gt;$$r_l = az_l&amp;rsquo; + k$$&lt;/p&gt;
+&lt;p&gt;In this equation, $z_l&amp;rsquo;$ is only determined by the coordinates of laser points in camera frame and the camera-laser rotation, it can also be computed without knowing the translation $t^{cl}$. Therefore, we can use line fitting and RANSAC to obtain the parameters $a$ and $k$, and then we have $t^{cl}_3 = \frac{k}{a}$. Now, we get the cone equation in laser frame.&lt;/p&gt;
+&lt;p&gt;Finally, to obtain the camera-laser translation $t^{cl}$, we can let $X_{l0} = 0$ (since the coordinate of the cone vertex in laser frame is 0), then we have:&lt;/p&gt;
+&lt;p&gt;$$X_{c0} = -(R^{cl})^T t^{cl}$$&lt;/p&gt;
+&lt;p&gt;where $X_{c0}$ is the coordinate of the cone vertex in camera frame. Besides, according to the cone axis equation, we have:&lt;/p&gt;
+&lt;p&gt;$$X_{c0} = \begin{bmatrix} x_0 + v_x s_0 \ y_0 + v_y s_0 \ z_0 + v_z s_0 \end{bmatrix}$$&lt;/p&gt;
+&lt;p&gt;Combining the equations, we have:&lt;/p&gt;
+&lt;p&gt;$$\begin{bmatrix} R^{cl}&lt;em&gt;{11} &amp;amp; R^{cl}&lt;/em&gt;{21} &amp;amp; v_x \ R^{cl}&lt;em&gt;{12} &amp;amp; R^{cl}&lt;/em&gt;{22} &amp;amp; v_y \ R^{cl}&lt;em&gt;{13} &amp;amp; R^{cl}&lt;/em&gt;{23} &amp;amp; v_z \end{bmatrix} \begin{bmatrix} t^{cl}_1 \ t^{cl}&lt;em&gt;2 \ s_0 \end{bmatrix} = \begin{bmatrix} -x_0 - R^{cl}&lt;/em&gt;{31} t^{cl}&lt;em&gt;3 \ -y_0 - R^{cl}&lt;/em&gt;{32} t^{cl}&lt;em&gt;3 \ -z_0 - R^{cl}&lt;/em&gt;{33} t^{cl}_3 \end{bmatrix}$$&lt;/p&gt;
+&lt;p&gt;For the above system of linear equations, we have three variables: $t^{cl}_1$, $t^{cl}_2$, $s_0$, and we have three linear equations, so the system can be solved and we can get the translation.&lt;/p&gt;
+&lt;p&gt;Finally, the cone equation parameter $a$, camera-laser rotation $R^{cl}$, and translation $t^{cl}$ are all obtained, and the calibration finished.&lt;/p&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;Calibration Results for Some Laser Cone Surfaces&lt;/h2&gt;
+  &lt;img src=&#34;cone_calib.png&#34; alt=&#34;success&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>2022 Carbon Rating Report of China&#39;s 100 Overseas Listed Companies</title>
       <link>https://EdgarFx.github.io/publication/carbon_rating/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
@@ -668,14 +783,6 @@
       <link>https://EdgarFx.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/admin/config.yml</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://EdgarFx.github.io/project/navigation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/project/navigation/</guid>
       <description></description>
     </item>
     

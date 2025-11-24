@@ -118,6 +118,10 @@
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://EdgarFx.github.io/project/vli_slam/</loc>
+    <lastmod>2022-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://EdgarFx.github.io/publication/carbon_rating/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -135,9 +139,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/admin/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://EdgarFx.github.io/project/navigation/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://EdgarFx.github.io/research/navigation/</loc>
