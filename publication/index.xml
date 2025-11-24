@@ -31,10 +31,12 @@
   &lt;h2&gt;Performance Compared With Exising Methods&lt;/h2&gt;
   &lt;img src=&#34;results.png&#34; alt=&#34;Performance Compared With Exising Methods&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
 &lt;/div&gt;
-&lt;div style=&#34;display: flex; gap: 20px; margin: 2rem 0;&#34;&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
   &lt;h2&gt;Performance on a More Challenging Pipe Environment&lt;/h2&gt;
-  &lt;img src=&#34;test_site.png&#34; alt=&#34;Demo 1&#34; style=&#34;width: 50%; object-fit: contain;&#34;&gt;
-  &lt;img src=&#34;A_Res.png&#34; alt=&#34;Demo 2&#34; style=&#34;width: 50%; object-fit: contain;&#34;&gt;
+  &lt;div style=&#34;display: flex; gap: 20px;&#34;&gt;
+    &lt;img src=&#34;test_site.png&#34; alt=&#34;Test Site&#34; style=&#34;width: 50%; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+    &lt;img src=&#34;A_Res.png&#34; alt=&#34;Results&#34; style=&#34;width: 50%; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;
   &lt;h2&gt;Integrate BoWG into VINS-Mono&lt;/h2&gt;
