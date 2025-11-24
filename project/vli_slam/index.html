@@ -305,22 +305,21 @@
 
 
   
-  
 
 
 
 
 
 
-<meta property="twitter:card" content="summary" />
+<meta property="twitter:card" content="summary_large_image" />
 
   <meta property="twitter:site" content="@xiangfei" />
   <meta property="twitter:creator" content="@xiangfei" />
-<meta property="twitter:image" content="https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png" />
+<meta property="twitter:image" content="https://EdgarFx.github.io/project/vli_slam/featured.png" />
 <meta property="og:site_name" content="Xiang (Shawn) Fei" />
 <meta property="og:url" content="https://EdgarFx.github.io/project/vli_slam/" />
 <meta property="og:title" content="Visual-Laser-Inertial SLAM for 3D Reconstruction of Confined Pipes | Xiang (Shawn) Fei" />
-<meta property="og:description" content="This work extended a compact, low-cast visual-laser-inertial SLAM-based 3D scanner to narrow pipe environments." /><meta property="og:image" content="https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:description" content="This work extended a compact, low-cast visual-laser-inertial SLAM-based 3D scanner to narrow pipe environments." /><meta property="og:image" content="https://EdgarFx.github.io/project/vli_slam/featured.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -356,6 +355,10 @@
     "@id": "https://EdgarFx.github.io/project/vli_slam/"
   },
   "headline": "Visual-Laser-Inertial SLAM for 3D Reconstruction of Confined Pipes",
+  
+  "image": [
+    "https://EdgarFx.github.io/project/vli_slam/featured.png"
+  ],
   
   "datePublished": "2024-11-01T00:00:00Z",
   "dateModified": "2024-11-01T00:00:00Z",
@@ -842,18 +845,25 @@
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
   
-  
+
+
 <div class="article-container pt-3">
   <h1>Visual-Laser-Inertial SLAM for 3D Reconstruction of Confined Pipes</h1>
 
   
 
   
-    
 
 
 <div class="article-metadata">
@@ -885,13 +895,20 @@
 
 </div>
 
-    
-
-
-
-
-
   
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 452px;">
+  <div style="position: relative">
+    <img src="/project/vli_slam/featured_hu4745e8c1d0e18b0dc6825ab1e71069f2_1554864_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="452" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 
@@ -998,9 +1015,15 @@
 <p>Finally, to obtain the camera-laser translation $t^{cl}$, we can let $X_{l0} = 0$ (since the coordinate of the cone vertex in laser frame is 0), then we have:</p>
 <p>$$X_{c0} = -(R^{cl})^T t^{cl}$$</p>
 <p>where $X_{c0}$ is the coordinate of the cone vertex in camera frame. Besides, according to the cone axis equation, we have:</p>
-<p>$$X_{c0} = \begin{bmatrix} x_0 + v_x s_0 \ y_0 + v_y s_0 \ z_0 + v_z s_0 \end{bmatrix}$$</p>
-<p>Combining the equations, we have:</p>
-<p>$$\begin{bmatrix} R^{cl}<em>{11} &amp; R^{cl}</em>{21} &amp; v_x \ R^{cl}<em>{12} &amp; R^{cl}</em>{22} &amp; v_y \ R^{cl}<em>{13} &amp; R^{cl}</em>{23} &amp; v_z \end{bmatrix} \begin{bmatrix} t^{cl}_1 \ t^{cl}<em>2 \ s_0 \end{bmatrix} = \begin{bmatrix} -x_0 - R^{cl}</em>{31} t^{cl}<em>3 \ -y_0 - R^{cl}</em>{32} t^{cl}<em>3 \ -z_0 - R^{cl}</em>{33} t^{cl}_3 \end{bmatrix}$$</p>
+<p>$$
+\mathbf{A} \mathbf{x} = \mathbf{b}
+$$</p>
+<p>where:</p>
+<ul>
+<li>$\mathbf{A} = \begin{bmatrix} R^{cl}<em>{11} &amp; R^{cl}</em>{21} &amp; v_x \ R^{cl}<em>{12} &amp; R^{cl}</em>{22} &amp; v_y \ R^{cl}<em>{13} &amp; R^{cl}</em>{23} &amp; v_z \end{bmatrix}$</li>
+<li>$\mathbf{x} = \begin{bmatrix} t^{cl}_1 \ t^{cl}_2 \ s_0 \end{bmatrix}$</li>
+<li>$\mathbf{b} = \begin{bmatrix} -x_0 - R^{cl}_{31} t^{cl}<em>3 \ -y_0 - R^{cl}</em>{32} t^{cl}<em>3 \ -z_0 - R^{cl}</em>{33} t^{cl}_3 \end{bmatrix}$</li>
+</ul>
 <p>For the above system of linear equations, we have three variables: $t^{cl}_1$, $t^{cl}_2$, $s_0$, and we have three linear equations, so the system can be solved and we can get the translation.</p>
 <p>Finally, the cone equation parameter $a$, camera-laser rotation $R^{cl}$, and translation $t^{cl}$ are all obtained, and the calibration finished.</p>
 <div style="margin: 2rem 0;">

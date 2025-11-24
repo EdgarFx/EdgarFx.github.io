@@ -116,9 +116,15 @@
 &lt;p&gt;Finally, to obtain the camera-laser translation $t^{cl}$, we can let $X_{l0} = 0$ (since the coordinate of the cone vertex in laser frame is 0), then we have:&lt;/p&gt;
 &lt;p&gt;$$X_{c0} = -(R^{cl})^T t^{cl}$$&lt;/p&gt;
 &lt;p&gt;where $X_{c0}$ is the coordinate of the cone vertex in camera frame. Besides, according to the cone axis equation, we have:&lt;/p&gt;
-&lt;p&gt;$$X_{c0} = \begin{bmatrix} x_0 + v_x s_0 \ y_0 + v_y s_0 \ z_0 + v_z s_0 \end{bmatrix}$$&lt;/p&gt;
-&lt;p&gt;Combining the equations, we have:&lt;/p&gt;
-&lt;p&gt;$$\begin{bmatrix} R^{cl}&lt;em&gt;{11} &amp;amp; R^{cl}&lt;/em&gt;{21} &amp;amp; v_x \ R^{cl}&lt;em&gt;{12} &amp;amp; R^{cl}&lt;/em&gt;{22} &amp;amp; v_y \ R^{cl}&lt;em&gt;{13} &amp;amp; R^{cl}&lt;/em&gt;{23} &amp;amp; v_z \end{bmatrix} \begin{bmatrix} t^{cl}_1 \ t^{cl}&lt;em&gt;2 \ s_0 \end{bmatrix} = \begin{bmatrix} -x_0 - R^{cl}&lt;/em&gt;{31} t^{cl}&lt;em&gt;3 \ -y_0 - R^{cl}&lt;/em&gt;{32} t^{cl}&lt;em&gt;3 \ -z_0 - R^{cl}&lt;/em&gt;{33} t^{cl}_3 \end{bmatrix}$$&lt;/p&gt;
+&lt;p&gt;$$
+\mathbf{A} \mathbf{x} = \mathbf{b}
+$$&lt;/p&gt;
+&lt;p&gt;where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\mathbf{A} = \begin{bmatrix} R^{cl}&lt;em&gt;{11} &amp;amp; R^{cl}&lt;/em&gt;{21} &amp;amp; v_x \ R^{cl}&lt;em&gt;{12} &amp;amp; R^{cl}&lt;/em&gt;{22} &amp;amp; v_y \ R^{cl}&lt;em&gt;{13} &amp;amp; R^{cl}&lt;/em&gt;{23} &amp;amp; v_z \end{bmatrix}$&lt;/li&gt;
+&lt;li&gt;$\mathbf{x} = \begin{bmatrix} t^{cl}_1 \ t^{cl}_2 \ s_0 \end{bmatrix}$&lt;/li&gt;
+&lt;li&gt;$\mathbf{b} = \begin{bmatrix} -x_0 - R^{cl}_{31} t^{cl}&lt;em&gt;3 \ -y_0 - R^{cl}&lt;/em&gt;{32} t^{cl}&lt;em&gt;3 \ -z_0 - R^{cl}&lt;/em&gt;{33} t^{cl}_3 \end{bmatrix}$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;For the above system of linear equations, we have three variables: $t^{cl}_1$, $t^{cl}_2$, $s_0$, and we have three linear equations, so the system can be solved and we can get the translation.&lt;/p&gt;
 &lt;p&gt;Finally, the cone equation parameter $a$, camera-laser rotation $R^{cl}$, and translation $t^{cl}$ are all obtained, and the calibration finished.&lt;/p&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;
