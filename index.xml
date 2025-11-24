@@ -33,6 +33,20 @@
     </item>
     
     <item>
+      <title>MAC-VI-Init: Robust Visual-Inertial Initialization and Calibration with Learning-based Features and Uncertainty</title>
+      <link>https://EdgarFx.github.io/publication/mac_vi_init/</link>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://EdgarFx.github.io/publication/mac_vi_init/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This paper presents MAC-VI-Init, a robust and accurate method for VI initialization and online calibration. Traditional approaches often struggle in challenging environments - such as severe illumination changes, dynamic objects, occlusions, and fast motions - due to their reliance on geometric visual features. Our method leverages learning-based feature matching and metrics-aware covariance to robustly estimate visual poses. Moreover, we explicitly compute the covariance of these visual poses to enable more effective joint VI optimization. A learning-based IMU model, AirIMU, can further be incorporated to provide precise IMU corrections and reliable uncertainty estimates for IMU pre-integration. Experiments in challenging scenarios demonstrate that our approach substantially improves the robustness and accuracy compared with existing methods.&lt;/p&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h2&gt;Successful Initialization Comparison on V102 Sequence of EuRoC dataset&lt;/h2&gt;
+  &lt;img src=&#34;featured.png&#34; alt=&#34;NC Demo&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing</title>
       <link>https://EdgarFx.github.io/publication/bowg/</link>
       <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
