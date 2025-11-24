@@ -541,15 +541,6 @@
     </item>
     
     <item>
-      <title>QuickTable, an ultra lightweight application to extract tables in PDF</title>
-      <link>https://EdgarFx.github.io/project/quick_table/</link>
-      <pubDate>Sat, 20 Aug 2022 10:00:00 +0000</pubDate>
-      <guid>https://EdgarFx.github.io/project/quick_table/</guid>
-      <description>&lt;p&gt;This research proposes a new pipeline to extract tables of interest in PDF files, and develops an ultra lightweight application named QuickTable accordingly. Most of the previous research only focused on one or two tasks of table recognition and there is little research on finding tables of interest. The developed QuickTable uses the proposed pipeline based on PP-Picodet, SLANet, PPOCRv3, Text Segmentation and Cosine Similarity Analysis, which allows users to upload PDF files &lt;strong&gt;from mobile devices&lt;/strong&gt; and &lt;strong&gt;enter keywords to get tables of interest&lt;/strong&gt;. In addition, we have trained models in both Chinese and English so that users can upload files in &lt;strong&gt;different languages&lt;/strong&gt;. Experiments show that the proposed pipeline is lightweight and outperforms previous approaches, demonstrating the effectiveness of our method. The &lt;a href=&#34;https://github.com/EdgarFx/QuickTable&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code&lt;/a&gt; is open-sourced.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>2022 Carbon Rating Report of China&#39;s 100 Overseas Listed Companies</title>
       <link>https://EdgarFx.github.io/publication/carbon_rating/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
