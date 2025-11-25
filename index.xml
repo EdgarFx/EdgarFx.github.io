@@ -42,6 +42,45 @@
 &lt;h2 id=&#34;video-demos&#34;&gt;Video Demos&lt;/h2&gt;
 &lt;p&gt;These videos illustrate the gravity-direction initialization results (Orange: estimated gravity; Green: ground truth) across different environments. Subsequent localization and mapping are carried out by jointly optimizing the visual pose graph (PGO) together with either standard IMU residuals or those from AirIMU. When AirIMU is used, the localization and mapping system effectively becomes &lt;strong&gt;MACVIO&lt;/strong&gt;, a learning-based stereo visual-inertial odometry that we are also developing.&lt;/p&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+  &lt;h3&gt;Lunar Environment (TartanairV2 Dataset)&lt;/h3&gt;
+  &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+    &lt;source src=&#34;lunar.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    Your browser does not support the video tag.
+  &lt;/video&gt;
+&lt;/div&gt;
+&lt;div style=&#34;display: flex; gap: 1rem; margin: 2rem 0;&#34;&gt;
+  &lt;div style=&#34;flex: 1;&#34;&gt;
+    &lt;h3&gt;VBR Colosseo Train 0 (Extreme Exposure)&lt;/h3&gt;
+    &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+      &lt;source src=&#34;vbr_light.mp4&#34; type=&#34;video/mp4&#34;&gt;
+      Your browser does not support the video tag.
+    &lt;/video&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;flex: 1;&#34;&gt;
+    &lt;h3&gt;VBR Colosseo Train 0 (Dynamic Scene)&lt;/h3&gt;
+    &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+      &lt;source src=&#34;vbr_dynamic.mp4&#34; type=&#34;video/mp4&#34;&gt;
+      Your browser does not support the video tag.
+    &lt;/video&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;display: flex; gap: 1rem; margin: 2rem 0;&#34;&gt;
+  &lt;div style=&#34;flex: 1;&#34;&gt;
+    &lt;h3&gt;EuRoC V102&lt;/h3&gt;
+    &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+      &lt;source src=&#34;V102.mp4&#34; type=&#34;video/mp4&#34;&gt;
+      Your browser does not support the video tag.
+    &lt;/video&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;flex: 1;&#34;&gt;
+    &lt;h3&gt;EuRoC V203&lt;/h3&gt;
+    &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
+      &lt;source src=&#34;V203.mp4&#34; type=&#34;video/mp4&#34;&gt;
+      Your browser does not support the video tag.
+    &lt;/video&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
   &lt;h2&gt;Successful Initialization Comparison on V102 Sequence of EuRoC Dataset&lt;/h2&gt;
   &lt;img src=&#34;featured.png&#34; alt=&#34;success&#34; style=&#34;width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
 &lt;/div&gt;
@@ -220,15 +259,10 @@
 &lt;p&gt;Finally, to obtain the camera-laser translation $t^{cl}$, we can let $X_{l0} = 0$ (since the coordinate of the cone vertex in laser frame is 0), then we have:&lt;/p&gt;
 &lt;p&gt;$$X_{c0} = -(R^{cl})^T t^{cl}$$&lt;/p&gt;
 &lt;p&gt;where $X_{c0}$ is the coordinate of the cone vertex in camera frame. Besides, according to the cone axis equation, we have:&lt;/p&gt;
-&lt;p&gt;$$
-\mathbf{A} \mathbf{x} = \mathbf{b}
-$$&lt;/p&gt;
-&lt;p&gt;where:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;$\mathbf{A} = \begin{bmatrix} R^{cl}&lt;em&gt;{11} &amp;amp; R^{cl}&lt;/em&gt;{21} &amp;amp; v_x \ R^{cl}&lt;em&gt;{12} &amp;amp; R^{cl}&lt;/em&gt;{22} &amp;amp; v_y \ R^{cl}&lt;em&gt;{13} &amp;amp; R^{cl}&lt;/em&gt;{23} &amp;amp; v_z \end{bmatrix}$&lt;/li&gt;
-&lt;li&gt;$\mathbf{x} = \begin{bmatrix} t^{cl}_1 \ t^{cl}_2 \ s_0 \end{bmatrix}$&lt;/li&gt;
-&lt;li&gt;$\mathbf{b} = \begin{bmatrix} -x_0 - R^{cl}_{31} t^{cl}&lt;em&gt;3 \ -y_0 - R^{cl}&lt;/em&gt;{32} t^{cl}&lt;em&gt;3 \ -z_0 - R^{cl}&lt;/em&gt;{33} t^{cl}_3 \end{bmatrix}$&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div style=&#34;text-align: center; margin: 2rem 0;&#34;&gt;
+  &lt;img src=&#34;formula.png&#34; alt=&#34;Pipeline of laser cones fitting&#34; style=&#34;max-width: 60%; height: auto;&#34;&gt;
+  &lt;p style=&#34;margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;For the above system of linear equations, we have three variables: $t^{cl}_1$, $t^{cl}_2$, $s_0$, and we have three linear equations, so the system can be solved and we can get the translation.&lt;/p&gt;
 &lt;p&gt;Finally, the cone equation parameter $a$, camera-laser rotation $R^{cl}$, and translation $t^{cl}$ are all obtained, and the calibration finished.&lt;/p&gt;
 &lt;div style=&#34;margin: 2rem 0;&#34;&gt;

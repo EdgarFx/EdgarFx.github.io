@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: November 24, 2025 --><html lang="en-us" >
+<!-- Last Published: November 25, 2025 --><html lang="en-us" >
 
 
 <head>
@@ -1015,15 +1015,10 @@
 <p>Finally, to obtain the camera-laser translation $t^{cl}$, we can let $X_{l0} = 0$ (since the coordinate of the cone vertex in laser frame is 0), then we have:</p>
 <p>$$X_{c0} = -(R^{cl})^T t^{cl}$$</p>
 <p>where $X_{c0}$ is the coordinate of the cone vertex in camera frame. Besides, according to the cone axis equation, we have:</p>
-<p>$$
-\mathbf{A} \mathbf{x} = \mathbf{b}
-$$</p>
-<p>where:</p>
-<ul>
-<li>$\mathbf{A} = \begin{bmatrix} R^{cl}<em>{11} &amp; R^{cl}</em>{21} &amp; v_x \ R^{cl}<em>{12} &amp; R^{cl}</em>{22} &amp; v_y \ R^{cl}<em>{13} &amp; R^{cl}</em>{23} &amp; v_z \end{bmatrix}$</li>
-<li>$\mathbf{x} = \begin{bmatrix} t^{cl}_1 \ t^{cl}_2 \ s_0 \end{bmatrix}$</li>
-<li>$\mathbf{b} = \begin{bmatrix} -x_0 - R^{cl}_{31} t^{cl}<em>3 \ -y_0 - R^{cl}</em>{32} t^{cl}<em>3 \ -z_0 - R^{cl}</em>{33} t^{cl}_3 \end{bmatrix}$</li>
-</ul>
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="formula.png" alt="Pipeline of laser cones fitting" style="max-width: 60%; height: auto;">
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;"></p>
+</div>
 <p>For the above system of linear equations, we have three variables: $t^{cl}_1$, $t^{cl}_2$, $s_0$, and we have three linear equations, so the system can be solved and we can get the translation.</p>
 <p>Finally, the cone equation parameter $a$, camera-laser rotation $R^{cl}$, and translation $t^{cl}$ are all obtained, and the calibration finished.</p>
 <div style="margin: 2rem 0;">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: November 24, 2025 --><html lang="en-us" >
+<!-- Last Published: November 25, 2025 --><html lang="en-us" >
 
 
 <head>
@@ -966,6 +966,45 @@
 <p>This paper presents MAC-VI-Init, a robust and accurate method for VI initialization and online calibration. Traditional approaches often struggle in challenging environments - such as severe illumination changes, dynamic objects, occlusions, and fast motions - due to their reliance on geometric visual features. Our method leverages learning-based feature matching and metrics-aware covariance to robustly estimate visual poses. Moreover, we explicitly compute the covariance of these visual poses to enable more effective joint VI optimization. A learning-based IMU model, AirIMU, can further be incorporated to provide precise IMU corrections and reliable uncertainty estimates for IMU pre-integration. Experiments in challenging scenarios demonstrate that our approach substantially improves the robustness and accuracy compared with existing methods.</p>
 <h2 id="video-demos">Video Demos</h2>
 <p>These videos illustrate the gravity-direction initialization results (Orange: estimated gravity; Green: ground truth) across different environments. Subsequent localization and mapping are carried out by jointly optimizing the visual pose graph (PGO) together with either standard IMU residuals or those from AirIMU. When AirIMU is used, the localization and mapping system effectively becomes <strong>MACVIO</strong>, a learning-based stereo visual-inertial odometry that we are also developing.</p>
+<div style="margin: 2rem 0;">
+  <h3>Lunar Environment (TartanairV2 Dataset)</h3>
+  <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <source src="lunar.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<div style="display: flex; gap: 1rem; margin: 2rem 0;">
+  <div style="flex: 1;">
+    <h3>VBR Colosseo Train 0 (Extreme Exposure)</h3>
+    <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <source src="vbr_light.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div style="flex: 1;">
+    <h3>VBR Colosseo Train 0 (Dynamic Scene)</h3>
+    <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <source src="vbr_dynamic.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<div style="display: flex; gap: 1rem; margin: 2rem 0;">
+  <div style="flex: 1;">
+    <h3>EuRoC V102</h3>
+    <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <source src="V102.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div style="flex: 1;">
+    <h3>EuRoC V203</h3>
+    <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <source src="V203.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 <div style="margin: 2rem 0;">
   <h2>Successful Initialization Comparison on V102 Sequence of EuRoC Dataset</h2>
   <img src="featured.png" alt="success" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
