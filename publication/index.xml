@@ -89,7 +89,7 @@
     <item>
       <title>Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing</title>
       <link>https://EdgarFx.github.io/publication/bowg/</link>
-      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://EdgarFx.github.io/publication/bowg/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This paper presents Bag-of-Word-Groups (BoWG), a novel loop closure detection method that achieves superior precision-recall, robustness, and computational efficiency. The core innovation lies in the introduction of word groups, which captures the spatial co-occurrence and proximity of visual words to construct an online dictionary. Additionally, drawing inspiration from probabilistic transition models, we incorporate temporal consistency directly into similarity computation with an adaptive scheme, substantially improving precision-recall performance. The method is further strengthened by a feature distribution analysis module and dedicated post-verification mechanisms.&lt;/p&gt;
