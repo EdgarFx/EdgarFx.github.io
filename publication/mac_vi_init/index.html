@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: November 30, 2025 --><html lang="en-us" >
+<!-- Last Published: March 2, 2026 --><html lang="en-us" >
 
 
 <head>
@@ -318,7 +318,7 @@
 <meta property="twitter:image" content="https://EdgarFx.github.io/publication/mac_vi_init/featured.png" />
 <meta property="og:site_name" content="Xiang (Shawn) Fei" />
 <meta property="og:url" content="https://EdgarFx.github.io/publication/mac_vi_init/" />
-<meta property="og:title" content="MAC-VI-Init: Robust Visual-Inertial Initialization and Calibration with Learning-based Features and Uncertainty | Xiang (Shawn) Fei" />
+<meta property="og:title" content="MAC-I²: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration | Xiang (Shawn) Fei" />
 <meta property="og:description" content=" " /><meta property="og:image" content="https://EdgarFx.github.io/publication/mac_vi_init/featured.png" /><meta property="og:locale" content="en-us" />
 
   
@@ -354,7 +354,7 @@
     "@type": "WebPage",
     "@id": "https://EdgarFx.github.io/publication/mac_vi_init/"
   },
-  "headline": "MAC-VI-Init: Robust Visual-Inertial Initialization and Calibration with Learning-based Features and Uncertainty",
+  "headline": "MAC-I²: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration",
   
   "image": [
     "https://EdgarFx.github.io/publication/mac_vi_init/featured.png"
@@ -398,7 +398,7 @@
 
 
   
-  <title>MAC-VI-Init: Robust Visual-Inertial Initialization and Calibration with Learning-based Features and Uncertainty | Xiang (Shawn) Fei</title>
+  <title>MAC-I²: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration | Xiang (Shawn) Fei</title>
 
   
   
@@ -860,7 +860,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>MAC-VI-Init: Robust Visual-Inertial Initialization and Calibration with Learning-based Features and Uncertainty</h1>
+  <h1>MAC-I²: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration</h1>
 
   
 
@@ -952,7 +952,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">(Working Paper) Preparing for Robotics Science and Systems (RSS) 2026</div>
+          <div class="col-12 col-md-9">Submitted to Robotics Science and Systems (RSS) 2026</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -963,9 +963,10 @@
     <div class="space-below"></div>
 
     <div class="article-style"><h2 id="overview">Overview</h2>
-<p>This paper presents MAC-VI-Init, a robust and accurate method for VI initialization and online calibration. Traditional approaches often struggle in challenging environments - such as severe illumination changes, dynamic objects, occlusions, and fast motions - due to their reliance on geometric visual features. Our method leverages learning-based feature matching and metrics-aware covariance to robustly estimate visual poses. Moreover, we explicitly compute the covariance of these visual poses to enable more effective joint VI optimization. A learning-based IMU model, AirIMU, can further be incorporated to provide precise IMU corrections and reliable uncertainty estimates for IMU pre-integration. Experiments in challenging scenarios demonstrate that our approach substantially improves the robustness and accuracy compared with existing methods.</p>
-<h2 id="video-demos">Video Demos</h2>
-<p>These videos illustrate the gravity-direction initialization results (Orange: estimated gravity; Green: ground truth) across different environments. Subsequent localization and mapping are carried out by jointly optimizing the visual pose graph (PGO) together with either standard IMU residuals or those from AirIMU. When AirIMU is used, the localization and mapping system effectively becomes <strong>MACVIO</strong>, a learning-based stereo visual-inertial odometry that we are also developing.</p>
+<p>Visual-inertial (VI) initialization and calibration are critical for the performance of VI systems, as they provide camera-IMU extrinsics and physically consistent initial state estimates for sensor fusion. However, traditional methods rely heavily on geometric feature correspondences and often struggle in challenging environments involving illumination changes, dynamic objects, and occlusions. In this paper, we present MAC-I$^2$, a robust VI initialization and online calibration framework that leverages learning-based visual features and uncertainty modeling. Specifically, we derive visual pose covariances from learned feature-matching uncertainties and adopt a learning-based IMU model to predict IMU integration covariances. Both visual and inertial covariances are metrics-aware, enabling principled and tuning-free VI initialization and calibration. Extensive experiments demonstrate that MAC-I$^2$ achieves significantly improved robustness and accuracy across a wide range of challenging scenarios where geometry-based methods often fail.</p>
+<!-- ## Video Demos
+These videos illustrate the gravity-direction initialization results (Orange: estimated gravity; Green: ground truth) across different environments. Subsequent localization and mapping are carried out by jointly optimizing the visual pose graph (PGO) together with either standard IMU residuals or those from AirIMU. When AirIMU is used, the localization and mapping system effectively becomes **MACVIO**, a learning-based stereo visual-inertial odometry that we are also developing.
+
 <div style="margin: 2rem 0;">
   <h3>Lunar Environment (TartanairV2 Dataset)</h3>
   <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -973,6 +974,8 @@
     Your browser does not support the video tag.
   </video>
 </div>
+
+
 <div style="display: flex; gap: 1rem; margin: 2rem 0;">
   <div style="flex: 1;">
     <h3>VBR Colosseo Train 0 (Extreme Exposure)</h3>
@@ -981,6 +984,7 @@
       Your browser does not support the video tag.
     </video>
   </div>
+  
   <div style="flex: 1;">
     <h3>VBR Colosseo Train 0 (Dynamic Scene)</h3>
     <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -989,6 +993,7 @@
     </video>
   </div>
 </div>
+
 <div style="display: flex; gap: 1rem; margin: 2rem 0;">
   <div style="flex: 1;">
     <h3>EuRoC V102</h3>
@@ -997,6 +1002,7 @@
       Your browser does not support the video tag.
     </video>
   </div>
+  
   <div style="flex: 1;">
     <h3>EuRoC V203</h3>
     <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -1005,22 +1011,27 @@
     </video>
   </div>
 </div>
+
 <div style="margin: 2rem 0;">
   <h2>Successful Initialization Comparison on V102 Sequence of EuRoC Dataset</h2>
   <img src="success.png" alt="success" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 </div>
+
 <div style="margin: 2rem 0;">
   <h2>Performance Comparison on EuRoC Dataset (SR in the table refers to the success rate)</h2>
   <img src="results_euroc.png" alt="euroc_init" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 </div>
+
 <div style="margin: 2rem 0;">
   <h2>Performance of the proposed MAC-VI-Init on TUM and VBR Dataset</h2>
   <img src="results_tum_vbr.png" alt="tum_vbr_init" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 </div>
+
 <div style="margin: 2rem 0;">
   <h2>Gyroscope Bias Estimation Comparison on EuRoC Dataset</h2>
   <img src="gyro_bias.png" alt="gyro_bias" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 </div>
+
 <div style="margin: 2rem 0;">
   <h2>Pose Covariance Analysis on TartanAir Dataset</h2>
   <div style="display: flex; flex-direction: column; gap: 5px;">
@@ -1028,7 +1039,7 @@
     <img src="pose_cov_trans.png" alt="Results" style="width: 100%; display: block; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
     <img src="pose_cov_rot.png" alt="Third Image" style="width: 100%; display: block; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   </div>
-</div></div>
+</div> --></div>
 
     
 
@@ -1053,7 +1064,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F&amp;text=MAC-VI-Init%3A&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration&#43;with&#43;Learning-based&#43;Features&#43;and&#43;Uncertainty" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F&amp;text=MAC-I%C2%B2%3A&#43;Learned&#43;Metrics-Aware&#43;Covariance&#43;for&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1070,7 +1081,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F&amp;t=MAC-VI-Init%3A&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration&#43;with&#43;Learning-based&#43;Features&#43;and&#43;Uncertainty" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F&amp;t=MAC-I%C2%B2%3A&#43;Learned&#43;Metrics-Aware&#43;Covariance&#43;for&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1089,7 +1100,7 @@
         
       
       <li>
-        <a href="mailto:?subject=MAC-VI-Init%3A%20Robust%20Visual-Inertial%20Initialization%20and%20Calibration%20with%20Learning-based%20Features%20and%20Uncertainty&amp;body=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=MAC-I%C2%B2%3A%20Learned%20Metrics-Aware%20Covariance%20for%20Robust%20Visual-Inertial%20Initialization%20and%20Calibration&amp;body=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1106,7 +1117,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F&amp;title=MAC-VI-Init%3A&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration&#43;with&#43;Learning-based&#43;Features&#43;and&#43;Uncertainty" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F&amp;title=MAC-I%C2%B2%3A&#43;Learned&#43;Metrics-Aware&#43;Covariance&#43;for&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1123,7 +1134,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=MAC-VI-Init%3A&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration&#43;with&#43;Learning-based&#43;Features&#43;and&#43;Uncertainty%20https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=MAC-I%C2%B2%3A&#43;Learned&#43;Metrics-Aware&#43;Covariance&#43;for&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration%20https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1140,7 +1151,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F&amp;title=MAC-VI-Init%3A&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration&#43;with&#43;Learning-based&#43;Features&#43;and&#43;Uncertainty" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2FEdgarFx.github.io%2Fpublication%2Fmac_vi_init%2F&amp;title=MAC-I%C2%B2%3A&#43;Learned&#43;Metrics-Aware&#43;Covariance&#43;for&#43;Robust&#43;Visual-Inertial&#43;Initialization&#43;and&#43;Calibration" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1372,7 +1383,7 @@
 
   
   <p class="powered-by copyright-license-text">
-    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+    © 2026 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
   </p>
   
 
