@@ -122,27 +122,33 @@
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation tasks, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual simulation methods typically rely on procedural geometric primitives that lack physically grounded deformation behavior, while physics-based approaches with robot learning support often approximate DLOs as rigid-link chains or generic soft bodies, failing to accurately capture the bending, twisting, and shear mechanics of slender elastic structures. In this work, we introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. Our Cosserat rod engine simulates the dynamics and self-collisions of DLOs, and contact interactions with arbitrary free-form meshes. To achieve high-fidelity visualization, we employ mesh skinning to map discrete rod deformations onto imported CAD models. To the best of our knowledge, DeformX is the first framework for DLO simulation that unifies realistic visualization, principled physics, and compatibility with robot learning pipelines. We demonstrate its versatility across synthetic data generation and policy learning for DLO manipulation, and validate visual and physical fidelity through comparisons against real-world experiments. Notably, fine-tuning Segment Anything Model 3 (SAM3) on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a mean target-hitting error of 6.6 cm on a UR5e manipulator in real-world trials, highlighting its strong sim-to-real transfer capability.&lt;/p&gt;
 &lt;h2 id=&#34;demo-video&#34;&gt;Demo Video&lt;/h2&gt;
-&lt;div style=&#34;margin: 2rem 0;&#34;&gt;
+&lt;div class=&#34;video-embed&#34;&gt;
   &lt;h3&gt;Introducing DeformX, a versatile co-simulation framework for deformable linear objects&lt;/h3&gt;
-  &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
-    &lt;source src=&#34;demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
-    Your browser does not support the video tag.
-  &lt;/video&gt;
-&lt;/div&gt;
-&lt;div style=&#34;display: flex; gap: 1rem; margin: 2rem 0;&#34;&gt;
-  &lt;div style=&#34;flex: 1;&#34;&gt;
-    &lt;h3&gt;Hit Apple Demo 1&lt;/h3&gt;
-    &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
-      &lt;source src=&#34;apple1.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  &lt;div class=&#34;video-embed__frame&#34;&gt;
+    &lt;video controls&gt;
+      &lt;source src=&#34;demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
       Your browser does not support the video tag.
     &lt;/video&gt;
   &lt;/div&gt;
-  &lt;div style=&#34;flex: 1;&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;video-grid&#34;&gt;
+  &lt;div class=&#34;video-grid__col&#34;&gt;
+    &lt;h3&gt;Hit Apple Demo 1&lt;/h3&gt;
+    &lt;div class=&#34;video-embed__frame&#34;&gt;
+      &lt;video controls&gt;
+        &lt;source src=&#34;apple1.mp4&#34; type=&#34;video/mp4&#34;&gt;
+        Your browser does not support the video tag.
+      &lt;/video&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;video-grid__col&#34;&gt;
     &lt;h3&gt;Hit Apple Demo 2&lt;/h3&gt;
-    &lt;video width=&#34;100%&#34; controls style=&#34;border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;
-      &lt;source src=&#34;apple2.mp4&#34; type=&#34;video/mp4&#34;&gt;
-      Your browser does not support the video tag.
-    &lt;/video&gt;
+    &lt;div class=&#34;video-embed__frame&#34;&gt;
+      &lt;video controls&gt;
+        &lt;source src=&#34;apple2.mp4&#34; type=&#34;video/mp4&#34;&gt;
+        Your browser does not support the video tag.
+      &lt;/video&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </description>

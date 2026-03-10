@@ -217,7 +217,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.49d90ccdd549417f29889db1e1ecde4d.css" />
+  <link rel="stylesheet" href="/css/wowchemy.d40ae3788e2aad6aed0921f9234e8be4.css" />
 
   
   
@@ -967,27 +967,33 @@
     <div class="article-style"><h2 id="overview">Overview</h2>
 <p>Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation tasks, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual simulation methods typically rely on procedural geometric primitives that lack physically grounded deformation behavior, while physics-based approaches with robot learning support often approximate DLOs as rigid-link chains or generic soft bodies, failing to accurately capture the bending, twisting, and shear mechanics of slender elastic structures. In this work, we introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. Our Cosserat rod engine simulates the dynamics and self-collisions of DLOs, and contact interactions with arbitrary free-form meshes. To achieve high-fidelity visualization, we employ mesh skinning to map discrete rod deformations onto imported CAD models. To the best of our knowledge, DeformX is the first framework for DLO simulation that unifies realistic visualization, principled physics, and compatibility with robot learning pipelines. We demonstrate its versatility across synthetic data generation and policy learning for DLO manipulation, and validate visual and physical fidelity through comparisons against real-world experiments. Notably, fine-tuning Segment Anything Model 3 (SAM3) on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a mean target-hitting error of 6.6 cm on a UR5e manipulator in real-world trials, highlighting its strong sim-to-real transfer capability.</p>
 <h2 id="demo-video">Demo Video</h2>
-<div style="margin: 2rem 0;">
+<div class="video-embed">
   <h3>Introducing DeformX, a versatile co-simulation framework for deformable linear objects</h3>
-  <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <source src="demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-<div style="display: flex; gap: 1rem; margin: 2rem 0;">
-  <div style="flex: 1;">
-    <h3>Hit Apple Demo 1</h3>
-    <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      <source src="apple1.mp4" type="video/mp4">
+  <div class="video-embed__frame">
+    <video controls>
+      <source src="demo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-  <div style="flex: 1;">
+</div>
+<div class="video-grid">
+  <div class="video-grid__col">
+    <h3>Hit Apple Demo 1</h3>
+    <div class="video-embed__frame">
+      <video controls>
+        <source src="apple1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <div class="video-grid__col">
     <h3>Hit Apple Demo 2</h3>
-    <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      <source src="apple2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="video-embed__frame">
+      <video controls>
+        <source src="apple2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
 </div>
 </div>
