@@ -466,13 +466,13 @@ class Component extends DCLogic {
     const badgeFor = (t) => t==='Conference' ? accent : (t==='Journal' ? cool : (t==='Report' ? '#7a6a3a' : '#6b7280'));
 
     const pubs = {
-      deformx:{ num:'01', type:'Conference', oral:true, equalNote:true, img:'assets/pub-deformx.png', venue:'IROS 2026', year:'2026', meta:'IROS 2026 · Conference Paper · Oral',
+      deformx:{ num:'02', type:'Conference', oral:true, equalNote:true, img:'assets/pub-deformx.png', venue:'IROS 2026', year:'2026', meta:'IROS 2026 · Conference Paper · Oral',
         title:'DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects',
         pre:'Yi Yang†, ', me:'Xiang Fei†', post:', Lehong Wang†, Chenghao Li, Zilin Dai, Henry Kou, Lu Li, Howie Choset',
-        links:[{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
+        links:[{label:'PDF',icon:IPDF,url:'https://arxiv.org/pdf/2606.22116'},{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
         paragraphs:['Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual methods rely on procedural geometric primitives that lack physically grounded deformation, while physics-based approaches often approximate DLOs as rigid-link chains or generic soft bodies, failing to capture the bending, twisting, and shear mechanics of slender elastic structures.','We introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat-rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. The Cosserat-rod engine simulates DLO dynamics, self-collisions, and contact with arbitrary free-form meshes; mesh skinning maps discrete rod deformations onto imported CAD models for high-fidelity visualization.','To our knowledge, DeformX is the first DLO-simulation framework to unify realistic visualization, principled physics, and compatibility with robot-learning pipelines. Fine-tuning SAM3 on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a 6.6 cm mean target-hitting error on a real UR5e — highlighting strong sim-to-real transfer.'],
         figures:[{img:'assets/pub-deformx.png',caption:'DeformX — Cosserat-rod physics co-simulated with Isaac Sim. Demo videos at deformx.github.io.'}] },
-      maci2:{ num:'02', type:'Preprint', equalNote:true, img:'assets/pub-maci2.png', venue:'Under Review', year:'2026', meta:'Under Review · Preprint',
+      maci2:{ num:'01', type:'Preprint', equalNote:true, img:'assets/pub-maci2.png', venue:'Under Review', year:'2026', meta:'Under Review · Preprint',
         title:'MAC-I\u00B2: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration',
         pre:'', me:'Xiang Fei†', post:', Yuheng Qiu†, Can Xu, Yutian Chen, Ruogu Li, Wenshan Wang, Sebastian Scherer',
         links:[],
@@ -515,7 +515,7 @@ class Component extends DCLogic {
         paragraphs:['A carbon-rating report assessing the carbon performance and disclosure of China\u2019s 100 largest overseas-listed companies, released at the 2022 Global Forum on Sustainable Development.'],
         figures:[{img:'assets/pub-carbon.png',caption:'2022 Carbon Rating Report'}] }
     };
-    const pubOrder = ['deformx','maci2','bowg','qopt','qgan','lqlstm','disclosure','carbon'];
+    const pubOrder = ['maci2','deformx','bowg','qopt','qgan','lqlstm','disclosure','carbon'];
     const fmtPub = (k) => { const p = pubs[k]; return { key:k, num:p.num, type:p.type, badgeBg:badgeFor(p.type), img:p.img, oral:!!p.oral, equalNote:!!p.equalNote,
       venue:p.venue, year:p.year, title:p.title, pre:p.pre, me:p.me, post:p.post, links:p.links, onClick:this.openPub(k) }; };
     const allPubs = pubOrder.map(fmtPub);
