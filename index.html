@@ -1,3192 +1,609 @@
 <!DOCTYPE html>
-<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: June 19, 2026 --><html lang="en-us" >
-
-
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
-  
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-
-  
-  
-  
-    
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-  
-  
-
-  
-  
-    
-    <script src="/js/mathjax-config.js"></script>
-  
-
-  
-
-  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
-
-  
-  
-  
-    
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-    
-    
-    
-      
-      
-      
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-
-    
-    
-    
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.766784d2f3f413ebb744264aa04002f8.css" />
-
-  
-  
-  
-  
-  
-  
-  
-    
-    
-    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
-    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
-  
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-
-  <meta name="author" content="Xiang Fei" />
-
-
-
-
-
-  
-
-<meta name="description" content="Undergrad Researcher in Robotics and Computer Vision" />
-
-
-
-<link rel="alternate" hreflang="en-us" href="https://EdgarFx.github.io/" />
-<link rel="canonical" href="https://EdgarFx.github.io/" />
-
-
-
-  <link rel="manifest" href="/manifest.webmanifest" />
-
-
-
-<link rel="icon" type="image/png" href="/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_32x32_fill_lanczos_center_3.png" />
-<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_180x180_fill_lanczos_center_3.png" />
-
-<meta name="theme-color" content="#1565c0" />
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-<meta property="twitter:card" content="summary" />
-
-  <meta property="twitter:site" content="@xiangfei" />
-  <meta property="twitter:creator" content="@xiangfei" />
-<meta property="twitter:image" content="https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png" />
-<meta property="og:site_name" content="Xiang (Shawn) Fei" />
-<meta property="og:url" content="https://EdgarFx.github.io/" />
-<meta property="og:title" content="Xiang (Shawn) Fei" />
-<meta property="og:description" content="Undergrad Researcher in Robotics and Computer Vision" /><meta property="og:image" content="https://EdgarFx.github.io/media/icon_hu511fa36bc4ff2d03adc724be90fee2b8_24177_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
-
-  
-    <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00" />
-  
-
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://EdgarFx.github.io/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://EdgarFx.github.io/"
-}
-</script>
-
-
-  
-
-
-
-
-  
-  
-  
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
-
-  
-  
-    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Xiang (Shawn) Fei" />
-  
-
-  
-
-
-  
-  <title>Xiang (Shawn) Fei</title>
-
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&amp;family=Spline+Sans:wght@400;500;600;700&amp;family=Spline+Sans+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;}
+  ::selection{background:var(--accent,#C41230);color:#fff;}
+  a{text-decoration:none;color:inherit;}
+  .xf-bio a{color:var(--accent,#C41230);border-bottom:1px solid rgba(196,18,48,0.32);transition:background .2s;}
+  .xf-bio a:hover{background:var(--accentSoft,rgba(196,18,48,0.08));}
+  .xf-news a{color:var(--accent,#C41230);border-bottom:1px solid rgba(196,18,48,0.3);}
+</style>
+</helmet>
 
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#C41230"></rect><text x="50" y="54" dominant-baseline="central" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#ffffff">XF</text></svg>
+</template>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
+<div style="{{ themeVars }}">
+<div style="min-height:100vh;background:var(--bg,#f4f5f7);color:var(--ink,#181b21);font-family:'Spline Sans',-apple-system,sans-serif;transition:background .45s ease,color .45s ease;-webkit-font-smoothing:antialiased;">
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="/js/wowchemy-init.min.2bb937f129e5d9a1df7980a60ff6010c.js"></script>
-
-  
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
+  <!-- NAV -->
+  <nav style="position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--navBg,rgba(244,245,247,0.82));border-bottom:1px solid var(--line,#e3e6ec);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 28px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+      <a href="#about" onClick="{{ onNav }}" style="font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:13.5px;letter-spacing:0.02em;color:var(--ink,#181b21);white-space:nowrap;">Xiang <span style="color:var(--accent,#C41230);">(Shawn)</span> Fei</a>
+      <div style="display:flex;align-items:center;gap:1px;">
+        <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="5">
+          <a href="#" onClick="{{ item.onClick }}" style="{{ item.style }}">{{ item.label }}</a>
+        </sc-for>
+        <button onClick="{{ toggleTheme }}" title="Toggle theme" style="margin-left:8px;font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.06em;border:1px solid var(--line,#e3e6ec);background:transparent;color:var(--muted,#5c6573);padding:7px 10px;border-radius:999px;cursor:pointer;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);">{{ themeLabel }}</button>
       </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header header--fixed">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-    <div class="container-xl">
-
-      
-      <div class="d-none d-lg-inline-flex">
-        <a class="navbar-brand" href="/">Xiang (Shawn) Fei</a>
-      </div>
-      
-
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-      
-      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class="navbar-brand" href="/">Xiang (Shawn) Fei</a>
-      </div>
-      
-
-      
-      
-      <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
-
-        
-        <ul class="navbar-nav d-md-inline-flex">
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#recent_news" data-target="#recent_news"><span>News</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#project" data-target="#project"><span>Project</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#experience" data-target="#experience"><span>Experience</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-              
-              
-              
-                
-              
-              
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-            
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/misc"><span>Misc</span></a>
-          </li>
-
-          
-          
-
-        
-
-          
-        </ul>
-      </div>
-
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-        
-        
-          
-        
-
-        
-        
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-        
-        
-        <li class="nav-item dropdown theme-dropdown">
-          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item js-set-theme-light">
-              <span>Light</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-dark">
-              <span>Dark</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-auto">
-              <span>Automatic</span>
-            </a>
-          </div>
-        </li>
-        
-
-        
-        
-
-      </ul>
-
     </div>
   </nav>
-</header>
 
-
-  </div>
-
-  <div class="page-body">
-    
-    
-    
-
-    
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-<span class="js-widget-page d-none"></span>
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="about" class="home-section wg-about  "  >
-   <div class="home-section-bg " >
-     
-   </div>
-    <div class="container">
-
-    
-
-      
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      
-      <img class="avatar avatar-circle"
-           width="270" height="270"
-           src="/authors/admin/avatar_hu7fd4ea7f8f157a95f1ccf8f920f2bb7a_3230017_270x270_fill_lanczos_center_3.png" alt="Xiang Fei">
-      
-
-      <div class="portrait-title">
-
-        <h2>Xiang Fei</h2>
-
-        
-
-        
-        <h3>
-          <a href="https://www.cmu.edu/" target="_blank" rel="noopener">
-          <span>Carnegie Mellon University</span>
-          </a>
-        </h3>
-        
+  <!-- HERO / ABOUT -->
+  <section id="about" data-screen-label="About" style="max-width:1120px;margin:0 auto;padding:80px 28px 92px;">
+    <div data-reveal="" style="display:grid;grid-template-columns:1.55fr 1fr;gap:60px;align-items:start;">
+      <div>
+        <div style="font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:0.14em;color:var(--accent,#C41230);margin-bottom:20px;">CARNEGIE MELLON UNIVERSITY · THE AIRLAB</div>
+        <h1 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(46px,6vw,74px);line-height:1.0;letter-spacing:-0.02em;margin:0 0 16px;color:var(--ink,#181b21);">Xiang <span style="font-style:italic;color:var(--muted,#5c6573);">(Shawn)</span> Fei<span style="color:var(--accent,#C41230);">.</span></h1>
+        <p style="font-family:'Spline Sans Mono',monospace;font-size:13px;letter-spacing:0.03em;color:var(--muted,#5c6573);margin:0 0 28px;">PhD Student&nbsp; ·&nbsp; M.S. Robotics, CMU '26</p>
+        <p class="xf-bio" style="font-size:17.5px;line-height:1.72;color:var(--ink,#181b21);max-width:580px;margin:0 0 16px;">
+          I am a PhD student at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>&nbsp;(CMU), advised by <a href="https://scholar.google.com/citations?user=gxoPfIYAAAAJ&amp;hl=de">Prof. Sebastian Scherer</a> at the <a href="https://theairlab.org/">AirLab</a>. I earned my M.S. in Robotics at the CMU <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, advised by <a href="https://scholar.google.com/citations?user=4fvo61oAAAAJ&amp;hl=en">Prof. Howie Choset</a> at the <a href="http://biorobotics.ri.cmu.edu/index.php">Biorobotics Lab</a>. Before CMU I received my B.Eng. in Computer Science from <a href="https://www.cuhk.edu.cn/en">CUHK-Shenzhen</a>, advised by <a href="https://scholar.google.com/citations?user=M2oDRWEAAAAJ&amp;hl=en">Prof. Junhua Zhao</a>.
+        </p>
+        <p style="font-family:'Newsreader',serif;font-style:italic;font-size:22px;line-height:1.45;color:var(--ink,#181b21);max-width:540px;margin:24px 0 26px;padding-left:20px;border-left:2px solid var(--accent,#C41230);">
+          My research aims at learned, robust, and generalizable spatial perception for robotics.
+        </p>
+        <p class="xf-bio" style="font-size:15px;line-height:1.6;color:var(--muted,#5c6573);max-width:560px;margin:0 0 30px;">
+          Outside research I enjoy basketball, hiking &amp; touring, race cars, LEGO, PC games, and time with my fiancée Waiwai — see my <a href="#misc" onClick="{{ onMisc }}">Misc page</a>.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px;">
+          <sc-for list="{{ interests }}" as="tag" hint-placeholder-count="4">
+            <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--muted,#5c6573);background:var(--surface,#fff);border:1px solid var(--line,#e3e6ec);padding:7px 13px;border-radius:999px;">{{ tag }}</span>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <sc-for list="{{ socials }}" as="s" hint-placeholder-count="5">
+            <a href="{{ s.url }}" title="{{ s.label }}" target="_blank" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line,#e3e6ec);border-radius:50%;color:var(--ink,#181b21);font-size:17px;transition:all .2s;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);transform:translateY(-2px);">
+              <i class="{{ s.icon }}"></i>
+            </a>
+          </sc-for>
+        </div>
       </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-        <li>
-          <a href="mailto:xiangfei@andrew.cmu.edu"  aria-label="envelope">
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=HFN65ugAAAAJ" target="_blank" rel="noopener" aria-label="google-scholar">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://github.com/EdgarFx/" target="_blank" rel="noopener" aria-label="github">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.linkedin.com/in/xiang-fei/" target="_blank" rel="noopener" aria-label="linkedin">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="/uploads/resume.pdf"  aria-label="cv">
-            <i class="ai ai-cv big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    <h1>About Me</h1>
-
-    <div class="article-style">
-      <p>I am an incoming PhD student at <a href="https://www.cmu.edu/" target="_blank" rel="noopener">Carnegie Mellon University (CMU)</a>, advised by <a href="https://scholar.google.com/citations?user=gxoPfIYAAAAJ&amp;hl=de" target="_blank" rel="noopener">Prof. Sebastian Scherer</a> at the <a href="https://theairlab.org/" target="_blank" rel="noopener">AirLab</a>. Prior to that, I also earned my M.S. degree in Robotics from CMU <a href="https://www.ri.cmu.edu/" target="_blank" rel="noopener">Robotics Institute</a> in 2026, advised by <a href="https://scholar.google.com/citations?user=4fvo61oAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Howie Choset</a> at the <a href="http://biorobotics.ri.cmu.edu/index.php" target="_blank" rel="noopener">Biorobotics Lab</a>. Before joining CMU, I received my Bachelor&rsquo;s degree in Computer Science and Engineering from the Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2024, advised by <a href="https://scholar.google.com/citations?user=M2oDRWEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Junhua Zhao</a>.</p>
-<p>My research interests lie in achieving learned, robust, and generalizable spatial perception for robotics.</p>
-<p>Outside of research, I enjoy basketball, hiking and touring, race car, LEGO, PC games, and accompanying my fiancée Waiwai! Check out my <a href="misc/"><strong>misc page</strong></a> for more non-research stuff :)</p>
-
-    </div>
-
-    
-    <p style="margin-top: 1rem;"><strong>Research Interests:</strong> Robotics; Simultaneous Localization and Mapping; Deep Learning; Multi-sensor Fusion.</p>
-    
-
-  </div>
-</div>
-
-
-    
-
+      <div style="position:relative;">
+        <div style="position:absolute;top:-12px;left:-12px;width:54px;height:54px;border-top:2px solid var(--accent,#C41230);border-left:2px solid var(--accent,#C41230);"></div>
+        <div style="position:absolute;bottom:-12px;right:-12px;width:54px;height:54px;border-bottom:2px solid var(--accent,#C41230);border-right:2px solid var(--accent,#C41230);"></div>
+        <img src="assets/avatar.png" alt="Xiang Fei" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 28%;display:block;filter:grayscale(0.12);border:1px solid var(--line,#e3e6ec);">
+        <div style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.06em;color:var(--faint,#8a91a0);margin-top:12px;display:flex;justify-content:space-between;">
+          <span>PITTSBURGH, PA</span><span>40.44°N · 79.99°W</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="recent_news" class="home-section wg-blank  "  >
-   <div class="home-section-bg " >
-     
-   </div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Recent News</h1>
-            <p class="mt-1"><a href="news">All News&raquo;</a></p>
-          </div>
-        
-      
-    
-
-      
-
-
-
-  <div class="col-12 col-lg-8">
-    
-
-
-
-
-
-
-
-
-<p>[<strong>Jun 2026</strong>] Our paper &ldquo;DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects&rdquo; has been accepted by IROS 2026 🥳. Code will be released upon published, welcome to follow it!</p>
-<p>[<strong>Apr 2026</strong>] I passed my Master thesis defense!</p>
-<p>[<strong>Mar 2026</strong>] I&rsquo;ve accepted the PhD offer at CMU! Looking forward to my PhD life 🎉!</p>
-<p>[<strong>Jun 2025</strong>] Our paper <a href="https://ieeexplore.ieee.org/document/11246796" target="_blank" rel="noopener"><strong>Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing</strong></a> has been accepted by IROS 2025 🥳.</p>
-<p>[<strong>Aug 2024</strong>] Our paper <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/enc2.12122" target="_blank" rel="noopener"><strong>Carbon market risk estimation using quantum conditional generative adversarial network and amplitude estimation</strong></a> is published by <strong>Energy Conversion and Economics</strong>.</p>
-
-
-  </div>
-
-
-
-    
+  <!-- NEWS -->
+  <section id="news" data-screen-label="News" style="border-top:1px solid var(--line,#e3e6ec);background:var(--surface,#fff);transition:background .45s ease;">
+    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 74px;">
+      <div data-reveal="" style="display:flex;align-items:baseline;gap:18px;margin-bottom:34px;">
+        <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">01</span>
+        <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Recent News</h2>
       </div>
-    
-
+      <div class="xf-news" data-reveal="" style="max-height:430px;overflow-y:auto;padding-right:10px;">
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">JUN 2026</span><span style="font-size:15.5px;line-height:1.6;">Our paper <a href="https://deformx.github.io/" target="_blank">“DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects”</a> was accepted by IROS 2026 🥳. Code will be released upon publication — stay tuned!</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">APR 2026</span><span style="font-size:15.5px;line-height:1.6;">I passed my Master's thesis defense! 🎓</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">MAR 2026</span><span style="font-size:15.5px;line-height:1.6;">I've accepted the PhD offer at CMU! Looking forward to my PhD life 🎉!</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">JUN 2025</span><span style="font-size:15.5px;line-height:1.6;">Our paper <a href="https://ieeexplore.ieee.org/document/11246796" target="_blank">“Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing”</a> was accepted by IROS 2025 🥳.</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">AUG 2024</span><span style="font-size:15.5px;line-height:1.6;">Our paper <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/enc2.12122" target="_blank">“Carbon Market Risk Estimation Using Quantum Conditional GAN and Amplitude Estimation”</a> was published in <em>Energy Conversion and Economics</em>.</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">JUL 2024</span><span style="font-size:15.5px;line-height:1.6;">Our paper <a href="https://www.nature.com/articles/s41598-024-67922-w" target="_blank">“Power System Fault Diagnosis with Quantum Computing and Efficient Gate Decomposition”</a> was published in <em>Scientific Reports</em> (JCR Q1).</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">MAY 2024</span><span style="font-size:15.5px;line-height:1.6;">Undergraduate Graduation 🎉! I graduated with First Class Honours from <a href="https://www.cuhk.edu.cn/en" target="_blank">CUHK-Shenzhen</a>.</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">APR 2024</span><span style="font-size:15.5px;line-height:1.6;">Waiwai is admitted to the MSIN program at CMU — congratulations to her! We can go to CMU together 🥳!</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">MAR 2024</span><span style="font-size:15.5px;line-height:1.6;">Happy 1st anniversary to me and Waiwai 🥰!</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">FEB 2024</span><span style="font-size:15.5px;line-height:1.6;">Offer of the M.S. in Robotics (MSR) program at CMU! Becoming a robotics scientist 🤖.</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">AUG 2023</span><span style="font-size:15.5px;line-height:1.6;">Finished the <a href="https://riss.ri.cmu.edu/" target="_blank">RISS</a> summer research program at CMU 🎊, and presented my research poster at the final showcase!</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">JUL 2023</span><span style="font-size:15.5px;line-height:1.6;">Our paper <a href="https://link.springer.com/article/10.1007/s42484-023-00115-2" target="_blank">“Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting”</a> was published in <em>Quantum Machine Intelligence</em> — my first journal paper 🥳!</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);">MAR 2023</span><span style="font-size:15.5px;line-height:1.6;">Offer of the <a href="https://riss.ri.cmu.edu/" target="_blank">RISS</a> program at CMU! Looking forward to joining CMU this summer 🤝.</span></div>
+      </div>
     </div>
   </section>
 
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="publications" class="home-section wg-pages  "  >
-   <div class="home-section-bg " >
-     
-   </div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Publications</h1>
-            
+  <!-- PUBLICATIONS -->
+  <section id="publications" data-screen-label="Publications" style="border-top:1px solid var(--line,#e3e6ec);">
+    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 78px;">
+      <div data-reveal="" style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:12px;">
+        <div style="display:flex;align-items:baseline;gap:18px;">
+          <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">02</span>
+          <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Selected Publications</h2>
+        </div>
+        <button onClick="{{ viewAllPubs }}" style="font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:0.04em;color:var(--ink,#181b21);background:transparent;border:1px solid var(--line,#e3e6ec);padding:9px 15px;border-radius:999px;cursor:pointer;transition:all .2s;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);">VIEW ALL PAPERS →</button>
+      </div>
+      <p data-reveal="" style="font-size:13.5px;color:var(--muted,#5c6573);margin:0 0 26px;font-family:'Spline Sans Mono',monospace;letter-spacing:0.02em;">Click any paper for the full write-up ↘</p>
+      <div data-reveal="" style="display:flex;flex-direction:column;gap:18px;">
+        <sc-for list="{{ selectedPubs }}" as="p" hint-placeholder-count="3">
+          <div onClick="{{ p.onClick }}" style="display:grid;grid-template-columns:440px 1fr;gap:32px;align-items:center;background:var(--surface,#fff);border:1px solid var(--line,#e3e6ec);border-radius:3px;overflow:hidden;cursor:pointer;transition:border-color .25s,transform .25s;" style-hover="border-color:var(--accent,#C41230);transform:translateY(-2px);">
+            <div style="align-self:stretch;background:var(--bg,#f4f5f7);display:flex;align-items:center;justify-content:center;">
+              <sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}">
+                <img src="{{ p.img }}" alt="{{ p.title }}" loading="lazy" style="width:100%;height:auto;max-height:380px;object-fit:contain;display:block;">
+              </sc-if>
+            </div>
+            <div style="padding:26px 28px 26px 0;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
+                <span style="font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:{{ p.badgeBg }};padding:4px 9px;border-radius:3px;">{{ p.type }}</span>
+                <sc-if value="{{ p.oral }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;align-items:center;gap:4px;font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent,#C41230);border:1px solid var(--accent,#C41230);padding:3px 8px;border-radius:3px;"><i class="fas fa-microphone"></i>Oral</span></sc-if>
+                <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--muted,#5c6573);">{{ p.venue }}</span>
+                <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--faint,#8a91a0);margin-left:auto;">{{ p.year }}</span>
+              </div>
+              <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:22px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 9px;color:var(--ink,#181b21);">{{ p.title }}</h3>
+              <div style="margin:0 0 15px;">
+                <p style="font-size:13.5px;line-height:1.55;color:var(--muted,#5c6573);margin:0;"><span>{{ p.pre }}</span><span style="font-weight:600;color:var(--ink,#181b21);">{{ p.me }}</span><span>{{ p.post }}</span></p>
+                <sc-if value="{{ p.equalNote }}" hint-placeholder-val="{{ false }}"><p style="font-family:'Spline Sans Mono',monospace;font-size:11px;color:var(--faint,#8a91a0);margin:6px 0 0;">† Equal contribution</p></sc-if>
+              </div>
+              <div style="display:flex;gap:9px;flex-wrap:wrap;align-items:center;">
+                <sc-for list="{{ p.links }}" as="l" hint-placeholder-count="2">
+                  <a href="{{ l.url }}" target="_blank" onClick="{{ stopDetail }}" style="display:inline-flex;align-items:center;gap:6px;font-family:'Spline Sans Mono',monospace;font-size:11.5px;letter-spacing:0.03em;color:var(--ink,#181b21);border:1px solid var(--line,#e3e6ec);padding:6px 11px;border-radius:6px;transition:all .2s;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);"><i class="{{ l.icon }}"></i>{{ l.label }}</a>
+                </sc-for>
+                <span style="font-family:'Spline Sans Mono',monospace;font-size:11.5px;letter-spacing:0.03em;color:var(--accent,#C41230);margin-left:auto;">Details →</span>
+              </div>
+            </div>
           </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple view-card">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  <span class="author-highlighted">
-      Xiang Fei</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      Yuheng Qiu</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      Can Xu</span>, <span >
-      Yutian Chen</span>, <span >
-      Ruogu Li</span>, <span >
-      Wenshan Wang</span>, <span >
-      Sebastian Scherer</span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    June, 2026
-  </span>
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="pub-publication">
-    
-      Under Review
-    
-  </span>
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-    
-    
-      
-    
-    <a href="/publication/mac_vi_init/" >
-      <div class="img-hover-zoom">
-        <img src="/publication/mac_vi_init/featured_hua66e6585a210cacfded32d5bb7563e96_19183081_808x455_fit_q75_h2_lanczos_3.webp" height="352" width="808"
-            class="article-banner" alt="MAC-I²: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration" loading="lazy">
+        </sc-for>
       </div>
-    </a>
-  
-
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/publication/mac_vi_init/" >MAC-I²: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration</a>
-  </div>
-
-  
-
-  
-
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple view-card">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  <span >
-      Yi Yang</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span class="author-highlighted">
-      Xiang Fei</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      Lehong Wang</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      Chenghao Li</span>, <span >
-      Zilin Dai</span>, <span >
-      Henry Kou</span>, <span >
-      Lu Li</span>, <span >
-      Howie Choset</span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    June, 2026
-  </span>
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="pub-publication">
-    
-      IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026
-    
-  </span>
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-    
-    
-      
-    
-    <a href="/publication/deformx/" >
-      <div class="img-hover-zoom">
-        <img src="/publication/deformx/featured_hu797192ded8e38aa4f39ffd3d34f6047c_13176617_808x455_fit_q75_h2_lanczos_3.webp" height="381" width="808"
-            class="article-banner" alt="DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects" loading="lazy">
-      </div>
-    </a>
-  
-
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/publication/deformx/" >DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects</a>
-  </div>
-
-  
-
-  
-  <div class="btn-links">
-    
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://deformx.github.io/" target="_blank" rel="noopener">
-  Website
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://huggingface.co/datasets/DeformX/WireSeg-36K" target="_blank" rel="noopener">
-  Dataset
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-  
-
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="card-simple view-card">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  <span class="author-highlighted">
-      Xiang Fei</span>, <span >
-      Tina Tian</span>, <span >
-      Howie Choset</span>, <span >
-      Lu Li</span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    October, 2025
-  </span>
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="pub-publication">
-    
-      IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025
-    
-  </span>
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-    
-    
-      
-    
-    <a href="/publication/bowg/" >
-      <div class="img-hover-zoom">
-        <img src="/publication/bowg/featured_hu31f3a3d349892eb115c7139c769f5b0e_2578430_808x455_fit_q75_h2_lanczos_3.webp" height="334" width="808"
-            class="article-banner" alt="Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing" loading="lazy">
-      </div>
-    </a>
-  
-
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/publication/bowg/" >Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing</a>
-  </div>
-
-  
-
-  
-  <div class="btn-links">
-    
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/document/11246796" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/EdgarFx/BoWG" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1109/IROS60139.2025.11246796" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-  </div>
-  
-
-</div>
-
-  
-
-  
-  
-  
-
-    
-    
-      
-    
-
-    
-    
-    
-    
-      
-    
-
-    
-
-    <div class="see-all">
-      <a href="/publication/">
-        See all publications
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </div>
-  
-
-</div>
-
-
-    
-      </div>
-    
-
     </div>
   </section>
 
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="project" class="home-section wg-portfolio  "  >
-   <div class="home-section-bg " >
-     
-   </div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Other Research Projects</h1>
-            
+  <!-- PROJECTS & RESEARCH -->
+  <section id="projects" data-screen-label="Projects" style="border-top:1px solid var(--line,#e3e6ec);background:var(--surface,#fff);transition:background .45s ease;">
+    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
+      <div data-reveal="" style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:12px;">
+        <div style="display:flex;align-items:baseline;gap:18px;">
+          <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">03</span>
+          <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Selected Projects</h2>
+        </div>
+        <button onClick="{{ viewAllProjects }}" style="font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:0.04em;color:var(--ink,#181b21);background:transparent;border:1px solid var(--line,#e3e6ec);padding:9px 15px;border-radius:999px;cursor:pointer;transition:all .2s;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);">VIEW ALL PROJECTS →</button>
+      </div>
+      <p data-reveal="" style="font-size:14px;color:var(--muted,#5c6573);margin:0 0 26px;font-family:'Spline Sans Mono',monospace;letter-spacing:0.02em;">Click any project for the full write-up ↘</p>
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;">
+        <sc-for list="{{ selectedProjects }}" as="pr" hint-placeholder-count="3">
+          <div onClick="{{ pr.onClick }}" style="display:flex;flex-direction:column;background:var(--bg,#f4f5f7);border:1px solid var(--line,#e3e6ec);border-radius:3px;overflow:hidden;cursor:pointer;transition:all .25s;" style-hover="border-color:var(--accent,#C41230);transform:translateY(-3px);">
+            <div style="position:relative;aspect-ratio:16/10;background:var(--bg,#f4f5f7);">
+              <sc-if value="{{ pr.img }}" hint-placeholder-val="{{ false }}">
+                <img src="{{ pr.img }}" alt="{{ pr.title }}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;">
+              </sc-if>
+              <sc-if value="{{ pr.noImg }}" hint-placeholder-val="{{ false }}">
+                <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(135deg,var(--line,#e3e6ec) 0,var(--line,#e3e6ec) 1px,transparent 1px,transparent 11px);display:flex;align-items:center;justify-content:center;">
+                  <span style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.1em;color:var(--faint,#8a91a0);">{{ pr.placeholder }}</span>
+                </div>
+              </sc-if>
+            </div>
+            <div style="padding:18px 18px 22px;display:flex;flex-direction:column;flex:1;">
+              <span style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.05em;color:var(--accent,#C41230);margin-bottom:9px;">{{ pr.meta }}</span>
+              <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:19px;line-height:1.3;margin:0 0 10px;color:var(--ink,#181b21);">{{ pr.title }}</h3>
+              <p style="font-size:13.5px;line-height:1.55;color:var(--muted,#5c6573);margin:0 0 14px;flex:1;">{{ pr.summary }}</p>
+              <span style="font-family:'Spline Sans Mono',monospace;font-size:11.5px;letter-spacing:0.04em;color:var(--accent,#C41230);">Details →</span>
+            </div>
           </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-
-  <div class=" row js-layout-row project-showcase">
-
-    
-    
-
-    
-    
-      
-      
-    
-    
-    
-    
-    
-      
-    
-
-    
-    
-    
-    
-    
-
-    
-      
-        
-          <div class="col-12 isotope-item ">
-        
-        
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-<div class="col-lg-12 mb-5 view-showcase">
-  <div class="row align-items-center">
-    <div class="col-12 col-md-6">
-      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/vli_slam/" >Visual-Laser-Inertial SLAM for 3D Reconstruction of Confined Pipes</a></div>
-
-      
-      <div class="article-style">
-        This work extended a compact, low-cast visual-laser-inertial SLAM-based 3D scanner to narrow pipe environments.
+        </sc-for>
       </div>
-      
-
-      <div class="btn-links">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-
-    </div>
-    <div class="col-12 col-md-6 order-first ">
-      
-
-      
-        
-        <a href="/project/vli_slam/" >
-          <img src="/project/vli_slam/featured_hu4745e8c1d0e18b0dc6825ab1e71069f2_1554864_540x0_resize_q75_h2_lanczos_3.webp" height="339" width="540"
-              alt="Visual-Laser-Inertial SLAM for 3D Reconstruction of Confined Pipes" loading="lazy">
-        </a>
-      
-    </div>
-  </div>
-</div>
-
-      </div>
-    
-      
-        
-          <div class="col-12 isotope-item ">
-        
-        
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-<div class="col-lg-12 mb-5 view-showcase">
-  <div class="row align-items-center">
-    <div class="col-12 col-md-6">
-      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/real_acmm/" >Photorealistic-3D-Reconstruction-with-Multi-view-Stereo</a></div>
-
-      
-      <div class="article-style">
-        Multi-View Stereo with Broad Adaptive Checkerboard Sampling and Dynamic Multi-Hypothesis Joint View Selection, improvements based on ACMM
-      </div>
-      
-
-      <div class="btn-links">
-        
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header" href="https://edgarfx.github.io/uploads/real_ACMM.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="https://github.com/EdgarFx/Photorealistic-3D-Reconstruction-with-Multi-view-Stereo" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="https://docs.google.com/presentation/d/1b5vOJpfoab8EPCnQ__-Rmh4ZOsqP7_7_/edit?usp=sharing&amp;ouid=110083063639360259216&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-
-
-      </div>
-
-    </div>
-    <div class="col-12 col-md-6 order-first ">
-      
-
-      
-        
-        <a href="/project/real_acmm/" >
-          <img src="/project/real_acmm/featured_hud4044741521ed63dcb2732b02ecf052a_1966338_540x0_resize_q75_h2_lanczos_3.webp" height="344" width="540"
-              alt="Photorealistic-3D-Reconstruction-with-Multi-view-Stereo" loading="lazy">
-        </a>
-      
-    </div>
-  </div>
-</div>
-
-      </div>
-    
-      
-        
-          <div class="col-12 isotope-item ">
-        
-        
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-<div class="col-lg-12 mb-5 view-showcase">
-  <div class="row align-items-center">
-    <div class="col-12 col-md-6">
-      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/winning/" >3D Reconstruction of the Gastrointestinal Tract and Sinus Surface</a></div>
-
-      
-      <div class="article-style">
-        This task involved creating 3D reconstructions of the gastrointestinal tract and sinus surface using a monocular endoscope. The main goal of this project was to document the endoscopy process in 3D and to help doctors realize a more comprehensive examination.
-      </div>
-      
-
-      <div class="btn-links">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-
-    </div>
-    <div class="col-12 col-md-6 order-first ">
-      
-
-      
-        
-        <a href="/project/winning/" >
-          <img src="/project/winning/featured_hu57b9d5a9c47c8c9bc5b0a6f1dfb24148_6142233_540x0_resize_q75_h2_lanczos_1.webp" height="306" width="540"
-              alt="3D Reconstruction of the Gastrointestinal Tract and Sinus Surface" loading="lazy">
-        </a>
-      
-    </div>
-  </div>
-</div>
-
-      </div>
-    
-
-  </div>
-</div>
-
-
-    
-      </div>
-    
-
     </div>
   </section>
 
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="experience" class="home-section wg-experience  "  >
-   <div class="home-section-bg " >
-     
-   </div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Experience</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-<div class="col-12 col-lg-8">
-  
-
-  
-  
-
-  
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col ">&nbsp;</div>
-        <div class="col">&nbsp;</div>
+  <!-- EXPERIENCE -->
+  <section id="experience" data-screen-label="Experience" style="border-top:1px solid var(--line,#e3e6ec);">
+    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
+      <div data-reveal="" style="display:flex;align-items:baseline;gap:18px;margin-bottom:32px;">
+        <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">04</span>
+        <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Experience</h2>
       </div>
-      <div class="m-2">
-        <span class="badge badge-pill border exp-fill">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><img src="/media/icons/brands/cmu.svg" width="56px" height="56px" alt="CMU - AirLab" loading="lazy"></div>
+      <div data-reveal="">
+        <sc-for list="{{ experience }}" as="e" hint-placeholder-count="6">
+          <div style="display:grid;grid-template-columns:150px 1fr 130px;gap:24px;padding:19px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;">
+            <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--muted,#5c6573);">{{ e.dates }}</span>
             <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Research Assistant of CMU</div>
-              <div class="section-subheading card-title exp-company text-muted my-0">CMU - AirLab</div>
-              <div class="text-muted exp-meta">
-                Oct 2024 –
-                
-                  Present
-                
-                
-                  <span class="middot-divider"></span>
-                  <span>Pittsburgh</span>
-                
-              </div>
+              <div style="font-size:16px;font-weight:600;color:var(--ink,#181b21);margin-bottom:3px;">{{ e.role }}</div>
+              <div style="font-size:14px;color:var(--muted,#5c6573);">{{ e.company }}</div>
             </div>
+            <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--faint,#8a91a0);text-align:right;">{{ e.location }}</span>
           </div>
-          
-
-          <div class="card-text">Mentor: Prof. Sebastian Scherer</div>
-        </div>
+        </sc-for>
       </div>
-    </div>
-  </div>
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border exp-fill">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><img src="/media/icons/brands/cmu.svg" width="56px" height="56px" alt="CMU - Biorobotics Lab" loading="lazy"></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Research Assistant of CMU</div>
-              <div class="section-subheading card-title exp-company text-muted my-0">CMU - Biorobotics Lab</div>
-              <div class="text-muted exp-meta">
-                Jun 2023 –
-                
-                  Present
-                
-                
-                  <span class="middot-divider"></span>
-                  <span>Pittsburgh</span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="card-text">Mentor: Prof. Howie Choset</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><img src="/media/icons/brands/airs.svg" width="56px" height="56px" alt="Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS)" loading="lazy"></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Undergraduate Researcher of AIRS</div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS)</div>
-              <div class="text-muted exp-meta">
-                Dec 2021 –
-                
-                  May 2024
-                
-                
-                  <span class="middot-divider"></span>
-                  <span>Shenzhen</span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="card-text">Mentor: Prof. Junhua Zhao</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><img src="/media/icons/brands/cuhksz.svg" width="56px" height="56px" alt="CUHKSZ - Energy Internet Lab" loading="lazy"></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Research Assistant of CUHKSZ</div>
-              <div class="section-subheading card-title exp-company text-muted my-0">CUHKSZ - Energy Internet Lab</div>
-              <div class="text-muted exp-meta">
-                Dec 2021 –
-                
-                  May 2024
-                
-                
-                  <span class="middot-divider"></span>
-                  <span>Shenzhen</span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="card-text">Mentor: Prof. Junhua Zhao</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><img src="/media/icons/brands/sribd.svg" width="56px" height="56px" alt="Shenzhen Research Institute of Big Data - Human Language Technology Laboratory" loading="lazy"></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Undergraduate Researcher of Human Language Technology Laboratory</div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Shenzhen Research Institute of Big Data - Human Language Technology Laboratory</div>
-              <div class="text-muted exp-meta">
-                Sep 2022 –
-                
-                  Feb 2023
-                
-                
-                  <span class="middot-divider"></span>
-                  <span>Shenzhen</span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="card-text">Mentor: Prof. Haizhou Li</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><img src="/media/icons/brands/winning.svg" width="56px" height="56px" alt="Winning Health Technology Group Co.,Ltd" loading="lazy"></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Computer Vision Algorithm Engineer</div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Winning Health Technology Group Co.,Ltd</div>
-              <div class="text-muted exp-meta">
-                Jul 2022 –
-                
-                  Sep 2022
-                
-                
-                  <span class="middot-divider"></span>
-                  <span>Shanghai</span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><img src="/media/icons/brands/cuhksz.svg" width="56px" height="56px" alt="CUHKSZ" loading="lazy"></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Teaching Assistant of CUHKSZ (Discrete Mathematics)</div>
-              <div class="section-subheading card-title exp-company text-muted my-0">CUHKSZ</div>
-              <div class="text-muted exp-meta">
-                Sep 2022 –
-                
-                  Dec 2022
-                
-                
-                  <span class="middot-divider"></span>
-                  <span>Shenzhen</span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col ">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><img src="/media/icons/brands/teabreak.svg" width="56px" height="56px" alt="Shenzhen TeaBreak Network Technology Co., Ltd" loading="lazy"></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Back-end Developer (Department Head)</div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Shenzhen TeaBreak Network Technology Co., Ltd</div>
-              <div class="text-muted exp-meta">
-                Dec 2020 –
-                
-                  Jan 2022
-                
-                
-                  <span class="middot-divider"></span>
-                  <span>Shenzhen</span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-</div>
-
-
-    
-      </div>
-    
-
     </div>
   </section>
 
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="contact" class="home-section wg-contact  "  >
-   <div class="home-section-bg " >
-     
-   </div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Contact</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="col-12 col-lg-8">
-  
-
-  
-
-    
-    
-      
-    
-
-    <div class="mb-3">
-      <form name="contact" method="POST" netlify netlify-honeypot="_gotcha"  >
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputName">Name</label>
-          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-        </div>
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Email</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="inputMessage">Message</label>
-          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
-        </div>
-        
-        <div class="d-none">
-          <label>Do not fill this field unless you are a bot: <input name="_gotcha"></label>
-        </div>
-        
-        <button type="submit" class="btn btn-primary px-3 py-2 w-100">Send</button>
-      </form>
+  <!-- MISC -->
+  <section id="misc" data-screen-label="Misc" style="border-top:1px solid var(--line,#e3e6ec);background:var(--surface,#fff);transition:background .45s ease;">
+    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
+      <div data-reveal="" style="display:flex;align-items:baseline;gap:18px;margin-bottom:16px;">
+        <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">05</span>
+        <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Miscellaneous</h2>
+      </div>
+      <p data-reveal="" style="font-size:16px;line-height:1.7;color:var(--ink,#181b21);max-width:640px;margin:0 0 34px;">
+        Outside of research, I enjoy basketball, hiking &amp; touring, race cars, LEGO, PC games, and — most of all — spending time with my fiancée Waiwai. A few moments along the way:
+      </p>
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:14px;">
+        <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="8">
+          <figure onClick="{{ g.onClick }}" style="margin:0;cursor:pointer;">
+            <div style="position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:3px;border:1px solid var(--line,#e3e6ec);transition:all .25s;" style-hover="border-color:var(--accent,#C41230);transform:translateY(-2px);">
+              <sc-if value="{{ g.img }}" hint-placeholder-val="{{ false }}">
+                <img src="{{ g.img }}" alt="{{ g.caption }}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;">
+              </sc-if>
+            </div>
+            <figcaption style="font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.02em;color:var(--faint,#8a91a0);margin-top:8px;line-height:1.4;">{{ g.caption }}</figcaption>
+          </figure>
+        </sc-for>
+      </div>
     </div>
-  
+  </section>
 
-  <ul class="fa-ul">
+  <!-- FUN FACTS -->
+  <section id="funfacts" data-screen-label="Fun Facts" style="border-top:1px solid var(--line,#e3e6ec);">
+    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
+      <div data-reveal="" style="display:flex;align-items:baseline;gap:18px;margin-bottom:38px;">
+        <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">06</span>
+        <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Fun Facts</h2>
+      </div>
+      <div class="xf-bio" data-reveal="" style="display:grid;grid-template-columns:1fr 1fr;gap:52px;">
+        <div style="border-top:2px solid var(--accent,#C41230);padding-top:22px;">
+          <div style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#C41230);margin-bottom:16px;">On the name “edgarfx”</div>
+          <p style="font-size:16px;line-height:1.74;color:var(--ink,#181b21);margin:0;">You might notice this site lives at <strong>edgarfx</strong>.github.io — which has nothing to do with “Shawn.” Through undergrad my English name was <strong>Edgar</strong>, given to me by my IELTS teacher right after high school (borrowed from a character in a play). Since “Shawn” sounds close to my Chinese name <strong>Xiang</strong>, I switched to it after coming to the US for grad school.</p>
+        </div>
+        <div style="border-top:2px solid var(--accent,#C41230);padding-top:22px;">
+          <div style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#C41230);margin-bottom:16px;">Sharing a name with a star</div>
+          <p style="font-size:16px;line-height:1.74;color:var(--ink,#181b21);margin:0;">My Chinese name is a homophone of the famous singer and actor Fei Xiang (费翔) — though my “Xiang” uses a different character “祥”, meaning auspiciousness and good fortune (吉祥). At gatherings my friends love asking me to sing his songs… the truth is, I don't know a single one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    
-    <li>
-      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-      <span id="person-email"><a href="mailto:xiangfei@andrew.cmu.edu">xiangfei@andrew.cmu.edu</a></span>
-    </li>
-    
+  <!-- CONTACT / FOOTER -->
+  <section id="contact" data-screen-label="Contact" style="border-top:1px solid var(--line,#e3e6ec);background:var(--accent,#C41230);color:#fff;">
+    <div style="max-width:1120px;margin:0 auto;padding:82px 28px 38px;">
+      <div data-reveal="">
+        <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:0.12em;color:rgba(255,255,255,0.72);">07 / GET IN TOUCH</span>
+        <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(34px,4.6vw,54px);line-height:1.06;letter-spacing:-0.02em;margin:18px 0 22px;max-width:640px;">Let's talk robots, perception, and SLAM.</h2>
+        <a href="mailto:xiangfei@andrew.cmu.edu" style="font-family:'Spline Sans Mono',monospace;font-size:clamp(15px,2vw,18px);letter-spacing:0.02em;color:#fff;border-bottom:2px solid rgba(255,255,255,0.55);padding-bottom:4px;">xiangfei@andrew.cmu.edu ↗</a>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:38px;">
+          <sc-for list="{{ socials }}" as="s" hint-placeholder-count="5">
+            <a href="{{ s.url }}" title="{{ s.label }}" target="_blank" style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(255,255,255,0.4);border-radius:50%;color:#fff;font-size:16px;transition:all .2s;" style-hover="background:#fff;color:var(--accent,#C41230);"><i class="{{ s.icon }}"></i></a>
+          </sc-for>
+        </div>
+      </div>
+      <div style="margin-top:68px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.22);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.05em;color:rgba(255,255,255,0.68);">
+        <span>© 2026 XIANG (SHAWN) FEI · PITTSBURGH, PA</span>
+        <span>REDESIGNED WITH CLAUDE · BUILT ON HUGO</span>
+      </div>
+    </div>
+  </section>
 
-    
+  <!-- DETAIL / LIGHTBOX MODAL -->
+  <sc-if value="{{ detail.open }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeDetail }}" style="position:fixed;inset:0;z-index:100;background:rgba(10,12,16,0.62);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding:48px 24px;overflow-y:auto;">
 
-    
-    
+      <sc-if value="{{ detail.isPhoto }}" hint-placeholder-val="{{ false }}">
+        <div onClick="{{ stopDetail }}" style="display:flex;flex-direction:column;align-items:center;gap:14px;max-width:1000px;margin:auto;">
+          <img src="{{ detail.photoImg }}" alt="{{ detail.photoCap }}" loading="lazy" style="max-width:90vw;max-height:80vh;object-fit:contain;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+          <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:0.04em;color:rgba(255,255,255,0.9);">{{ detail.photoCap }}</span>
+          <button onClick="{{ closeDetail }}" style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.06em;color:rgba(255,255,255,0.75);background:transparent;border:1px solid rgba(255,255,255,0.35);padding:8px 16px;border-radius:999px;cursor:pointer;">CLOSE ✕</button>
+        </div>
+      </sc-if>
 
-    
+      <sc-if value="{{ detail.isPanel }}" hint-placeholder-val="{{ false }}">
+        <div onClick="{{ stopDetail }}" style="width:100%;max-width:760px;background:var(--bg,#f4f5f7);border:1px solid var(--line,#e3e6ec);border-radius:5px;padding:34px 38px 40px;margin:auto 0;box-shadow:0 24px 70px rgba(0,0,0,0.4);">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:8px;">
+            <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+              <sc-if value="{{ detail.canBack }}" hint-placeholder-val="{{ false }}">
+                <button onClick="{{ detail.onBack }}" style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.05em;color:var(--muted,#5c6573);background:transparent;border:1px solid var(--line,#e3e6ec);padding:7px 12px;border-radius:999px;cursor:pointer;">{{ detail.backLabel }}</button>
+              </sc-if>
+              <span style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent,#C41230);">{{ detail.meta }}</span>
+            </div>
+            <button onClick="{{ closeDetail }}" style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.06em;color:var(--muted,#5c6573);background:transparent;border:1px solid var(--line,#e3e6ec);padding:7px 13px;border-radius:999px;cursor:pointer;flex:none;">CLOSE ✕</button>
+          </div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:29px;line-height:1.22;letter-spacing:-0.01em;margin:8px 0 22px;color:var(--ink,#181b21);">{{ detail.title }}</h3>
 
-    
+          <sc-if value="{{ detail.isPubs }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <sc-for list="{{ detail.pubs }}" as="p" hint-placeholder-count="6">
+                <div onClick="{{ p.onClick }}" style="display:grid;grid-template-columns:28px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line,#e3e6ec);align-items:start;cursor:pointer;">
+                  <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);padding-top:5px;">{{ p.num }}</span>
+                  <div>
+                    <h4 style="font-family:'Newsreader',serif;font-weight:500;font-size:18px;line-height:1.3;margin:0 0 7px;color:var(--ink,#181b21);">{{ p.title }}</h4>
+                    <p style="font-size:13px;line-height:1.5;color:var(--muted,#5c6573);margin:0 0 5px;"><span>{{ p.pre }}</span><span style="font-weight:600;color:var(--ink,#181b21);">{{ p.me }}</span><span>{{ p.post }}</span></p>
+                    <sc-if value="{{ p.equalNote }}" hint-placeholder-val="{{ false }}"><p style="font-family:'Spline Sans Mono',monospace;font-size:10.5px;color:var(--faint,#8a91a0);margin:0 0 6px;">† Equal contribution</p></sc-if>
+                    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 10px;">
+                      <span style="font-family:'Spline Sans Mono',monospace;font-size:11.5px;color:var(--faint,#8a91a0);"><span style="color:var(--accent,#C41230);">{{ p.venue }}</span> · {{ p.year }}</span>
+                      <sc-if value="{{ p.oral }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;align-items:center;gap:4px;font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent,#C41230);border:1px solid var(--accent,#C41230);padding:2px 6px;border-radius:3px;"><i class="fas fa-microphone"></i>Oral</span></sc-if>
+                    </div>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+                      <sc-for list="{{ p.links }}" as="l" hint-placeholder-count="2">
+                        <a href="{{ l.url }}" target="_blank" onClick="{{ stopDetail }}" style="display:inline-flex;align-items:center;gap:6px;font-family:'Spline Sans Mono',monospace;font-size:11px;color:var(--ink,#181b21);border:1px solid var(--line,#e3e6ec);padding:5px 10px;border-radius:6px;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);"><i class="{{ l.icon }}"></i>{{ l.label }}</a>
+                      </sc-for>
+                      <span style="font-family:'Spline Sans Mono',monospace;font-size:11px;color:var(--accent,#C41230);margin-left:auto;">Details →</span>
+                    </div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
 
-    
-    <li>
-      <i class="fa-li fas fa-calendar-check fa-2x" aria-hidden="true"></i>
-      <a href="https://calendly.com" target="_blank" rel="noopener">Book an appointment</a>
-    </li>
-    
+          <sc-if value="{{ detail.isProjList }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <sc-for list="{{ detail.projs }}" as="pr" hint-placeholder-count="5">
+                <div onClick="{{ pr.onClick }}" style="display:grid;grid-template-columns:28px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line,#e3e6ec);align-items:start;cursor:pointer;">
+                  <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--accent,#C41230);padding-top:5px;">{{ pr.num }}</span>
+                  <div>
+                    <h4 style="font-family:'Newsreader',serif;font-weight:500;font-size:18px;line-height:1.3;margin:0 0 6px;color:var(--ink,#181b21);">{{ pr.title }}</h4>
+                    <p style="font-family:'Spline Sans Mono',monospace;font-size:11.5px;color:var(--faint,#8a91a0);margin:0 0 7px;">{{ pr.meta }}</p>
+                    <p style="font-size:13px;line-height:1.5;color:var(--muted,#5c6573);margin:0 0 8px;">{{ pr.summary }}</p>
+                    <span style="font-family:'Spline Sans Mono',monospace;font-size:11px;color:var(--accent,#C41230);">Details →</span>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
 
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <i class="fa-li fas fa-video fa-2x" aria-hidden="true"></i>
-      <a href="https://zoom.com" target="_blank" rel="noopener">Zoom Me</a>
-    </li>
-    
+          <sc-if value="{{ detail.isContent }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <div style="margin:0 0 22px;">
+                <p style="font-size:13.5px;line-height:1.55;color:var(--muted,#5c6573);margin:0;"><span>{{ detail.authorsPre }}</span><span style="font-weight:600;color:var(--ink,#181b21);">{{ detail.authorsMe }}</span><span>{{ detail.authorsPost }}</span></p>
+                <sc-if value="{{ detail.equalNote }}" hint-placeholder-val="{{ false }}"><p style="font-family:'Spline Sans Mono',monospace;font-size:11px;color:var(--faint,#8a91a0);margin:6px 0 0;">† Equal contribution</p></sc-if>
+              </div>
+              <sc-for list="{{ detail.paragraphs }}" as="para" hint-placeholder-count="2">
+                <p style="font-size:15.5px;line-height:1.72;color:var(--ink,#181b21);margin:0 0 16px;">{{ para }}</p>
+              </sc-for>
+              <sc-for list="{{ detail.figures }}" as="f" hint-placeholder-count="0">
+                <figure style="margin:22px 0 0;">
+                  <img src="{{ f.img }}" alt="{{ f.caption }}" loading="lazy" style="width:100%;border-radius:4px;border:1px solid var(--line,#e3e6ec);display:block;">
+                  <figcaption style="font-family:'Spline Sans Mono',monospace;font-size:11px;color:var(--faint,#8a91a0);margin-top:8px;line-height:1.5;">{{ f.caption }}</figcaption>
+                </figure>
+              </sc-for>
+              <sc-if value="{{ detail.hasLinks }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:26px;">
+                  <sc-for list="{{ detail.links }}" as="l" hint-placeholder-count="2">
+                    <a href="{{ l.url }}" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-family:'Spline Sans Mono',monospace;font-size:12px;color:#fff;background:var(--accent,#C41230);padding:8px 14px;border-radius:6px;" style-hover="opacity:0.88;"><i class="{{ l.icon }}"></i>{{ l.label }}</a>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </sc-if>
 
-  </ul>
+        </div>
+      </sc-if>
 
-  
-  <div class="d-none">
-    <input id="map-provider" value="mapnik">
-    <input id="map-lat" value="40.4436">
-    <input id="map-lng" value="-79.9458">
-    <input id="map-dir" value="">
-    <input id="map-zoom" value="15">
-    <input id="map-api-key" value="">
-  </div>
-  <div id="map"></div>
-  
+    </div>
+  </sc-if>
 
 </div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="featured" class="home-section wg-blank  "  >
-   <div class="home-section-bg " >
-     
-   </div>
-    <div class="container">
-
-    
-      <div class="row  justify-content-center">
-      
-    
-
-      
-
-
-
-  <div class="col-12 col-lg-8">
-    
-  </div>
-
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="research" class="home-section wg-blank  "  >
-   <div class="home-section-bg " >
-     
-   </div>
-    <div class="container">
-
-    
-      <div class="row  justify-content-center">
-      
-    
-
-      
-
-
-
-  <div class="col-12 col-lg-8">
-    
-  </div>
-
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-
-
-
-
-
-
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-    
-  
-  
-    
-  
-
-  
-
-  
-  <p class="powered-by copyright-license-text">
-    © 2026 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
-  </p>
-  
-
-  <p class="powered-by footer-license-icons">
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
-      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
-      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
-      
-        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
-      
-      
-        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
-      
-    </a>
-  </p>
-
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
-    
-  </p>
-</footer>
-
-    </div>
-    
-  </div>
-
-  
-
-
-<script src="/js/vendor-bundle.min.32ee83730ed883becad04bc5170512cc.js"></script>
-
-
-
-
-  
-    <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
-  
-
-  
-  
-
-  
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-  
-  <script id="search-hit-fuse-template" type="text/x-template">
-    <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-    </div>
-  </script>
-  
-    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-<script id="page-data" type="application/json">{"use_headroom":false}</script>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-<script src="/en/js/wowchemy.min.91534f6cb18c3621254d412c69186d7c.js"></script>
-
-
-
-  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
-
-
-
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-        <pre><code></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
 </div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1120,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#C41230&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#C41230&quot;,&quot;#2f6f8f&quot;,&quot;#1f6f5c&quot;,&quot;#b5453a&quot;]},&quot;themeDefault&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;light&quot;,&quot;options&quot;:[&quot;light&quot;,&quot;dark&quot;],&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { theme: null, active: 'about', detailKind: null, detailKey: null, photo: null };
 
+  componentDidMount() {
+    let t = (this.props.themeDefault === 'dark') ? 'dark' : 'light';
+    try { const saved = localStorage.getItem('xf_theme'); if (saved) t = saved; } catch(e){}
+    this.setState({ theme: t });
 
-  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    const reveal = (el) => { el.style.opacity = '1'; el.style.transform = 'none'; };
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(reveal);
+    } else {
+      els.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1)'; });
+      els.forEach(el => { if (el.getBoundingClientRect().top < window.innerHeight) reveal(el); });
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(en => { if (en.isIntersecting) { reveal(en.target); io.unobserve(en.target); } });
+      }, { threshold: 0.1, rootMargin: '0px 0px -8% 0px' });
+      els.forEach(el => io.observe(el));
+      setTimeout(() => els.forEach(reveal), 1400);
+    }
 
+    const secs = ['about','news','publications','projects','experience','misc','funfacts','contact'];
+    if ('IntersectionObserver' in window) {
+      const so = new IntersectionObserver((entries) => {
+        entries.forEach(en => { if (en.isIntersecting) this.setState({ active: en.target.id }); });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      secs.forEach(id => { const el = document.getElementById(id); if (el) so.observe(el); });
+    }
 
+    this._onKey = (e) => { if (e.key === 'Escape') this.closeDetail(); };
+    window.addEventListener('keydown', this._onKey);
+  }
+  componentWillUnmount() { if (this._onKey) window.removeEventListener('keydown', this._onKey); }
 
+  scrollTo = (id) => (e) => {
+    if (e) e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) { const y = el.getBoundingClientRect().top + window.scrollY - 58; window.scrollTo({ top: y, behavior: 'smooth' }); }
+  };
+  toggleTheme = () => {
+    const next = (this.state.theme === 'dark') ? 'light' : 'dark';
+    this.setState({ theme: next });
+    try { localStorage.setItem('xf_theme', next); } catch(e){}
+  };
+  openPub = (k) => () => this.setState({ detailKind:'pub', detailKey:k });
+  openProject = (k) => () => this.setState({ detailKind:'project', detailKey:k });
+  openPhoto = (img, cap) => () => this.setState({ detailKind:'photo', photo:{ img, cap } });
+  viewAllPubs = () => this.setState({ detailKind:'pubs', detailKey:null });
+  viewAllProjects = () => this.setState({ detailKind:'projects', detailKey:null });
+  closeDetail = () => this.setState({ detailKind:null, detailKey:null, photo:null });
+  stopDetail = (e) => { if (e) e.stopPropagation(); };
 
+  renderVals() {
+    const accent = this.props.accent || '#C41230';
+    const dark = this.state.theme === 'dark';
+    const themeVars = dark ? {
+      '--bg':'#0e1014','--surface':'#161a20','--ink':'#eef1f5','--muted':'#9aa3b2','--faint':'#6b7280',
+      '--line':'#252b34','--accent':accent,'--accentSoft':'rgba(255,255,255,0.05)','--navBg':'rgba(14,16,20,0.78)','--cool':'#74b0cf'
+    } : {
+      '--bg':'#f4f5f7','--surface':'#ffffff','--ink':'#181b21','--muted':'#5c6573','--faint':'#8a91a0',
+      '--line':'#e3e6ec','--accent':accent,'--accentSoft':'rgba(196,18,48,0.07)','--navBg':'rgba(244,245,247,0.82)','--cool':'#3a6b86'
+    };
+    const cool = themeVars['--cool'];
 
+    const navDef = [
+      { id:'news', label:'News' },{ id:'publications', label:'Publications' },
+      { id:'projects', label:'Projects' },{ id:'misc', label:'Misc' },{ id:'funfacts', label:'Fun Facts' },{ id:'contact', label:'Contact' }
+    ];
+    const navItems = navDef.map(n => ({
+      id:n.id, label:n.label, onClick:this.scrollTo(n.id),
+      style:`font-family:'Spline Sans Mono',monospace;font-size:11.5px;letter-spacing:0.02em;padding:8px 10px;border-radius:6px;cursor:pointer;transition:color .2s;white-space:nowrap;color:${this.state.active===n.id?'var(--accent,#C41230)':'var(--muted,#5c6573)'};`
+    }));
 
+    const interests = ['Robotics','SLAM','Spatial Perception','Deep Learning','Multi-Sensor Fusion'];
+    const socials = [
+      { label:'Email', icon:'fas fa-envelope', url:'mailto:xiangfei@andrew.cmu.edu' },
+      { label:'Google Scholar', icon:'ai ai-google-scholar', url:'https://scholar.google.com/citations?hl=en&user=HFN65ugAAAAJ' },
+      { label:'GitHub', icon:'fab fa-github', url:'https://github.com/EdgarFx/' },
+      { label:'LinkedIn', icon:'fab fa-linkedin-in', url:'https://www.linkedin.com/in/xiang-fei/' },
+      { label:'CV', icon:'ai ai-cv', url:'uploads/resume.pdf' }
+    ];
 
+    const IPDF='fas fa-file-lines', ICODE='fab fa-github', IWEB='fas fa-link', IDATA='fas fa-database';
+    const badgeFor = (t) => t==='Conference' ? accent : (t==='Journal' ? cool : (t==='Report' ? '#7a6a3a' : '#6b7280'));
 
+    const pubs = {
+      deformx:{ num:'01', type:'Conference', oral:true, equalNote:true, img:'assets/pub-deformx.png', venue:'IROS 2026', year:'2026', meta:'IROS 2026 · Conference Paper · Oral',
+        title:'DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects',
+        pre:'Yi Yang†, ', me:'Xiang Fei†', post:', Lehong Wang†, Chenghao Li, Zilin Dai, Henry Kou, Lu Li, Howie Choset',
+        links:[{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
+        paragraphs:['Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual methods rely on procedural geometric primitives that lack physically grounded deformation, while physics-based approaches often approximate DLOs as rigid-link chains or generic soft bodies, failing to capture the bending, twisting, and shear mechanics of slender elastic structures.','We introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat-rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. The Cosserat-rod engine simulates DLO dynamics, self-collisions, and contact with arbitrary free-form meshes; mesh skinning maps discrete rod deformations onto imported CAD models for high-fidelity visualization.','To our knowledge, DeformX is the first DLO-simulation framework to unify realistic visualization, principled physics, and compatibility with robot-learning pipelines. Fine-tuning SAM3 on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a 6.6 cm mean target-hitting error on a real UR5e — highlighting strong sim-to-real transfer.'],
+        figures:[{img:'assets/pub-deformx.png',caption:'DeformX — Cosserat-rod physics co-simulated with Isaac Sim. Demo videos at deformx.github.io.'}] },
+      maci2:{ num:'02', type:'Preprint', equalNote:true, img:'assets/pub-maci2.png', venue:'Under Review', year:'2026', meta:'Under Review · Preprint',
+        title:'MAC-I\u00B2: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration',
+        pre:'', me:'Xiang Fei†', post:', Yuheng Qiu†, Can Xu, Yutian Chen, Ruogu Li, Wenshan Wang, Sebastian Scherer',
+        links:[],
+        paragraphs:['Visual-inertial (VI) initialization and calibration are critical for VI systems, providing camera-IMU extrinsics and physically consistent initial state estimates for sensor fusion. Traditional methods rely heavily on geometric feature correspondences and often struggle under illumination changes, dynamic objects, and occlusions.','We present MAC-I\u00B2, a robust VI initialization and online-calibration framework that leverages learning-based visual features and uncertainty modeling. We derive visual pose covariances from learned feature-matching uncertainties and adopt a learning-based IMU model to predict integration covariances. Both visual and inertial covariances are metrics-aware, enabling principled, tuning-free initialization and calibration.','Extensive experiments show MAC-I\u00B2 achieves significantly improved robustness and accuracy across a wide range of challenging scenarios where geometry-based methods often fail.'],
+        figures:[{img:'assets/pub-maci2.png',caption:'MAC-I\u00B2 — metrics-aware covariance for robust VI initialization and calibration.'}] },
+      bowg:{ num:'03', type:'Conference', oral:true, img:'assets/pub-bowg.png', venue:'IROS 2025', year:'2025', meta:'IROS 2025 · Conference Paper · Oral',
+        title:'Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing',
+        pre:'', me:'Xiang Fei', post:', Tina Tian, Howie Choset, Lu Li',
+        links:[{label:'PDF',icon:IPDF,url:'https://ieeexplore.ieee.org/document/11246796'},{label:'Code',icon:ICODE,url:'https://github.com/EdgarFx/BoWG'}],
+        paragraphs:['Loop closure is critical in SLAM to reduce accumulative drift and ensure global mapping consistency. Conventional methods struggle in perceptually aliased environments such as narrow pipes — due to vector quantization, feature sparsity, and repetitive textures — while existing solutions often incur high computational cost.','BoWG introduces word groups that capture the spatial co-occurrence and proximity of visual words to construct an online dictionary. Drawing on probabilistic transition models, we incorporate temporal consistency directly into the similarity computation with an adaptive scheme, substantially improving precision-recall. A feature-distribution-analysis module and dedicated post-verification mechanisms further strengthen the method.','BoWG surpasses state-of-the-art traditional and learning-based methods in precision-recall and efficiency, with excellent scalability — averaging 16 ms per image across 17,565 images on the Bicocca25b dataset.'],
+        figures:[{img:'assets/pub-bowg.png',caption:'BoWG loop-closure pipeline'},{img:'assets/pub/bowg-results.png',caption:'Precision-recall vs. existing methods'},{img:'assets/pub/bowg-testsite.png',caption:'Confined-pipe test environment'},{img:'assets/pub/bowg-ares.png',caption:'Results in the challenging pipe environment'}] },
+      qopt:{ num:'04', type:'Journal', img:'assets/pub-qopt.png', venue:'Scientific Reports', year:'2024', meta:'Scientific Reports · 2024 (JCR Q1)',
+        title:'Power System Fault Diagnosis with Quantum Computing and Efficient Gate Decomposition',
+        pre:'', me:'Xiang Fei', post:', et al.',
+        links:[{label:'Paper',icon:IPDF,url:'https://www.nature.com/articles/s41598-024-67922-w'}],
+        paragraphs:['A QAOA-based approach to power-system fault diagnosis, together with a proposed efficient quantum gate decomposition that reduces circuit complexity while preserving diagnostic accuracy. Published in Scientific Reports (JCR Q1).'],
+        figures:[{img:'assets/pub-qopt.png',caption:'Quantum power-system fault diagnosis with efficient gate decomposition'}] },
+      qgan:{ num:'05', type:'Journal', img:'assets/pub-qgan.png', venue:'Energy Conversion and Economics', year:'2024', meta:'Energy Conversion and Economics · 2024',
+        title:'Carbon Market Risk Estimation Using Quantum Conditional GAN and Amplitude Estimation',
+        pre:'', me:'Xiang Fei', post:', et al.',
+        links:[{label:'Paper',icon:IPDF,url:'https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/enc2.12122'}],
+        paragraphs:['A carbon-market risk-estimation method combining a quantum conditional generative adversarial network (QCGAN) with quantum amplitude estimation, providing efficient distribution learning and risk-measure computation for carbon-market price dynamics. Published in Energy Conversion and Economics.'],
+        figures:[{img:'assets/pub-qgan.png',caption:'Quantum CGAN + amplitude estimation for carbon-market risk'}] },
+      lqlstm:{ num:'06', type:'Journal', img:'assets/pub-lqlstm.png', venue:'Quantum Machine Intelligence', year:'2023', meta:'Quantum Machine Intelligence · 2023',
+        title:'Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting',
+        pre:'', me:'Xiang Fei', post:', et al.',
+        links:[{label:'Paper',icon:IPDF,url:'https://link.springer.com/article/10.1007/s42484-023-00115-2'},{label:'Code',icon:ICODE,url:'https://github.com/TravisCao/L-QLSTM'}],
+        paragraphs:['A linear-layer-enhanced quantum long short-term memory (L-QLSTM) network for carbon-price forecasting, improving on the standard QLSTM formulation with classical linear layers for stronger temporal modeling. Published in Quantum Machine Intelligence — my first journal paper.'],
+        figures:[{img:'assets/pub-lqlstm.png',caption:'L-QLSTM architecture for carbon-price forecasting'}] },
+      disclosure:{ num:'07', type:'Preprint', img:'assets/pub-disclosure.png', venue:'Submitted to J. Cleaner Production', year:'2023', meta:'Submitted to Journal of Cleaner Production · Working Paper',
+        title:'Carbon Disclosure Effect, Corporate Fundamentals, and Net-zero Emission Target: Evidence from China',
+        pre:'', me:'Xiang Fei', post:', et al.',
+        links:[],
+        paragraphs:['An empirical analysis of the impact of China\u2019s national and regional Emissions Trading Scheme (ETS) on the financial performance of listed companies, relating carbon disclosure to corporate fundamentals and net-zero targets.','Recognized with the National Outstanding Award of the National University Student Energy Economy Academic Creativity Competition (Top 5 in China). Working paper.'],
+        figures:[{img:'assets/pub-disclosure.png',caption:'Carbon disclosure effect on corporate financial performance'}] },
+      carbon:{ num:'08', type:'Report', img:'assets/pub-carbon.png', venue:'2022 Global Forum on Sustainable Development', year:'2022', meta:'2022 Global Forum on Sustainable Development · Report',
+        title:"2022 Carbon Rating Report of China's 100 Overseas Listed Companies",
+        pre:'', me:'Xiang Fei', post:', et al.',
+        links:[{label:'Report',icon:IPDF,url:'https://airs.cuhk.edu.cn/files/2022-06/2022%20Carbon%20Rating%20Report%20of%20China%27s%20100%20Overseas%20Listed%20Companies_0.pdf'}],
+        paragraphs:['A carbon-rating report assessing the carbon performance and disclosure of China\u2019s 100 largest overseas-listed companies, released at the 2022 Global Forum on Sustainable Development.'],
+        figures:[{img:'assets/pub-carbon.png',caption:'2022 Carbon Rating Report'}] }
+    };
+    const pubOrder = ['deformx','maci2','bowg','qopt','qgan','lqlstm','disclosure','carbon'];
+    const fmtPub = (k) => { const p = pubs[k]; return { key:k, num:p.num, type:p.type, badgeBg:badgeFor(p.type), img:p.img, oral:!!p.oral, equalNote:!!p.equalNote,
+      venue:p.venue, year:p.year, title:p.title, pre:p.pre, me:p.me, post:p.post, links:p.links, onClick:this.openPub(k) }; };
+    const allPubs = pubOrder.map(fmtPub);
+    const selectedPubs = ['deformx','maci2','bowg'].map(fmtPub);
 
+    const projectMap = {
+      vli:{ meta:'2024 · CMU Biorobotics Lab', img:'assets/proj-vlislam.png', title:'Visual-Laser-Inertial SLAM for Confined Pipes',
+        summary:'Extending a compact, low-cost VLI-SLAM 3D scanner to narrow pipe environments for in-pipe reconstruction and defect detection.',
+        paragraphs:['This work extended our lab\u2019s compact, low-cost visual-laser-inertial (VLI) SLAM-based 3D scanner to narrow pipe environments, enabling in-pipe 3D reconstruction and defect detection.','The in-pipe reconstruction is adapted from VLI-SLAM, which incorporates a laser-based structured-light technique into a monocular visual-inertial SLAM system. To reach confined pipes, we redesigned the structured-light system — projecting a laser beam onto a conic mirror to generate a laser ring — and explored a diffractive-optics design with a sub-millimeter laser-cone calibration method that fits the laser cone from sparse, unevenly distributed laser points.'],
+        figures:[{img:'assets/proj/vli-framework.png',caption:'Software framework and data flow of VLI-SLAM'},{img:'assets/proj/vli-simulation.png',caption:'Unreal Engine simulation compared against the real pipe'}], links:[] },
+      acmm:{ meta:'2024 · Research Project', img:'assets/proj-acmm.png', title:'Photorealistic 3D Reconstruction with Multi-View Stereo',
+        summary:'real-ACMM — improvements on ACMM for better reconstruction with fewer iterations, especially in low-texture areas.',
+        paragraphs:['We propose real-ACMM, a photorealistic 3D reconstruction method with multi-view stereo, based on the ACMM architecture. It achieves better reconstruction with fewer iterations, especially in low-texture areas.','Contributions: (1) Broad Adaptive Checkerboard Sampling, which considers all pixels in a neighborhood window rather than extending in a specific direction, capturing correct hypotheses in large low-texture areas; (2) Dynamic Multi-Hypothesis Joint View Selection, which dynamically adjusts the matching cost for both good and bad matches, enabling more robust and accurate view selection.'],
+        figures:[{img:'assets/proj/acmm-depth.png',caption:'Depth-map comparison on the ETH3D pipes dataset'},{img:'assets/proj/acmm-point.png',caption:'Point-cloud comparison on the ETH3D pipes dataset'}],
+        links:[{label:'Code',icon:ICODE,url:'https://github.com/EdgarFx/Photorealistic-3D-Reconstruction-with-Multi-view-Stereo'},{label:'PDF',icon:IPDF,url:'https://edgarfx.github.io/uploads/real_ACMM.pdf'},{label:'Slides',icon:IWEB,url:'https://docs.google.com/presentation/d/1b5vOJpfoab8EPCnQ__-Rmh4ZOsqP7_7_/edit?usp=sharing'}] },
+      winning:{ meta:'2022 · Winning Health Technology', img:'https://media.giphy.com/media/ZI4METZ0dPjbWVlCOz/giphy.gif', title:'3D Reconstruction of the GI Tract & Sinus Surface',
+        summary:'Monocular-endoscope 3D reconstruction to document endoscopy in 3D and support more thorough examinations.',
+        paragraphs:['This project created 3D reconstructions of the gastrointestinal tract and sinus surface using a monocular endoscope, documenting the endoscopy process in 3D to help doctors perform more comprehensive examinations.','Emphasizing accuracy over real-time operation, I explored Structure-from-Motion rather than SLAM. To handle textureless frames, varying lighting, and contamination, I used SfM (with SIFT) sparse reconstruction and camera poses as self-supervised signals to train a two-branch Siamese network for dense depth estimation and feature descriptors.','Custom differentiable layers (Depth Scaling, Depth Warping, Flow-from-Depth) and losses (Sparse Flow Loss, Depth Consistency Loss) enabled end-to-end training. Depth fusion and surface extraction then produced a watertight triangle-mesh surface. I was responsible for methodology conceptualization and code implementation.'],
+        figures:[{img:'https://media.giphy.com/media/TRSYjA7bffmxDtONdy/giphy.gif',caption:'Figure 1 — Point cloud from the dense depth estimation'},{img:'https://media.giphy.com/media/ZI4METZ0dPjbWVlCOz/giphy.gif',caption:'Figure 2 — Overlay of the video and COLMAP point cloud with dense descriptors'},{img:'assets/proj/winning-depth-net.png',caption:'Dense depth-estimation network architecture'},{img:'assets/proj/winning-feat-net.png',caption:'Dense feature-descriptor network architecture'}], links:[] },
+      navigation:{ meta:'2023 · UC Berkeley / USC', img:'', placeholder:'SLAM · NAVIGATION', title:'SLAM for Vision-based Navigation',
+        summary:'Integrating learning-based perception with model-based visual SLAM for dependable autonomous navigation in challenging scenes.',
+        paragraphs:['This project, initiated by Prof. Shankar Sastry (UC Berkeley) and Prof. Somil Bansal (USC), aims at a new autonomous-navigation pipeline that combines learning-based perception — for distinctive features and semantic interpretation — with model-based SLAM for inference and metric map reconstruction.','Learning-based perception reliably identifies task-relevant objects but struggles with accurate metric reconstruction in narrow hallways and tight corners. Visual SLAM produces consistent metric maps but is computationally heavy and lacks semantics. The study explores integrating the two to build an efficient, reliable navigation system with high success rates in complex, unpredictable environments.'],
+        figures:[], links:[] },
+      simulation:{ meta:'2022 · CUHKSZ Energy Internet Lab', img:'assets/proj/sim-featured.png', title:'Carbon-Electricity Market Simulation',
+        summary:'A hybrid experimental-learning method to simulate the carbon-electricity market under carbon neutrality.',
+        paragraphs:['A hybrid experimental-learning method is applied to simulate the carbon-electricity market under the context of carbon neutrality.','It addresses macro-scale problems arising from the conflict between electricity-market price reduction and carbon-emission cost, and micro-scale problems arising from the differing decision time scales of market participants.'],
+        figures:[{img:'assets/proj/sim-featured.png',caption:'Carbon-electricity market simulation modeling'}], links:[] }
+    };
+    const projectOrder = ['vli','acmm','winning','navigation','simulation'];
+    const fmtProjCard = (k) => ({ key:k, meta:projectMap[k].meta, img:projectMap[k].img, noImg:!projectMap[k].img, placeholder:projectMap[k].placeholder||'PROJECT', title:projectMap[k].title, summary:projectMap[k].summary, onClick:this.openProject(k) });
+    const selectedProjects = ['vli','acmm','winning'].map(fmtProjCard);
+    const projectsList = projectOrder.map((k,i) => ({ key:k, num:String(i+1).padStart(2,'0'), meta:projectMap[k].meta, title:projectMap[k].title, summary:projectMap[k].summary, onClick:this.openProject(k) }));
 
+    const experience = [
+      { dates:'2024 — Present', role:'Research Assistant', company:'CMU · AirLab — Prof. Sebastian Scherer', location:'Pittsburgh' },
+      { dates:'2023 — Present', role:'Research Assistant', company:'CMU · Biorobotics Lab — Prof. Howie Choset', location:'Pittsburgh' },
+      { dates:'2021 — 2024', role:'Undergraduate Researcher', company:'AIRS — Prof. Junhua Zhao', location:'Shenzhen' },
+      { dates:'2021 — 2024', role:'Research Assistant', company:'CUHKSZ · Energy Internet Lab', location:'Shenzhen' },
+      { dates:'2022 — 2023', role:'Undergraduate Researcher', company:'SRIBD · Human Language Technology Lab — Prof. Haizhou Li', location:'Shenzhen' },
+      { dates:'2022', role:'Computer Vision Algorithm Engineer', company:'Winning Health Technology Group', location:'Shanghai' },
+      { dates:'2022', role:'Teaching Assistant — Discrete Mathematics', company:'CUHK-Shenzhen', location:'Shenzhen' },
+      { dates:'2020 — 2022', role:'Back-end Developer (Dept. Head)', company:'TeaBreak Network Technology', location:'Shenzhen' }
+    ];
 
+    const galleryData = [
+      ['assets/misc/grand-canyon-wai.jpg','Grand Canyon with Wai'],['assets/misc/golden-gate.jpg','Golden Gate Bridge'],
+      ['assets/misc/zion-angel.jpg','Zion \u2014 Angels Landing'],['assets/misc/grad-cuhksz.jpg','Graduation, CUHK-Shenzhen'],
+      ['assets/misc/bball-gold.jpg','Basketball Gold Medal, CUHK-SZ'],['assets/misc/berkeley-library.jpg','Berkeley Library with Wai'],
+      ['assets/misc/utah-tour.jpg','Self-driving tour in Utah'],['assets/misc/first-anniversary.jpg','First Anniversary'],
+      ['assets/misc/grand-canyon-sunset.jpg','Grand Canyon Sunset'],['assets/misc/stanford.jpg','Stanford'],
+      ['assets/misc/zion-narrows.jpg','Zion \u2014 The Narrows'],['assets/misc/big-c.jpg','Big C, Berkeley'],
+      ['assets/misc/las-vegas.jpg','Las Vegas with Wai'],['assets/misc/berkeley-museum.jpg','Berkeley Science Museum \u2014 the day we got together'],
+      ['assets/misc/snow-mountain.jpg','Snow mountain behind Waiwai\u2019s cabin'],['assets/misc/grad-wai-nku.jpg','Wai\u2019s Graduation, NKU'],
+      ['assets/misc/study-wai.jpg','Studying with Wai in Berkeley'],['assets/misc/sunbathing-wai.jpg','Sunbathing with Wai'],
+      ['assets/misc/bball-trophies.jpg','Basketball Trophies, CUHK-SZ'],['assets/misc/bball-cert.jpg','Basketball Certificate, CUHK-SZ'],
+      ['assets/misc/tsinghua.jpg','Tsinghua'],['assets/misc/yolo-festival.jpg','YOLO Rap Music Festival'],
+      ['assets/misc/leaving-berkeley.jpg','Leaving Berkeley'],['assets/misc/juan-xiang.jpg','Juan Xiang'],
+      ['assets/misc/auwee-yellow.jpg','Auwee and Yellow'],['assets/misc/naffy.jpg','Naffy']
+    ];
+    const gallery = galleryData.map(g => ({ img:g[0], caption:g[1], onClick:this.openPhoto(g[0], g[1]) }));
 
+    // ---- detail / modal ----
+    let detail = { open:false, isPhoto:false, isPanel:false, isPubs:false, isProjList:false, isContent:false, canBack:false, hasLinks:false, equalNote:false,
+      onBack:this.viewAllPubs, backLabel:'\u2190 ALL PAPERS',
+      title:'', meta:'', authorsPre:'', authorsMe:'', authorsPost:'', paragraphs:[], figures:[], links:[], photoImg:'', photoCap:'', pubs:[], projs:[] };
+    const k = this.state.detailKind;
+    if (k === 'photo' && this.state.photo) {
+      detail = { ...detail, open:true, isPhoto:true, photoImg:this.state.photo.img, photoCap:this.state.photo.cap };
+    } else if (k === 'pubs') {
+      detail = { ...detail, open:true, isPanel:true, isPubs:true, title:'All Publications', meta:'Selected works \u00B7 ' + pubOrder.length + ' papers', pubs:allPubs };
+    } else if (k === 'projects') {
+      detail = { ...detail, open:true, isPanel:true, isProjList:true, title:'All Projects', meta:'Projects & research \u00B7 ' + projectOrder.length + ' entries', projs:projectsList };
+    } else if (k === 'pub' && pubs[this.state.detailKey]) {
+      const p = pubs[this.state.detailKey];
+      detail = { ...detail, open:true, isPanel:true, isContent:true, canBack:true, onBack:this.viewAllPubs, backLabel:'\u2190 ALL PAPERS', title:p.title, meta:p.meta, equalNote:!!p.equalNote,
+        authorsPre:p.pre, authorsMe:p.me, authorsPost:p.post, paragraphs:p.paragraphs, figures:p.figures, links:p.links, hasLinks:p.links.length>0 };
+    } else if (k === 'project' && projectMap[this.state.detailKey]) {
+      const p = projectMap[this.state.detailKey];
+      detail = { ...detail, open:true, isPanel:true, isContent:true, canBack:true, onBack:this.viewAllProjects, backLabel:'\u2190 ALL PROJECTS', title:p.title, meta:p.meta,
+        paragraphs:p.paragraphs, figures:p.figures, links:p.links, hasLinks:p.links.length>0 };
+    }
 
-
-
-
-
-
+    return { themeVars, navItems, onNav:this.scrollTo('about'), onMisc:this.scrollTo('misc'),
+      toggleTheme:this.toggleTheme, themeLabel: dark ? 'LIGHT' : 'DARK',
+      interests, socials, selectedPubs, selectedProjects, experience, gallery,
+      viewAllPubs:this.viewAllPubs, viewAllProjects:this.viewAllProjects, closeDetail:this.closeDetail, stopDetail:this.stopDetail, detail };
+  }
+}
+</script>
 </body>
 </html>
