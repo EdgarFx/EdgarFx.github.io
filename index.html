@@ -22,6 +22,43 @@
   .xf-bio a{color:var(--accent,#C41230);border-bottom:1px solid rgba(196,18,48,0.32);transition:background .2s;}
   .xf-bio a:hover{background:var(--accentSoft,rgba(196,18,48,0.08));}
   .xf-news a{color:var(--accent,#C41230);border-bottom:1px solid rgba(196,18,48,0.3);}
+  img{max-width:100%;}
+
+  /* ---- Responsive / mobile ---- */
+  /* Tablet: tighten the widest multi-column layouts */
+  @media (max-width:980px){
+    [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:repeat(2,1fr)!important;}
+    [style*="grid-template-columns:1.55fr 1fr"]{grid-template-columns:1fr!important;gap:40px!important;}
+    [style*="grid-template-columns:440px 1fr"]{grid-template-columns:300px 1fr!important;gap:22px!important;}
+  }
+  /* Phone: collapse everything to a single column */
+  @media (max-width:760px){
+    /* Nav: hide the section links (page is a single scroll), keep name + theme toggle */
+    nav a[href="#"]{display:none!important;}
+    /* Uniform, tighter side padding for all section wrappers + the nav bar */
+    [style*="max-width:1120px"]{padding-left:18px!important;padding-right:18px!important;}
+
+    /* Stack every fixed multi-column grid */
+    [style*="grid-template-columns:1.55fr 1fr"]{grid-template-columns:1fr!important;gap:34px!important;}
+    [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important;}
+    [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;gap:30px!important;}
+    [style*="grid-template-columns:440px 1fr"]{grid-template-columns:1fr!important;gap:0!important;}
+    [style*="grid-template-columns:150px 1fr 130px"]{grid-template-columns:1fr!important;gap:5px!important;}
+    [style*="grid-template-columns:120px 1fr"]{grid-template-columns:74px 1fr!important;gap:14px!important;}
+    [style*="minmax(195px,1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+
+    /* Publication card: restore left padding once the image stacks on top */
+    [style*="padding:26px 28px 26px 0"]{padding:20px 20px 24px!important;}
+    /* Experience: left-align the location once rows stack */
+    [style*="grid-template-columns:150px 1fr 130px"] [style*="text-align:right"]{text-align:left!important;}
+
+    /* Section headings a touch smaller */
+    h2[style*="font-size:37px"]{font-size:27px!important;}
+
+    /* Detail / lightbox modal: tighter padding on small screens */
+    [style*="padding:48px 24px"]{padding:18px 10px!important;}
+    [style*="padding:34px 38px 40px"]{padding:24px 18px 28px!important;}
+  }
 </style>
 </helmet>
 
@@ -469,7 +506,7 @@ class Component extends DCLogic {
       deformx:{ num:'02', type:'Conference', oral:true, equalNote:true, img:'assets/pub-deformx.png', venue:'IROS 2026', year:'2026', meta:'IROS 2026 · Conference Paper · Oral',
         title:'DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects',
         pre:'Yi Yang†, ', me:'Xiang Fei†', post:', Lehong Wang†, Chenghao Li, Zilin Dai, Henry Kou, Lu Li, Howie Choset',
-        links:[{label:'PDF',icon:IPDF,url:'https://arxiv.org/pdf/2606.22116'},{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
+        links:[{label:'PDF',icon:IPDF,url:'https://arxiv.org/abs/2606.22116'},{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
         paragraphs:['Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual methods rely on procedural geometric primitives that lack physically grounded deformation, while physics-based approaches often approximate DLOs as rigid-link chains or generic soft bodies, failing to capture the bending, twisting, and shear mechanics of slender elastic structures.','We introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat-rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. The Cosserat-rod engine simulates DLO dynamics, self-collisions, and contact with arbitrary free-form meshes; mesh skinning maps discrete rod deformations onto imported CAD models for high-fidelity visualization.','To our knowledge, DeformX is the first DLO-simulation framework to unify realistic visualization, principled physics, and compatibility with robot-learning pipelines. Fine-tuning SAM3 on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a 6.6 cm mean target-hitting error on a real UR5e — highlighting strong sim-to-real transfer.'],
         figures:[{img:'assets/pub-deformx.png',caption:'DeformX — Cosserat-rod physics co-simulated with Isaac Sim. Demo videos at deformx.github.io.'}] },
       maci2:{ num:'01', type:'Preprint', equalNote:true, img:'assets/pub-maci2.png', venue:'Under Review', year:'2026', meta:'Under Review · Preprint',
