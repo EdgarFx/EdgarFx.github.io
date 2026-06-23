@@ -24,40 +24,36 @@
   .xf-news a{color:var(--accent,#C41230);border-bottom:1px solid rgba(196,18,48,0.3);}
   img{max-width:100%;}
 
-  /* ---- Responsive / mobile ---- */
-  /* Tablet: tighten the widest multi-column layouts */
+  /* ---- Responsive / mobile (class hooks; inline styles are re-serialized by the
+     framework so substring style-matching is unreliable — we use explicit classes) ---- */
+  /* Tablet */
   @media (max-width:980px){
-    [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:repeat(2,1fr)!important;}
-    [style*="grid-template-columns:1.55fr 1fr"]{grid-template-columns:1fr!important;gap:40px!important;}
-    [style*="grid-template-columns:440px 1fr"]{grid-template-columns:300px 1fr!important;gap:22px!important;}
+    .xf-grid3{grid-template-columns:repeat(2,1fr)!important;}
+    .xf-hero-grid{grid-template-columns:1fr!important;gap:40px!important;}
+    .xf-pub-card{grid-template-columns:300px 1fr!important;gap:22px!important;}
   }
-  /* Phone: collapse everything to a single column */
+  /* Phone: collapse to a single column */
   @media (max-width:760px){
-    /* Nav: hide the section links (page is a single scroll), keep name + theme toggle */
+    /* Nav: hide section links (page is a single scroll), keep name + theme toggle */
     nav a[href="#"]{display:none!important;}
-    /* Uniform, tighter side padding for all section wrappers + the nav bar */
-    [style*="max-width:1120px"]{padding-left:18px!important;padding-right:18px!important;}
+    /* Tighter, uniform side padding for every section wrapper + the nav bar */
+    .xf-wrap{padding-left:18px!important;padding-right:18px!important;}
 
-    /* Stack every fixed multi-column grid */
-    [style*="grid-template-columns:1.55fr 1fr"]{grid-template-columns:1fr!important;gap:34px!important;}
-    [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important;}
-    [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;gap:30px!important;}
-    [style*="grid-template-columns:440px 1fr"]{grid-template-columns:1fr!important;gap:0!important;}
-    [style*="grid-template-columns:150px 1fr 130px"]{grid-template-columns:1fr!important;gap:5px!important;}
-    [style*="grid-template-columns:120px 1fr"]{grid-template-columns:74px 1fr!important;gap:14px!important;}
-    [style*="minmax(195px,1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+    .xf-hero-grid{grid-template-columns:1fr!important;gap:32px!important;}
+    .xf-grid3{grid-template-columns:1fr!important;}
+    .xf-2col{grid-template-columns:1fr!important;gap:30px!important;}
+    .xf-pub-card{grid-template-columns:1fr!important;gap:0!important;}
+    .xf-pub-body{padding:20px 20px 24px!important;}
+    .xf-exp-row{grid-template-columns:1fr!important;gap:4px!important;}
+    .xf-exp-loc{text-align:left!important;}
+    .xf-news>div{grid-template-columns:74px 1fr!important;gap:14px!important;}
+    .xf-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
 
-    /* Publication card: restore left padding once the image stacks on top */
-    [style*="padding:26px 28px 26px 0"]{padding:20px 20px 24px!important;}
-    /* Experience: left-align the location once rows stack */
-    [style*="grid-template-columns:150px 1fr 130px"] [style*="text-align:right"]{text-align:left!important;}
-
-    /* Section headings a touch smaller */
-    h2[style*="font-size:37px"]{font-size:27px!important;}
+    section h2{font-size:27px!important;}
 
     /* Detail / lightbox modal: tighter padding on small screens */
-    [style*="padding:48px 24px"]{padding:18px 10px!important;}
-    [style*="padding:34px 38px 40px"]{padding:24px 18px 28px!important;}
+    .xf-modal-ov{padding:18px 10px!important;}
+    .xf-modal-panel{padding:24px 18px 28px!important;}
   }
 </style>
 </helmet>
@@ -71,7 +67,7 @@
 
   <!-- NAV -->
   <nav style="position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--navBg,rgba(244,245,247,0.82));border-bottom:1px solid var(--line,#e3e6ec);">
-    <div style="max-width:1120px;margin:0 auto;padding:0 28px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+    <div class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:0 28px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
       <a href="#about" onClick="{{ onNav }}" style="font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:13.5px;letter-spacing:0.02em;color:var(--ink,#181b21);white-space:nowrap;">Xiang <span style="color:var(--accent,#C41230);">(Shawn)</span> Fei</a>
       <div style="display:flex;align-items:center;gap:1px;">
         <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="5">
@@ -83,8 +79,8 @@
   </nav>
 
   <!-- HERO / ABOUT -->
-  <section id="about" data-screen-label="About" style="max-width:1120px;margin:0 auto;padding:80px 28px 92px;">
-    <div data-reveal="" style="display:grid;grid-template-columns:1.55fr 1fr;gap:60px;align-items:start;">
+  <section id="about" data-screen-label="About" class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:80px 28px 92px;">
+    <div data-reveal="" class="xf-hero-grid" style="display:grid;grid-template-columns:1.55fr 1fr;gap:60px;align-items:start;">
       <div>
         <div style="font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:0.14em;color:var(--accent,#C41230);margin-bottom:20px;">CARNEGIE MELLON UNIVERSITY · THE AIRLAB</div>
         <h1 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(46px,6vw,74px);line-height:1.0;letter-spacing:-0.02em;margin:0 0 16px;color:var(--ink,#181b21);">Xiang <span style="font-style:italic;color:var(--muted,#5c6573);">(Shawn)</span> Fei<span style="color:var(--accent,#C41230);">.</span></h1>
@@ -124,7 +120,7 @@
 
   <!-- NEWS -->
   <section id="news" data-screen-label="News" style="border-top:1px solid var(--line,#e3e6ec);background:var(--surface,#fff);transition:background .45s ease;">
-    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 74px;">
+    <div class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:70px 28px 74px;">
       <div data-reveal="" style="display:flex;align-items:baseline;gap:18px;margin-bottom:34px;">
         <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">01</span>
         <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Recent News</h2>
@@ -149,7 +145,7 @@
 
   <!-- PUBLICATIONS -->
   <section id="publications" data-screen-label="Publications" style="border-top:1px solid var(--line,#e3e6ec);">
-    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 78px;">
+    <div class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:70px 28px 78px;">
       <div data-reveal="" style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:12px;">
         <div style="display:flex;align-items:baseline;gap:18px;">
           <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">02</span>
@@ -160,13 +156,13 @@
       <p data-reveal="" style="font-size:13.5px;color:var(--muted,#5c6573);margin:0 0 26px;font-family:'Spline Sans Mono',monospace;letter-spacing:0.02em;">Click any paper for the full write-up ↘</p>
       <div data-reveal="" style="display:flex;flex-direction:column;gap:18px;">
         <sc-for list="{{ selectedPubs }}" as="p" hint-placeholder-count="3">
-          <div onClick="{{ p.onClick }}" style="display:grid;grid-template-columns:440px 1fr;gap:32px;align-items:center;background:var(--surface,#fff);border:1px solid var(--line,#e3e6ec);border-radius:3px;overflow:hidden;cursor:pointer;transition:border-color .25s,transform .25s;" style-hover="border-color:var(--accent,#C41230);transform:translateY(-2px);">
+          <div onClick="{{ p.onClick }}" class="xf-pub-card" style="display:grid;grid-template-columns:440px 1fr;gap:32px;align-items:center;background:var(--surface,#fff);border:1px solid var(--line,#e3e6ec);border-radius:3px;overflow:hidden;cursor:pointer;transition:border-color .25s,transform .25s;" style-hover="border-color:var(--accent,#C41230);transform:translateY(-2px);">
             <div style="align-self:stretch;background:var(--bg,#f4f5f7);display:flex;align-items:center;justify-content:center;">
               <sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}">
                 <img src="{{ p.img }}" alt="{{ p.title }}" loading="lazy" style="width:100%;height:auto;max-height:380px;object-fit:contain;display:block;">
               </sc-if>
             </div>
-            <div style="padding:26px 28px 26px 0;">
+            <div class="xf-pub-body" style="padding:26px 28px 26px 0;">
               <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
                 <span style="font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:{{ p.badgeBg }};padding:4px 9px;border-radius:3px;">{{ p.type }}</span>
                 <sc-if value="{{ p.oral }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;align-items:center;gap:4px;font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent,#C41230);border:1px solid var(--accent,#C41230);padding:3px 8px;border-radius:3px;"><i class="fas fa-microphone"></i>Oral</span></sc-if>
@@ -193,7 +189,7 @@
 
   <!-- PROJECTS & RESEARCH -->
   <section id="projects" data-screen-label="Projects" style="border-top:1px solid var(--line,#e3e6ec);background:var(--surface,#fff);transition:background .45s ease;">
-    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
+    <div class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
       <div data-reveal="" style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:12px;">
         <div style="display:flex;align-items:baseline;gap:18px;">
           <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">03</span>
@@ -202,7 +198,7 @@
         <button onClick="{{ viewAllProjects }}" style="font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:0.04em;color:var(--ink,#181b21);background:transparent;border:1px solid var(--line,#e3e6ec);padding:9px 15px;border-radius:999px;cursor:pointer;transition:all .2s;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);">VIEW ALL PROJECTS →</button>
       </div>
       <p data-reveal="" style="font-size:14px;color:var(--muted,#5c6573);margin:0 0 26px;font-family:'Spline Sans Mono',monospace;letter-spacing:0.02em;">Click any project for the full write-up ↘</p>
-      <div data-reveal="" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;">
+      <div data-reveal="" class="xf-grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;">
         <sc-for list="{{ selectedProjects }}" as="pr" hint-placeholder-count="3">
           <div onClick="{{ pr.onClick }}" style="display:flex;flex-direction:column;background:var(--bg,#f4f5f7);border:1px solid var(--line,#e3e6ec);border-radius:3px;overflow:hidden;cursor:pointer;transition:all .25s;" style-hover="border-color:var(--accent,#C41230);transform:translateY(-3px);">
             <div style="position:relative;aspect-ratio:16/10;background:var(--bg,#f4f5f7);">
@@ -229,20 +225,20 @@
 
   <!-- EXPERIENCE -->
   <section id="experience" data-screen-label="Experience" style="border-top:1px solid var(--line,#e3e6ec);">
-    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
+    <div class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
       <div data-reveal="" style="display:flex;align-items:baseline;gap:18px;margin-bottom:32px;">
         <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">04</span>
         <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Experience</h2>
       </div>
       <div data-reveal="">
         <sc-for list="{{ experience }}" as="e" hint-placeholder-count="6">
-          <div style="display:grid;grid-template-columns:150px 1fr 130px;gap:24px;padding:19px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;">
+          <div class="xf-exp-row" style="display:grid;grid-template-columns:150px 1fr 130px;gap:24px;padding:19px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;">
             <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--muted,#5c6573);">{{ e.dates }}</span>
             <div>
               <div style="font-size:16px;font-weight:600;color:var(--ink,#181b21);margin-bottom:3px;">{{ e.role }}</div>
               <div style="font-size:14px;color:var(--muted,#5c6573);">{{ e.company }}</div>
             </div>
-            <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--faint,#8a91a0);text-align:right;">{{ e.location }}</span>
+            <span class="xf-exp-loc" style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--faint,#8a91a0);text-align:right;">{{ e.location }}</span>
           </div>
         </sc-for>
       </div>
@@ -251,7 +247,7 @@
 
   <!-- MISC -->
   <section id="misc" data-screen-label="Misc" style="border-top:1px solid var(--line,#e3e6ec);background:var(--surface,#fff);transition:background .45s ease;">
-    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
+    <div class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
       <div data-reveal="" style="display:flex;align-items:baseline;gap:18px;margin-bottom:16px;">
         <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">05</span>
         <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Miscellaneous</h2>
@@ -259,7 +255,7 @@
       <p data-reveal="" style="font-size:16px;line-height:1.7;color:var(--ink,#181b21);max-width:640px;margin:0 0 34px;">
         Outside of research, I enjoy basketball, hiking &amp; touring, race cars, LEGO, PC games, and — most of all — spending time with my fiancée Waiwai. A few moments along the way:
       </p>
-      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:14px;">
+      <div data-reveal="" class="xf-gallery" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:14px;">
         <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="8">
           <figure onClick="{{ g.onClick }}" style="margin:0;cursor:pointer;">
             <div style="position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:3px;border:1px solid var(--line,#e3e6ec);transition:all .25s;" style-hover="border-color:var(--accent,#C41230);transform:translateY(-2px);">
@@ -276,12 +272,12 @@
 
   <!-- FUN FACTS -->
   <section id="funfacts" data-screen-label="Fun Facts" style="border-top:1px solid var(--line,#e3e6ec);">
-    <div style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
+    <div class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:70px 28px 80px;">
       <div data-reveal="" style="display:flex;align-items:baseline;gap:18px;margin-bottom:38px;">
         <span style="font-family:'Spline Sans Mono',monospace;font-size:13px;color:var(--accent,#C41230);">06</span>
         <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Fun Facts</h2>
       </div>
-      <div class="xf-bio" data-reveal="" style="display:grid;grid-template-columns:1fr 1fr;gap:52px;">
+      <div class="xf-bio xf-2col" data-reveal="" style="display:grid;grid-template-columns:1fr 1fr;gap:52px;">
         <div style="border-top:2px solid var(--accent,#C41230);padding-top:22px;">
           <div style="font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#C41230);margin-bottom:16px;">On the name “edgarfx”</div>
           <p style="font-size:16px;line-height:1.74;color:var(--ink,#181b21);margin:0;">You might notice this site lives at <strong>edgarfx</strong>.github.io — which has nothing to do with “Shawn.” Through undergrad my English name was <strong>Edgar</strong>, given to me by my IELTS teacher right after high school (borrowed from a character in a play). Since “Shawn” sounds close to my Chinese name <strong>Xiang</strong>, I switched to it after coming to the US for grad school.</p>
@@ -296,7 +292,7 @@
 
   <!-- CONTACT / FOOTER -->
   <section id="contact" data-screen-label="Contact" style="border-top:1px solid var(--line,#e3e6ec);background:var(--accent,#C41230);color:#fff;">
-    <div style="max-width:1120px;margin:0 auto;padding:82px 28px 38px;">
+    <div class="xf-wrap" style="max-width:1120px;margin:0 auto;padding:82px 28px 38px;">
       <div data-reveal="">
         <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;letter-spacing:0.12em;color:rgba(255,255,255,0.72);">07 / GET IN TOUCH</span>
         <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(34px,4.6vw,54px);line-height:1.06;letter-spacing:-0.02em;margin:18px 0 22px;max-width:640px;">Let's talk robots, perception, and SLAM.</h2>
@@ -316,7 +312,7 @@
 
   <!-- DETAIL / LIGHTBOX MODAL -->
   <sc-if value="{{ detail.open }}" hint-placeholder-val="{{ false }}">
-    <div onClick="{{ closeDetail }}" style="position:fixed;inset:0;z-index:100;background:rgba(10,12,16,0.62);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding:48px 24px;overflow-y:auto;">
+    <div onClick="{{ closeDetail }}" class="xf-modal-ov" style="position:fixed;inset:0;z-index:100;background:rgba(10,12,16,0.62);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding:48px 24px;overflow-y:auto;">
 
       <sc-if value="{{ detail.isPhoto }}" hint-placeholder-val="{{ false }}">
         <div onClick="{{ stopDetail }}" style="display:flex;flex-direction:column;align-items:center;gap:14px;max-width:1000px;margin:auto;">
@@ -327,7 +323,7 @@
       </sc-if>
 
       <sc-if value="{{ detail.isPanel }}" hint-placeholder-val="{{ false }}">
-        <div onClick="{{ stopDetail }}" style="width:100%;max-width:760px;background:var(--bg,#f4f5f7);border:1px solid var(--line,#e3e6ec);border-radius:5px;padding:34px 38px 40px;margin:auto 0;box-shadow:0 24px 70px rgba(0,0,0,0.4);">
+        <div onClick="{{ stopDetail }}" class="xf-modal-panel" style="width:100%;max-width:760px;background:var(--bg,#f4f5f7);border:1px solid var(--line,#e3e6ec);border-radius:5px;padding:34px 38px 40px;margin:auto 0;box-shadow:0 24px 70px rgba(0,0,0,0.4);">
           <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:8px;">
             <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
               <sc-if value="{{ detail.canBack }}" hint-placeholder-val="{{ false }}">
@@ -556,7 +552,7 @@ class Component extends DCLogic {
     const fmtPub = (k) => { const p = pubs[k]; return { key:k, num:p.num, type:p.type, badgeBg:badgeFor(p.type), img:p.img, oral:!!p.oral, equalNote:!!p.equalNote,
       venue:p.venue, year:p.year, title:p.title, pre:p.pre, me:p.me, post:p.post, links:p.links, onClick:this.openPub(k) }; };
     const allPubs = pubOrder.map(fmtPub);
-    const selectedPubs = ['deformx','maci2','bowg'].map(fmtPub);
+    const selectedPubs = ['maci2','deformx','bowg'].map(fmtPub);
 
     const projectMap = {
       vli:{ meta:'2024 · CMU Biorobotics Lab', img:'assets/proj-vlislam.png', title:'Visual-Laser-Inertial SLAM for Confined Pipes',
