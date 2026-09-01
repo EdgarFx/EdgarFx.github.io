@@ -164,9 +164,10 @@
               </sc-if>
             </div>
             <div class="xf-pub-body" style="padding:26px 28px 26px 0;">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:11px;">
                 <span style="font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#fff;background:{{ p.badgeBg }};padding:4px 9px;border-radius:3px;">{{ p.type }}</span>
                 <sc-if value="{{ p.oral }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;align-items:center;gap:4px;font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent,#C41230);border:1px solid var(--accent,#C41230);padding:3px 8px;border-radius:3px;"><i class="fas fa-microphone"></i>Oral</span></sc-if>
+                <sc-if value="{{ p.award }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;align-items:center;gap:5px;font-family:'Spline Sans Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold,#8f6d12);background:rgba(190,152,44,0.13);border:1px solid rgba(190,152,44,0.45);padding:3px 8px;border-radius:3px;"><i class="fas fa-star"></i>{{ p.award }}</span></sc-if>
                 <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--muted,#5c6573);">{{ p.venue }}</span>
                 <span style="font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--faint,#8a91a0);margin-left:auto;">{{ p.year }}</span>
               </div>
@@ -175,7 +176,6 @@
                 <p style="font-size:13.5px;line-height:1.55;color:var(--muted,#5c6573);margin:0;"><span>{{ p.pre }}</span><span style="font-weight:600;color:var(--ink,#181b21);">{{ p.me }}</span><span>{{ p.post }}</span></p>
                 <sc-for list="{{ p.notes }}" as="nt" hint-placeholder-count="0"><p style="font-family:'Spline Sans',sans-serif;font-size:11.5px;color:var(--faint,#8a91a0);margin:6px 0 0;">{{ nt }}</p></sc-for>
               </div>
-              <sc-if value="{{ p.award }}" hint-placeholder-val="{{ false }}"><div style="display:inline-flex;align-items:center;gap:7px;font-family:'Spline Sans',sans-serif;font-size:12px;font-weight:600;color:var(--gold,#8f6d12);background:rgba(190,152,44,0.13);border:1px solid rgba(190,152,44,0.42);padding:5px 12px;border-radius:999px;margin:0 0 15px;"><i class="fas fa-star" style="font-size:10px;"></i>{{ p.award }}</div></sc-if>
               <div style="display:flex;gap:9px;flex-wrap:wrap;align-items:center;">
                 <sc-for list="{{ p.links }}" as="l" hint-placeholder-count="2">
                   <a href="{{ l.url }}" target="_blank" onClick="{{ stopDetail }}" style="display:inline-flex;align-items:center;gap:6px;font-family:'Spline Sans Mono',monospace;font-size:11.5px;letter-spacing:0.03em;color:var(--ink,#181b21);border:1px solid var(--line,#e3e6ec);padding:6px 11px;border-radius:6px;transition:all .2s;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);"><i class="{{ l.icon }}"></i>{{ l.label }}</a>
@@ -381,7 +381,7 @@
                 <p style="font-size:13.5px;line-height:1.55;color:var(--muted,#5c6573);margin:0;"><span>{{ detail.authorsPre }}</span><span style="font-weight:600;color:var(--ink,#181b21);">{{ detail.authorsMe }}</span><span>{{ detail.authorsPost }}</span></p>
                 <sc-for list="{{ detail.notes }}" as="nt" hint-placeholder-count="0"><p style="font-family:'Spline Sans',sans-serif;font-size:11.5px;color:var(--faint,#8a91a0);margin:6px 0 0;">{{ nt }}</p></sc-for>
               </div>
-              <sc-if value="{{ detail.award }}" hint-placeholder-val="{{ false }}"><div style="display:inline-flex;align-items:center;gap:7px;font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;color:var(--gold,#8f6d12);background:rgba(190,152,44,0.13);border:1px solid rgba(190,152,44,0.42);padding:6px 13px;border-radius:999px;margin:0 0 20px;"><i class="fas fa-star" style="font-size:10.5px;"></i>{{ detail.award }}</div></sc-if>
+              <sc-if value="{{ detail.award }}" hint-placeholder-val="{{ false }}"><div style="display:inline-flex;align-items:center;gap:7px;font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;color:var(--gold,#8f6d12);background:rgba(190,152,44,0.13);border:1px solid rgba(190,152,44,0.42);padding:6px 13px;border-radius:999px;margin:0 0 20px;"><i class="fas fa-star" style="font-size:10.5px;"></i>{{ detail.awardFull }}</div></sc-if>
               <sc-for list="{{ detail.paragraphs }}" as="para" hint-placeholder-count="2">
                 <p style="font-size:15.5px;line-height:1.72;color:var(--ink,#181b21);margin:0 0 16px;">{{ para }}</p>
               </sc-for>
@@ -505,7 +505,7 @@ class Component extends DCLogic {
         links:[{label:'PDF',icon:IPDF,url:'https://arxiv.org/abs/2606.22116'},{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Code',icon:ICODE,url:'https://github.com/DeformX/DeformX'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
         paragraphs:['Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual methods rely on procedural geometric primitives that lack physically grounded deformation, while physics-based approaches often approximate DLOs as rigid-link chains or generic soft bodies, failing to capture the bending, twisting, and shear mechanics of slender elastic structures.','We introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat-rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. The Cosserat-rod engine simulates DLO dynamics, self-collisions, and contact with arbitrary free-form meshes; mesh skinning maps discrete rod deformations onto imported CAD models for high-fidelity visualization.','To our knowledge, DeformX is the first DLO-simulation framework to unify realistic visualization, principled physics, and compatibility with robot-learning pipelines. Fine-tuning SAM3 on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a 6.6 cm mean target-hitting error on a real UR5e — highlighting strong sim-to-real transfer.'],
         figures:[{img:'assets/pub-deformx.png',caption:'DeformX — Cosserat-rod physics co-simulated with Isaac Sim. Demo videos at deformx.github.io.'}] },
-      wireseg:{ num:'03', type:'Workshop', award:'Best Short Paper Award @ CVPR 2026 Workshop', notes:['* Corresponding authors and project leads'], img:'assets/pub-wireseg.png', venue:'CVPRW 2026', year:'2026', meta:'CVPR 2026 Workshop \u00B7 Short Paper \u00B7 Best Short Paper Award',
+      wireseg:{ num:'03', type:'Workshop', award:'Best Short Paper Award', awardFull:'Best Short Paper Award @ CVPR Workshop 2026', notes:['* Corresponding authors and project leads','Part of the DeformX project \u2014 dataset now extended to WireSeg-36K'], img:'assets/pub-wireseg.png', venue:'CVPR Workshop 2026', year:'2026', meta:'CVPR Workshop 2026 \u00B7 Short Paper \u00B7 Best Short Paper Award',
         title:'WireSeg-32K: A Physics-Grounded Synthetic Dataset for Wire Instance Segmentation',
         pre:'Zilin Dai, Lehong Wang*, Yi Yang*, ', me:'Xiang Fei*', post:'',
         links:[{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Code',icon:ICODE,url:'https://github.com/DeformX/DeformX'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
@@ -617,7 +617,7 @@ class Component extends DCLogic {
     const gallery = galleryData.map(g => ({ img:g[0], caption:g[1], onClick:this.openPhoto(g[0], g[1]) }));
 
     // ---- detail / modal ----
-    let detail = { open:false, isPhoto:false, isPanel:false, isPubs:false, isProjList:false, isContent:false, canBack:false, hasLinks:false, notes:[], award:'',
+    let detail = { open:false, isPhoto:false, isPanel:false, isPubs:false, isProjList:false, isContent:false, canBack:false, hasLinks:false, notes:[], award:'', awardFull:'',
       onBack:this.viewAllPubs, backLabel:'\u2190 ALL PAPERS',
       title:'', meta:'', authorsPre:'', authorsMe:'', authorsPost:'', paragraphs:[], figures:[], links:[], photoImg:'', photoCap:'', pubs:[], projs:[] };
     const k = this.state.detailKind;
@@ -629,7 +629,7 @@ class Component extends DCLogic {
       detail = { ...detail, open:true, isPanel:true, isProjList:true, title:'All Projects', meta:'Projects & research \u00B7 ' + projectOrder.length + ' entries', projs:projectsList };
     } else if (k === 'pub' && pubs[this.state.detailKey]) {
       const p = pubs[this.state.detailKey];
-      detail = { ...detail, open:true, isPanel:true, isContent:true, canBack:true, onBack:this.viewAllPubs, backLabel:'\u2190 ALL PAPERS', title:p.title, meta:p.meta, notes:p.notes || [], award:p.award || '',
+      detail = { ...detail, open:true, isPanel:true, isContent:true, canBack:true, onBack:this.viewAllPubs, backLabel:'\u2190 ALL PAPERS', title:p.title, meta:p.meta, notes:p.notes || [], award:p.award || '', awardFull:p.awardFull || p.award || '',
         authorsPre:p.pre, authorsMe:p.me, authorsPost:p.post, paragraphs:p.paragraphs, figures:p.figures, links:p.links, hasLinks:p.links.length>0 };
     } else if (k === 'project' && projectMap[this.state.detailKey]) {
       const p = projectMap[this.state.detailKey];
