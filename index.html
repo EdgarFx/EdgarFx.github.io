@@ -126,7 +126,9 @@
         <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:37px;letter-spacing:-0.01em;margin:0;color:var(--ink,#181b21);">Recent News</h2>
       </div>
       <div class="xf-news" data-reveal="" style="max-height:430px;overflow-y:auto;padding-right:10px;">
-        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.04em;color:var(--accent,#C41230);">JUN 2026</span><span style="font-size:15.5px;line-height:1.6;">Our paper <a href="https://deformx.github.io/" target="_blank">“DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects”</a> was accepted by IROS 2026 🥳. Code will be released upon publication — stay tuned!</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.04em;color:var(--accent,#C41230);">SEP 2026</span><span style="font-size:15.5px;line-height:1.6;">The code for <a href="https://github.com/DeformX/DeformX" target="_blank">DeformX</a> is now released on GitHub 🚀 — give it a try!</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.04em;color:var(--accent,#C41230);">JUN 2026</span><span style="font-size:15.5px;line-height:1.6;">Our paper “WireSeg-32K: A Physics-Grounded Synthetic Dataset for Wire Instance Segmentation” received the <strong>Best Short Paper Award</strong> at the CVPR 2026 Workshop 🏆. This work is part of <a href="https://deformx.github.io/" target="_blank">DeformX</a>, and we have since extended the dataset to <a href="https://huggingface.co/datasets/DeformX/WireSeg-36K" target="_blank">WireSeg-36K</a>.</span></div>
+        <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.04em;color:var(--accent,#C41230);">JUN 2026</span><span style="font-size:15.5px;line-height:1.6;">Our paper <a href="https://deformx.github.io/" target="_blank">“DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects”</a> was accepted by IROS 2026 🥳.</span></div>
         <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.04em;color:var(--accent,#C41230);">APR 2026</span><span style="font-size:15.5px;line-height:1.6;">I passed my Master's thesis defense! 🎓</span></div>
         <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.04em;color:var(--accent,#C41230);">MAR 2026</span><span style="font-size:15.5px;line-height:1.6;">I've accepted the PhD offer at CMU! Looking forward to my PhD life 🎉!</span></div>
         <div style="display:grid;grid-template-columns:120px 1fr;gap:22px;padding:14px 0;border-top:1px solid var(--line,#e3e6ec);align-items:baseline;"><span style="font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.04em;color:var(--accent,#C41230);">JUN 2025</span><span style="font-size:15.5px;line-height:1.6;">Our paper <a href="https://ieeexplore.ieee.org/document/11246796" target="_blank">“Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing”</a> was accepted by IROS 2025 🥳.</span></div>
@@ -171,8 +173,9 @@
               <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:22px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 9px;color:var(--ink,#181b21);">{{ p.title }}</h3>
               <div style="margin:0 0 15px;">
                 <p style="font-size:13.5px;line-height:1.55;color:var(--muted,#5c6573);margin:0;"><span>{{ p.pre }}</span><span style="font-weight:600;color:var(--ink,#181b21);">{{ p.me }}</span><span>{{ p.post }}</span></p>
-                <sc-if value="{{ p.equalNote }}" hint-placeholder-val="{{ false }}"><p style="font-family:'Spline Sans',sans-serif;font-size:11.5px;color:var(--faint,#8a91a0);margin:6px 0 0;">† Equal contribution</p></sc-if>
+                <sc-for list="{{ p.notes }}" as="nt" hint-placeholder-count="0"><p style="font-family:'Spline Sans',sans-serif;font-size:11.5px;color:var(--faint,#8a91a0);margin:6px 0 0;">{{ nt }}</p></sc-for>
               </div>
+              <sc-if value="{{ p.award }}" hint-placeholder-val="{{ false }}"><div style="display:inline-flex;align-items:center;gap:7px;font-family:'Spline Sans',sans-serif;font-size:12px;font-weight:600;color:var(--gold,#8f6d12);background:rgba(190,152,44,0.13);border:1px solid rgba(190,152,44,0.42);padding:5px 12px;border-radius:999px;margin:0 0 15px;"><i class="fas fa-star" style="font-size:10px;"></i>{{ p.award }}</div></sc-if>
               <div style="display:flex;gap:9px;flex-wrap:wrap;align-items:center;">
                 <sc-for list="{{ p.links }}" as="l" hint-placeholder-count="2">
                   <a href="{{ l.url }}" target="_blank" onClick="{{ stopDetail }}" style="display:inline-flex;align-items:center;gap:6px;font-family:'Spline Sans Mono',monospace;font-size:11.5px;letter-spacing:0.03em;color:var(--ink,#181b21);border:1px solid var(--line,#e3e6ec);padding:6px 11px;border-radius:6px;transition:all .2s;" style-hover="border-color:var(--accent,#C41230);color:var(--accent,#C41230);"><i class="{{ l.icon }}"></i>{{ l.label }}</a>
@@ -338,10 +341,11 @@
                   <div>
                     <h4 style="font-family:'Newsreader',serif;font-weight:500;font-size:18px;line-height:1.3;margin:0 0 7px;color:var(--ink,#181b21);">{{ p.title }}</h4>
                     <p style="font-size:13px;line-height:1.5;color:var(--muted,#5c6573);margin:0 0 5px;"><span>{{ p.pre }}</span><span style="font-weight:600;color:var(--ink,#181b21);">{{ p.me }}</span><span>{{ p.post }}</span></p>
-                    <sc-if value="{{ p.equalNote }}" hint-placeholder-val="{{ false }}"><p style="font-family:'Spline Sans',sans-serif;font-size:11px;color:var(--faint,#8a91a0);margin:0 0 6px;">† Equal contribution</p></sc-if>
+                    <sc-for list="{{ p.notes }}" as="nt" hint-placeholder-count="0"><p style="font-family:'Spline Sans',sans-serif;font-size:11px;color:var(--faint,#8a91a0);margin:0 0 6px;">{{ nt }}</p></sc-for>
                     <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 10px;">
                       <span style="font-family:'Spline Sans Mono',monospace;font-size:11.5px;color:var(--faint,#8a91a0);"><span style="color:var(--accent,#C41230);">{{ p.venue }}</span> · {{ p.year }}</span>
                       <sc-if value="{{ p.oral }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;align-items:center;gap:4px;font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent,#C41230);border:1px solid var(--accent,#C41230);padding:2px 6px;border-radius:3px;"><i class="fas fa-microphone"></i>Oral</span></sc-if>
+                      <sc-if value="{{ p.award }}" hint-placeholder-val="{{ false }}"><span style="display:inline-flex;align-items:center;gap:5px;font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:0.05em;color:var(--gold,#8f6d12);background:rgba(190,152,44,0.13);border:1px solid rgba(190,152,44,0.42);padding:2px 7px;border-radius:3px;"><i class="fas fa-star"></i>{{ p.award }}</span></sc-if>
                     </div>
                     <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
                       <sc-for list="{{ p.links }}" as="l" hint-placeholder-count="2">
@@ -375,8 +379,9 @@
             <div>
               <div style="margin:0 0 22px;">
                 <p style="font-size:13.5px;line-height:1.55;color:var(--muted,#5c6573);margin:0;"><span>{{ detail.authorsPre }}</span><span style="font-weight:600;color:var(--ink,#181b21);">{{ detail.authorsMe }}</span><span>{{ detail.authorsPost }}</span></p>
-                <sc-if value="{{ detail.equalNote }}" hint-placeholder-val="{{ false }}"><p style="font-family:'Spline Sans',sans-serif;font-size:11.5px;color:var(--faint,#8a91a0);margin:6px 0 0;">† Equal contribution</p></sc-if>
+                <sc-for list="{{ detail.notes }}" as="nt" hint-placeholder-count="0"><p style="font-family:'Spline Sans',sans-serif;font-size:11.5px;color:var(--faint,#8a91a0);margin:6px 0 0;">{{ nt }}</p></sc-for>
               </div>
+              <sc-if value="{{ detail.award }}" hint-placeholder-val="{{ false }}"><div style="display:inline-flex;align-items:center;gap:7px;font-family:'Spline Sans',sans-serif;font-size:12.5px;font-weight:600;color:var(--gold,#8f6d12);background:rgba(190,152,44,0.13);border:1px solid rgba(190,152,44,0.42);padding:6px 13px;border-radius:999px;margin:0 0 20px;"><i class="fas fa-star" style="font-size:10.5px;"></i>{{ detail.award }}</div></sc-if>
               <sc-for list="{{ detail.paragraphs }}" as="para" hint-placeholder-count="2">
                 <p style="font-size:15.5px;line-height:1.72;color:var(--ink,#181b21);margin:0 0 16px;">{{ para }}</p>
               </sc-for>
@@ -465,10 +470,10 @@ class Component extends DCLogic {
     const dark = this.state.theme === 'dark';
     const themeVars = dark ? {
       '--bg':'#0e1014','--surface':'#161a20','--ink':'#eef1f5','--muted':'#9aa3b2','--faint':'#6b7280',
-      '--line':'#252b34','--accent':accent,'--accentSoft':'rgba(255,255,255,0.05)','--navBg':'rgba(14,16,20,0.78)','--cool':'#74b0cf'
+      '--line':'#252b34','--accent':accent,'--accentSoft':'rgba(255,255,255,0.05)','--navBg':'rgba(14,16,20,0.78)','--cool':'#74b0cf','--gold':'#e2bd4b'
     } : {
       '--bg':'#f4f5f7','--surface':'#ffffff','--ink':'#181b21','--muted':'#5c6573','--faint':'#8a91a0',
-      '--line':'#e3e6ec','--accent':accent,'--accentSoft':'rgba(196,18,48,0.07)','--navBg':'rgba(244,245,247,0.82)','--cool':'#3a6b86'
+      '--line':'#e3e6ec','--accent':accent,'--accentSoft':'rgba(196,18,48,0.07)','--navBg':'rgba(244,245,247,0.82)','--cool':'#3a6b86','--gold':'#8f6d12'
     };
     const cool = themeVars['--cool'];
 
@@ -491,63 +496,69 @@ class Component extends DCLogic {
     ];
 
     const IPDF='fas fa-file-lines', ICODE='fab fa-github', IWEB='fas fa-link', IDATA='fas fa-database';
-    const badgeFor = (t) => t==='Conference' ? accent : (t==='Journal' ? cool : (t==='Report' ? '#7a6a3a' : '#6b7280'));
+    const badgeFor = (t) => (t==='Conference' || t==='Workshop') ? accent : (t==='Journal' ? cool : (t==='Report' ? '#7a6a3a' : '#6b7280'));
 
     const pubs = {
-      deformx:{ num:'02', type:'Conference', oral:true, equalNote:true, img:'assets/pub-deformx.png', venue:'IROS 2026', year:'2026', meta:'IROS 2026 · Conference Paper · Oral',
+      deformx:{ num:'02', type:'Conference', oral:true, notes:['\u2020 Equal contribution'], img:'assets/pub-deformx.png', venue:'IROS 2026', year:'2026', meta:'IROS 2026 · Conference Paper · Oral',
         title:'DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects',
-        pre:'Yi Yang†, ', me:'Xiang Fei†', post:', Lehong Wang†, Chenghao Li, Zilin Dai, Henry Kou, Lu Li, Howie Choset',
-        links:[{label:'PDF',icon:IPDF,url:'https://arxiv.org/abs/2606.22116'},{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
+        pre:'', me:'Xiang Fei†', post:', Yi Yang†, Lehong Wang†, Chenghao Li, Zilin Dai, Henry Kou, Lu Li, Howie Choset',
+        links:[{label:'PDF',icon:IPDF,url:'https://arxiv.org/abs/2606.22116'},{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Code',icon:ICODE,url:'https://github.com/DeformX/DeformX'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
         paragraphs:['Deformable linear objects (DLOs) such as wires, cables, and ropes are common in robotic manipulation, yet simulating them with both visual realism and physical accuracy remains challenging. Existing visual methods rely on procedural geometric primitives that lack physically grounded deformation, while physics-based approaches often approximate DLOs as rigid-link chains or generic soft bodies, failing to capture the bending, twisting, and shear mechanics of slender elastic structures.','We introduce DeformX, a co-simulation framework that integrates a dedicated Cosserat-rod physics engine with NVIDIA Isaac Sim, enabling DLO simulations that are both physically faithful and visually realistic. The Cosserat-rod engine simulates DLO dynamics, self-collisions, and contact with arbitrary free-form meshes; mesh skinning maps discrete rod deformations onto imported CAD models for high-fidelity visualization.','To our knowledge, DeformX is the first DLO-simulation framework to unify realistic visualization, principled physics, and compatibility with robot-learning pipelines. Fine-tuning SAM3 on DeformX-generated data yields a 10.2% mAP@75 improvement in real-image wire segmentation, and a rope-swinging policy trained entirely in DeformX achieves a 6.6 cm mean target-hitting error on a real UR5e — highlighting strong sim-to-real transfer.'],
         figures:[{img:'assets/pub-deformx.png',caption:'DeformX — Cosserat-rod physics co-simulated with Isaac Sim. Demo videos at deformx.github.io.'}] },
-      maci2:{ num:'01', type:'Preprint', equalNote:true, img:'assets/pub-maci2.png', venue:'Under Review', year:'2026', meta:'Under Review · Preprint',
-        title:'MAC-I\u00B2: Learned Metrics-Aware Covariance for Robust Visual-Inertial Initialization and Calibration',
-        pre:'', me:'Xiang Fei†', post:', Yuheng Qiu†, Can Xu, Yutian Chen, Ruogu Li, Wenshan Wang, Sebastian Scherer',
+      wireseg:{ num:'03', type:'Workshop', award:'Best Short Paper Award @ CVPR 2026 Workshop', notes:['* Corresponding authors and project leads'], img:'assets/pub-wireseg.png', venue:'CVPRW 2026', year:'2026', meta:'CVPR 2026 Workshop \u00B7 Short Paper \u00B7 Best Short Paper Award',
+        title:'WireSeg-32K: A Physics-Grounded Synthetic Dataset for Wire Instance Segmentation',
+        pre:'Zilin Dai, Lehong Wang*, Yi Yang*, ', me:'Xiang Fei*', post:'',
+        links:[{label:'Website',icon:IWEB,url:'https://deformx.github.io/'},{label:'Code',icon:ICODE,url:'https://github.com/DeformX/DeformX'},{label:'Dataset',icon:IDATA,url:'https://huggingface.co/datasets/DeformX/WireSeg-36K'}],
+        paragraphs:['Wires and cables are thin, highly deformable, and frequently self-occluding, which makes instance segmentation unusually hard \u2014 and collecting real annotated data at scale is prohibitively expensive.','WireSeg-32K is a physics-grounded synthetic dataset of 32,000 images with instance masks, depth maps, and difficulty splits, paired with a real-world test set. Every scene is generated with DeformX, our co-simulation framework that couples a Cosserat-rod wire simulator with photorealistic rendering, so the wire configurations are physically plausible and contact-consistent rather than procedurally drawn.','Fine-tuning SAM3 on WireSeg-32K improves real-image wire segmentation by 10.2% over the baseline, showing that physically grounded synthetic data transfers to real-world wire perception. This work is part of the DeformX effort; the dataset has since been extended to WireSeg-36K and released on Hugging Face.'],
+        figures:[{img:'assets/pub-wireseg.png',caption:'WireSeg-32K \u2014 physics-grounded synthetic wire instance-segmentation data generated with DeformX.'}] },
+      maci2:{ num:'01', type:'Preprint', notes:['\u2020 Equal contribution'], img:'assets/pub-maci2.png', venue:'Under Review', year:'2026', meta:'Under Review · Preprint',
+        title:'MAC-I\u00B2: Learned Metrics-Aware Covariance for Robust Visual-Inertial Fusion in Initialization and Calibration',
+        pre:'', me:'Xiang Fei†', post:', Yuheng Qiu†, Can Xu, Yutian Chen, Ruogu Li, Xingxing Zuo, Wenshan Wang, Sebastian Scherer',
         links:[],
         paragraphs:['Visual-inertial (VI) initialization and calibration are critical for VI systems, providing camera-IMU extrinsics and physically consistent initial state estimates for sensor fusion. Traditional methods rely heavily on geometric feature correspondences and often struggle under illumination changes, dynamic objects, and occlusions.','We present MAC-I\u00B2, a robust VI initialization and online-calibration framework that leverages learning-based visual features and uncertainty modeling. We derive visual pose covariances from learned feature-matching uncertainties and adopt a learning-based IMU model to predict integration covariances. Both visual and inertial covariances are metrics-aware, enabling principled, tuning-free initialization and calibration.','Extensive experiments show MAC-I\u00B2 achieves significantly improved robustness and accuracy across a wide range of challenging scenarios where geometry-based methods often fail.'],
         figures:[{img:'assets/pub-maci2.png',caption:'MAC-I\u00B2 — metrics-aware covariance for robust VI initialization and calibration.'}] },
-      bowg:{ num:'03', type:'Conference', oral:true, img:'assets/pub-bowg.png', venue:'IROS 2025', year:'2025', meta:'IROS 2025 · Conference Paper · Oral',
+      bowg:{ num:'04', type:'Conference', oral:true, img:'assets/pub-bowg.png', venue:'IROS 2025', year:'2025', meta:'IROS 2025 · Conference Paper · Oral',
         title:'Bag of Word Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing',
         pre:'', me:'Xiang Fei', post:', Tina Tian, Howie Choset, Lu Li',
         links:[{label:'PDF',icon:IPDF,url:'https://ieeexplore.ieee.org/document/11246796'},{label:'Code',icon:ICODE,url:'https://github.com/EdgarFx/BoWG'}],
         paragraphs:['Loop closure is critical in SLAM to reduce accumulative drift and ensure global mapping consistency. Conventional methods struggle in perceptually aliased environments such as narrow pipes — due to vector quantization, feature sparsity, and repetitive textures — while existing solutions often incur high computational cost.','BoWG introduces word groups that capture the spatial co-occurrence and proximity of visual words to construct an online dictionary. Drawing on probabilistic transition models, we incorporate temporal consistency directly into the similarity computation with an adaptive scheme, substantially improving precision-recall. A feature-distribution-analysis module and dedicated post-verification mechanisms further strengthen the method.','BoWG surpasses state-of-the-art traditional and learning-based methods in precision-recall and efficiency, with excellent scalability — averaging 16 ms per image across 17,565 images on the Bicocca25b dataset.'],
         figures:[{img:'assets/pub-bowg.png',caption:'BoWG loop-closure pipeline'},{img:'assets/pub/bowg-results.png',caption:'Precision-recall vs. existing methods'},{img:'assets/pub/bowg-testsite.png',caption:'Confined-pipe test environment'},{img:'assets/pub/bowg-ares.png',caption:'Results in the challenging pipe environment'}] },
-      qopt:{ num:'04', type:'Journal', img:'assets/pub-qopt.png', venue:'Scientific Reports', year:'2024', meta:'Scientific Reports · 2024 (JCR Q1)',
+      qopt:{ num:'05', type:'Journal', img:'assets/pub-qopt.png', venue:'Scientific Reports', year:'2024', meta:'Scientific Reports · 2024 (JCR Q1)',
         title:'Power System Fault Diagnosis with Quantum Computing and Efficient Gate Decomposition',
         pre:'', me:'Xiang Fei', post:', et al.',
         links:[{label:'Paper',icon:IPDF,url:'https://www.nature.com/articles/s41598-024-67922-w'}],
         paragraphs:['A QAOA-based approach to power-system fault diagnosis, together with a proposed efficient quantum gate decomposition that reduces circuit complexity while preserving diagnostic accuracy. Published in Scientific Reports (JCR Q1).'],
         figures:[{img:'assets/pub-qopt.png',caption:'Quantum power-system fault diagnosis with efficient gate decomposition'}] },
-      qgan:{ num:'05', type:'Journal', img:'assets/pub-qgan.png', venue:'Energy Conversion and Economics', year:'2024', meta:'Energy Conversion and Economics · 2024',
+      qgan:{ num:'06', type:'Journal', img:'assets/pub-qgan.png', venue:'Energy Conversion and Economics', year:'2024', meta:'Energy Conversion and Economics · 2024',
         title:'Carbon Market Risk Estimation Using Quantum Conditional GAN and Amplitude Estimation',
         pre:'', me:'Xiang Fei', post:', et al.',
         links:[{label:'Paper',icon:IPDF,url:'https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/enc2.12122'}],
         paragraphs:['A carbon-market risk-estimation method combining a quantum conditional generative adversarial network (QCGAN) with quantum amplitude estimation, providing efficient distribution learning and risk-measure computation for carbon-market price dynamics. Published in Energy Conversion and Economics.'],
         figures:[{img:'assets/pub-qgan.png',caption:'Quantum CGAN + amplitude estimation for carbon-market risk'}] },
-      lqlstm:{ num:'06', type:'Journal', img:'assets/pub-lqlstm.png', venue:'Quantum Machine Intelligence', year:'2023', meta:'Quantum Machine Intelligence · 2023',
+      lqlstm:{ num:'07', type:'Journal', img:'assets/pub-lqlstm.png', venue:'Quantum Machine Intelligence', year:'2023', meta:'Quantum Machine Intelligence · 2023',
         title:'Linear-Layer-Enhanced Quantum Long Short-Term Memory for Carbon Price Forecasting',
         pre:'', me:'Xiang Fei', post:', et al.',
         links:[{label:'Paper',icon:IPDF,url:'https://link.springer.com/article/10.1007/s42484-023-00115-2'},{label:'Code',icon:ICODE,url:'https://github.com/TravisCao/L-QLSTM'}],
         paragraphs:['A linear-layer-enhanced quantum long short-term memory (L-QLSTM) network for carbon-price forecasting, improving on the standard QLSTM formulation with classical linear layers for stronger temporal modeling. Published in Quantum Machine Intelligence — my first journal paper.'],
         figures:[{img:'assets/pub-lqlstm.png',caption:'L-QLSTM architecture for carbon-price forecasting'}] },
-      disclosure:{ num:'07', type:'Preprint', img:'assets/pub-disclosure.png', venue:'Submitted to J. Cleaner Production', year:'2023', meta:'Submitted to Journal of Cleaner Production · Working Paper',
+      disclosure:{ num:'08', type:'Preprint', img:'assets/pub-disclosure.png', venue:'Submitted to J. Cleaner Production', year:'2023', meta:'Submitted to Journal of Cleaner Production · Working Paper',
         title:'Carbon Disclosure Effect, Corporate Fundamentals, and Net-zero Emission Target: Evidence from China',
         pre:'', me:'Xiang Fei', post:', et al.',
         links:[],
         paragraphs:['An empirical analysis of the impact of China\u2019s national and regional Emissions Trading Scheme (ETS) on the financial performance of listed companies, relating carbon disclosure to corporate fundamentals and net-zero targets.','Recognized with the National Outstanding Award of the National University Student Energy Economy Academic Creativity Competition (Top 5 in China). Working paper.'],
         figures:[{img:'assets/pub-disclosure.png',caption:'Carbon disclosure effect on corporate financial performance'}] },
-      carbon:{ num:'08', type:'Report', img:'assets/pub-carbon.png', venue:'2022 Global Forum on Sustainable Development', year:'2022', meta:'2022 Global Forum on Sustainable Development · Report',
+      carbon:{ num:'09', type:'Report', img:'assets/pub-carbon.png', venue:'2022 Global Forum on Sustainable Development', year:'2022', meta:'2022 Global Forum on Sustainable Development · Report',
         title:"2022 Carbon Rating Report of China's 100 Overseas Listed Companies",
         pre:'', me:'Xiang Fei', post:', et al.',
         links:[{label:'Report',icon:IPDF,url:'https://airs.cuhk.edu.cn/files/2022-06/2022%20Carbon%20Rating%20Report%20of%20China%27s%20100%20Overseas%20Listed%20Companies_0.pdf'}],
         paragraphs:['A carbon-rating report assessing the carbon performance and disclosure of China\u2019s 100 largest overseas-listed companies, released at the 2022 Global Forum on Sustainable Development.'],
         figures:[{img:'assets/pub-carbon.png',caption:'2022 Carbon Rating Report'}] }
     };
-    const pubOrder = ['maci2','deformx','bowg','qopt','qgan','lqlstm','disclosure','carbon'];
-    const fmtPub = (k) => { const p = pubs[k]; return { key:k, num:p.num, type:p.type, badgeBg:badgeFor(p.type), img:p.img, oral:!!p.oral, equalNote:!!p.equalNote,
+    const pubOrder = ['maci2','deformx','wireseg','bowg','qopt','qgan','lqlstm','disclosure','carbon'];
+    const fmtPub = (k) => { const p = pubs[k]; return { key:k, num:p.num, type:p.type, badgeBg:badgeFor(p.type), img:p.img, oral:!!p.oral, notes:p.notes || [], award:p.award || '',
       venue:p.venue, year:p.year, title:p.title, pre:p.pre, me:p.me, post:p.post, links:p.links, onClick:this.openPub(k) }; };
     const allPubs = pubOrder.map(fmtPub);
-    const selectedPubs = ['maci2','deformx','bowg'].map(fmtPub);
+    const selectedPubs = ['maci2','deformx','wireseg','bowg'].map(fmtPub);
 
     const projectMap = {
       vli:{ meta:'2024 · CMU Biorobotics Lab', img:'assets/proj-vlislam.png', title:'Visual-Laser-Inertial SLAM for Confined Pipes',
@@ -606,7 +617,7 @@ class Component extends DCLogic {
     const gallery = galleryData.map(g => ({ img:g[0], caption:g[1], onClick:this.openPhoto(g[0], g[1]) }));
 
     // ---- detail / modal ----
-    let detail = { open:false, isPhoto:false, isPanel:false, isPubs:false, isProjList:false, isContent:false, canBack:false, hasLinks:false, equalNote:false,
+    let detail = { open:false, isPhoto:false, isPanel:false, isPubs:false, isProjList:false, isContent:false, canBack:false, hasLinks:false, notes:[], award:'',
       onBack:this.viewAllPubs, backLabel:'\u2190 ALL PAPERS',
       title:'', meta:'', authorsPre:'', authorsMe:'', authorsPost:'', paragraphs:[], figures:[], links:[], photoImg:'', photoCap:'', pubs:[], projs:[] };
     const k = this.state.detailKind;
@@ -618,7 +629,7 @@ class Component extends DCLogic {
       detail = { ...detail, open:true, isPanel:true, isProjList:true, title:'All Projects', meta:'Projects & research \u00B7 ' + projectOrder.length + ' entries', projs:projectsList };
     } else if (k === 'pub' && pubs[this.state.detailKey]) {
       const p = pubs[this.state.detailKey];
-      detail = { ...detail, open:true, isPanel:true, isContent:true, canBack:true, onBack:this.viewAllPubs, backLabel:'\u2190 ALL PAPERS', title:p.title, meta:p.meta, equalNote:!!p.equalNote,
+      detail = { ...detail, open:true, isPanel:true, isContent:true, canBack:true, onBack:this.viewAllPubs, backLabel:'\u2190 ALL PAPERS', title:p.title, meta:p.meta, notes:p.notes || [], award:p.award || '',
         authorsPre:p.pre, authorsMe:p.me, authorsPost:p.post, paragraphs:p.paragraphs, figures:p.figures, links:p.links, hasLinks:p.links.length>0 };
     } else if (k === 'project' && projectMap[this.state.detailKey]) {
       const p = projectMap[this.state.detailKey];
